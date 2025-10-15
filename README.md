@@ -17,7 +17,7 @@ This comprehensive project synopsis presents an innovative reinforcement learnin
   - 🎯 *Shubhansh Gupta* - UR: 2315510204
   - 🔧 *Rachit Gupta* - UR: 2315510159  
   - ⚙ *Manas Kashyap* - UR: 2315510114
-- *Mentor:* Prof. Yunis Ahmed Lone
+- *Mentor:* Mr. Preshit Mangesh Desai & Prof. Yunis Ahmed Lone
 
 ### 📚 *Project Synopsis Overview*
 🚑 A traffic light control system that gives priority to ambulances, fire trucks, and police cars while optimizing normal traffic flow.
@@ -375,6 +375,8 @@ Logs events (timestamped state/action/reward) for analysis. Could be a simple da
 
 *Another flow:* regular traffic updates cycle, and RL agent optimizes throughput if no EV present.
 
+![Workflow](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/workflow.png)
+
 ## 📊 *11. Data Design*
 
 We will log key data elements for each simulation run:
@@ -397,25 +399,25 @@ Summarized data per run: average delay, throughput, EV travel times
 ## 📊 *12. Technical Workflow Diagrams*
 
 ### 🔄 *12.1 State Transition Diagram*
-[Referenced in original document]
+![State Transition Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/state-transition-diagram.png)
 
 ### 📋 *12.2 Sequence Diagram*
-[Referenced in original document]
+![Sequence Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/sequence-diagram.png)
 
 ### 👤 *12.3 Use Case Diagram*
-[Referenced in original document]
+![Use Case Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/use-case-diagram.jpg)
 
 ### 📊 *12.4 Data Flow Diagram*
-[Referenced in original document]
+![Data Flow Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/data-flow-diagram.png)
 
 ### 🗄 *12.5 ER Diagram*
-[Referenced in original document]
+![ER Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/er-diagram.png)
 
 ### ⚙ *12.6 Technical Workflow Diagram*
-[Referenced in original document]
+![Technical Workflow Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/technical-flow-diagram.jpg)
 
 ### 🏗 *12.7 Work Architecture Diagram*
-[Referenced in original document]
+![Work Architecture Diagram](![Data Flow Diagram](https://github.com/shubhansh-gupta25641082564/T40-RL-Based-Smart-Traffic-Light-System-for-Emergency-Response/blob/main/data-flow-diagram.png)
 
 ## ✅ *13. Quality (Non-Functional Requirements and Testing)*
 
