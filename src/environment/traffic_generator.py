@@ -2,7 +2,7 @@ import random
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-def generate_routes(output_file, num_vehicles=1000, num_emergency=20):
+def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
     """
     Generate vehicle routes for simulation
 
@@ -57,15 +57,18 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=20):
         ['W_C', 'C_N'],  # West to North (right turn)
     ]
 
+    all_vehicles = []
+
     # Civilian vehicles: Random route
     for i in range(num_vehicles):
-        vehicle = ET.SubElement(routes, 'vehicle')
-        vehicle.set('id', f'civilian_{i}')
-        vehicle.set('type', 'civilian')
-        vehicle.set('depart', str(random.uniform(0, 3600)))
+        depart_time = random.uniform(0, 3600)
         route_edges = random.choice(routes_list)
-        route = ET.SubElement(vehicle, 'route')
-        route.set('edges', ' '.join(route_edges))
+        all_vehicles.append({
+            "id": f"civilian_{i}",
+            "type": "civilian",
+            "depart": depart_time,
+            "edges": route_edges
+        })
 
     # Emergency vehicles: Prefer straight (priority) routes
     straight_routes = [
@@ -75,13 +78,26 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=20):
         ['W_C', 'C_E']
     ]
     for i in range(num_emergency):
+        depart_time = random.uniform(100, 3500)
+        route_edges = random.choice(straight_routes)
+        all_vehicles.append({
+            "id": f"emergency_{i}",
+            "type": "emergency",
+            "depart": depart_time,
+            "edges": route_edges
+        })
+
+    # SORT List by depart!
+    all_vehicles.sort(key=lambda v: v["depart"])
+    
+    # Write vehicles to XML
+    for v in all_vehicles:
         vehicle = ET.SubElement(routes, 'vehicle')
-        vehicle.set('id', f'emergency_{i}')
-        vehicle.set('type', 'emergency')
-        vehicle.set('depart', str(random.uniform(100, 3500)))
-        route_edges = random.choice(straight_routes)  # Emergency: straight
+        vehicle.set('id', v['id'])
+        vehicle.set('type', v['type'])
+        vehicle.set('depart', str(v['depart']))
         route = ET.SubElement(vehicle, 'route')
-        route.set('edges', ' '.join(route_edges))
+        route.set('edges', ' '.join(v['edges']))
 
     xml_str = minidom.parseString(ET.tostring(routes)).toprettyxml(indent="   ")
     with open(output_file, 'w') as f:
@@ -93,4 +109,4 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=20):
 if __name__ == "__main__":
     import os
     os.makedirs('data/networks', exist_ok=True)
-    generate_routes('data/networks/intersection.rou.xml', num_vehicles=1000, num_emergency=20)
+    generate_routes('data/networks/intersection.rou.xml', num_vehicles=1000, num_emergency=200)
