@@ -1,3 +1,4 @@
+# this is an alternate way to create the network using sumolib instead of netedit
 import os
 import sys
 
