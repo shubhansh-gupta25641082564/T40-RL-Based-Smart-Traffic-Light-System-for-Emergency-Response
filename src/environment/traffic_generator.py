@@ -61,7 +61,7 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
 
     # Civilian vehicles: Random route
     for i in range(num_vehicles):
-        depart_time = random.uniform(0, 3600)
+        depart_time = i * (3600 / num_vehicles)
         route_edges = random.choice(routes_list)
         all_vehicles.append({
             "id": f"civilian_{i}",
