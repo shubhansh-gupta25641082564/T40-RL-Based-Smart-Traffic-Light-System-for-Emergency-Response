@@ -2,7 +2,7 @@ import random
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-def generate_routes(output_file, num_vehicles=10000, num_emergency=2000):
+def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
     """
     Generate vehicle routes for simulation
 
@@ -61,7 +61,7 @@ def generate_routes(output_file, num_vehicles=10000, num_emergency=2000):
 
     # Civilian vehicles: Random route
     for i in range(num_vehicles):
-        depart_time = random.uniform(0, 36000)
+        depart_time = random.uniform(0, 3600)
         route_edges = random.choice(routes_list)
         all_vehicles.append({
             "id": f"civilian_{i}",
@@ -78,7 +78,7 @@ def generate_routes(output_file, num_vehicles=10000, num_emergency=2000):
         ['W_C', 'C_E']
     ]
     for i in range(num_emergency):
-        depart_time = random.uniform(1000, 35000)
+        depart_time = random.uniform(100, 3500)
         route_edges = random.choice(straight_routes)
         all_vehicles.append({
             "id": f"emergency_{i}",
@@ -109,4 +109,4 @@ def generate_routes(output_file, num_vehicles=10000, num_emergency=2000):
 if __name__ == "__main__":
     import os
     os.makedirs('data/networks', exist_ok=True)
-    generate_routes('data/networks/intersection.rou.xml', num_vehicles=10000, num_emergency=2000)
+    generate_routes('data/networks/intersection.rou.xml', num_vehicles=1000, num_emergency=200)
