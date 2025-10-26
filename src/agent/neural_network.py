@@ -20,15 +20,15 @@ class DQN(nn.Module):
         
         # Input layer
         self.fc1 = nn.Linear(state_size, hidden_size)
-        self.bn1 = nn.BatchNorm1d(hidden_size)
+        self.bn1 = nn.LayerNorm(hidden_size)
         
         # Hidden layers
         self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.bn2 = nn.BatchNorm1d(hidden_size)
-        
+        self.bn2 = nn.LayerNorm(hidden_size)
+
         self.fc3 = nn.Linear(hidden_size, hidden_size // 2)
-        self.bn3 = nn.BatchNorm1d(hidden_size // 2)
-        
+        self.bn3 = nn.LayerNorm(hidden_size // 2)
+
         # Output layer
         self.fc4 = nn.Linear(hidden_size // 2, action_size)
         

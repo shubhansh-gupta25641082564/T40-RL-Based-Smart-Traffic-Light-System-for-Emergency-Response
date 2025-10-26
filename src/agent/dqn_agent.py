@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
-from neural_network import DQN
-from replay_buffer import ReplayBuffer
+from src.agent.neural_network import DQN
+from src.agent.replay_buffer import ReplayBuffer
 
 class DQNAgent:
     """
