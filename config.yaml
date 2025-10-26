@@ -1,0 +1,30 @@
+# Training Configuration
+training:
+  num_episodes: 500
+  max_steps_per_episode: 3600
+  save_interval: 50
+  eval_interval: 25
+
+# DQN Hyperparameters
+agent:
+  gamma: 0.95
+  epsilon_start: 1.0
+  epsilon_min: 0.01
+  epsilon_decay: 0.995
+  learning_rate: 0.001
+  batch_size: 64
+  buffer_size: 10000
+  target_update: 10
+
+# Environment
+environment:
+  net_file: "data/networks/intersection.net.xml"
+  route_file: "data/networks/intersection.rou.xml"
+  use_gui: false
+  delta_time: 2
+
+# Paths
+paths:
+  models_dir: "models/checkpoints"
+  logs_dir: "data/logs"
+  best_model: "models/best_model.pth"
