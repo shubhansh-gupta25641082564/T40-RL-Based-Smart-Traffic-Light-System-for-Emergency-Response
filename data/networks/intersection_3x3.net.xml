@@ -1,0 +1,171 @@
+<!-- ye us alternate way ka create kara hua network intersction hai -->
+
+<?xml version="1.0" ?>
+<net xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+  <location netOffset="0.00,0.00" convBoundary="-750.0,-750.0,750.0,750.0" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+  <junction id="C_00" type="traffic_light" x="-500" y="500" incLanes="" intLanes="" shape=""/>
+  <junction id="C_10" type="traffic_light" x="0" y="500" incLanes="" intLanes="" shape=""/>
+  <junction id="C_20" type="traffic_light" x="500" y="500" incLanes="" intLanes="" shape=""/>
+  <junction id="C_01" type="traffic_light" x="-500" y="0" incLanes="" intLanes="" shape=""/>
+  <junction id="C_11" type="traffic_light" x="0" y="0" incLanes="" intLanes="" shape=""/>
+  <junction id="C_21" type="traffic_light" x="500" y="0" incLanes="" intLanes="" shape=""/>
+  <junction id="C_02" type="traffic_light" x="-500" y="-500" incLanes="" intLanes="" shape=""/>
+  <junction id="C_12" type="traffic_light" x="0" y="-500" incLanes="" intLanes="" shape=""/>
+  <junction id="C_22" type="traffic_light" x="500" y="-500" incLanes="" intLanes="" shape=""/>
+  <junction id="N_00" type="priority" x="-500" y="900" incLanes="" intLanes="" shape=""/>
+  <junction id="N_10" type="priority" x="0" y="900" incLanes="" intLanes="" shape=""/>
+  <junction id="N_20" type="priority" x="500" y="900" incLanes="" intLanes="" shape=""/>
+  <junction id="S_00" type="priority" x="-500" y="-900" incLanes="" intLanes="" shape=""/>
+  <junction id="S_10" type="priority" x="0" y="-900" incLanes="" intLanes="" shape=""/>
+  <junction id="S_20" type="priority" x="500" y="-900" incLanes="" intLanes="" shape=""/>
+  <junction id="W_00" type="priority" x="-900" y="500" incLanes="" intLanes="" shape=""/>
+  <junction id="W_01" type="priority" x="-900" y="0" incLanes="" intLanes="" shape=""/>
+  <junction id="W_02" type="priority" x="-900" y="-500" incLanes="" intLanes="" shape=""/>
+  <junction id="E_00" type="priority" x="900" y="500" incLanes="" intLanes="" shape=""/>
+  <junction id="E_01" type="priority" x="900" y="0" incLanes="" intLanes="" shape=""/>
+  <junction id="E_02" type="priority" x="900" y="-500" incLanes="" intLanes="" shape=""/>
+  <edge id="E_0" from="W_00" to="C_00" priority="-1">
+    <lane id="E_0_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_0_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_0_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_0_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_1" from="C_00" to="C_10" priority="-1">
+    <lane id="E_1_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_1_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_1_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_1_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_2" from="C_10" to="C_20" priority="-1">
+    <lane id="E_2_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_2_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_2_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_2_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_3" from="C_20" to="E_00" priority="-1">
+    <lane id="E_3_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_3_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_3_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_3_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_4" from="W_01" to="C_01" priority="-1">
+    <lane id="E_4_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_4_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_4_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_4_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_5" from="C_01" to="C_11" priority="-1">
+    <lane id="E_5_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_5_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_5_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_5_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_6" from="C_11" to="C_21" priority="-1">
+    <lane id="E_6_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_6_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_6_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_6_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_7" from="C_21" to="E_01" priority="-1">
+    <lane id="E_7_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_7_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_7_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_7_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_8" from="W_02" to="C_02" priority="-1">
+    <lane id="E_8_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_8_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_8_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_8_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_9" from="C_02" to="C_12" priority="-1">
+    <lane id="E_9_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_9_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_9_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_9_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_10" from="C_12" to="C_22" priority="-1">
+    <lane id="E_10_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_10_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_10_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_10_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_11" from="C_22" to="E_02" priority="-1">
+    <lane id="E_11_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_11_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_11_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_11_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_12" from="N_00" to="C_00" priority="-1">
+    <lane id="E_12_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_12_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_12_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_12_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_13" from="C_00" to="C_01" priority="-1">
+    <lane id="E_13_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_13_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_13_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_13_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_14" from="C_01" to="C_02" priority="-1">
+    <lane id="E_14_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_14_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_14_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_14_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_15" from="C_02" to="S_00" priority="-1">
+    <lane id="E_15_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_15_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_15_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_15_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_16" from="N_10" to="C_10" priority="-1">
+    <lane id="E_16_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_16_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_16_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_16_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_17" from="C_10" to="C_11" priority="-1">
+    <lane id="E_17_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_17_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_17_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_17_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_18" from="C_11" to="C_12" priority="-1">
+    <lane id="E_18_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_18_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_18_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_18_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_19" from="C_12" to="S_10" priority="-1">
+    <lane id="E_19_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_19_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_19_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_19_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_20" from="N_20" to="C_20" priority="-1">
+    <lane id="E_20_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_20_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_20_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_20_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_21" from="C_20" to="C_21" priority="-1">
+    <lane id="E_21_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_21_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_21_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_21_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_22" from="C_21" to="C_22" priority="-1">
+    <lane id="E_22_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_22_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_22_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_22_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+  <edge id="E_23" from="C_22" to="S_20" priority="-1">
+    <lane id="E_23_0" index="0" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_23_1" index="1" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_23_2" index="2" speed="13.89" length="100.00" shape="0,0 100,0"/>
+    <lane id="E_23_3" index="3" speed="13.89" length="100.00" shape="0,0 100,0"/>
+  </edge>
+</net>
