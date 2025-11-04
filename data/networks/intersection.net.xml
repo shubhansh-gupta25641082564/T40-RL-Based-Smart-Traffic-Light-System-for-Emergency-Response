@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-10-23 14:42:55 by Eclipse SUMO netedit Version 1.24.0
+<!-- generated on 2025-11-05 00:21:41 by Eclipse SUMO netedit Version 1.24.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
@@ -28,126 +28,894 @@
 
 <net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
 
-    <location netOffset="0.00,0.00" convBoundary="-500.00,-500.00,500.00,500.00" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+    <location netOffset="0.00,0.00" convBoundary="-600.00,-600.00,600.00,600.00" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
 
-    <edge id=":C_0" function="internal">
-        <lane id=":C_0_0" index="0" speed="6.51" length="9.03" shape="-11.20,16.80 -11.55,14.35 -12.60,12.60 -14.35,11.55 -16.80,11.20"/>
+    <edge id=":Ayodhya_0" function="internal">
+        <lane id=":Ayodhya_0_0" index="0" speed="6.51" length="9.03" shape="-11.20,-283.20 -11.55,-285.65 -12.60,-287.40 -14.35,-288.45 -16.80,-288.80"/>
     </edge>
-    <edge id=":C_1" function="internal">
-        <lane id=":C_1_0" index="0" speed="13.89" length="33.60" shape="-11.20,16.80 -11.20,-16.80"/>
-        <lane id=":C_1_1" index="1" speed="13.89" length="33.60" shape="-8.00,16.80 -8.00,-16.80"/>
-        <lane id=":C_1_2" index="2" speed="13.89" length="33.60" shape="-4.80,16.80 -4.80,-16.80"/>
-        <lane id=":C_1_3" index="3" speed="13.89" length="33.60" shape="-1.60,16.80 -1.60,-16.80"/>
+    <edge id=":Ayodhya_1" function="internal">
+        <lane id=":Ayodhya_1_0" index="0" speed="13.89" length="33.60" shape="-11.20,-283.20 -11.20,-316.80"/>
+        <lane id=":Ayodhya_1_1" index="1" speed="13.89" length="33.60" shape="-8.00,-283.20 -8.00,-316.80"/>
+        <lane id=":Ayodhya_1_2" index="2" speed="13.89" length="33.60" shape="-4.80,-283.20 -4.80,-316.80"/>
+        <lane id=":Ayodhya_1_3" index="3" speed="13.89" length="33.60" shape="-1.60,-283.20 -1.60,-316.80"/>
     </edge>
-    <edge id=":C_5" function="internal">
-        <lane id=":C_5_0" index="0" speed="11.36" length="5.01" shape="-1.60,16.80 -0.89,11.84"/>
+    <edge id=":Ayodhya_5" function="internal">
+        <lane id=":Ayodhya_5_0" index="0" speed="11.36" length="5.01" shape="-1.60,-283.20 -0.89,-288.16"/>
     </edge>
-    <edge id=":C_24" function="internal">
-        <lane id=":C_24_0" index="0" speed="11.36" length="24.66" shape="-0.89,11.84 -0.45,8.75 3.00,3.00 8.75,-0.45 16.80,-1.60"/>
+    <edge id=":Ayodhya_24" function="internal">
+        <lane id=":Ayodhya_24_0" index="0" speed="11.36" length="24.66" shape="-0.89,-288.16 -0.45,-291.25 3.00,-297.00 8.75,-300.45 16.80,-301.60"/>
     </edge>
-    <edge id=":C_6" function="internal">
-        <lane id=":C_6_0" index="0" speed="6.51" length="9.03" shape="16.80,11.20 14.35,11.55 12.60,12.60 11.55,14.35 11.20,16.80"/>
+    <edge id=":Ayodhya_6" function="internal">
+        <lane id=":Ayodhya_6_0" index="0" speed="6.51" length="9.03" shape="16.80,-288.80 14.35,-288.45 12.60,-287.40 11.55,-285.65 11.20,-283.20"/>
     </edge>
-    <edge id=":C_7" function="internal">
-        <lane id=":C_7_0" index="0" speed="13.89" length="33.60" shape="16.80,11.20 -16.80,11.20"/>
-        <lane id=":C_7_1" index="1" speed="13.89" length="33.60" shape="16.80,8.00 -16.80,8.00"/>
-        <lane id=":C_7_2" index="2" speed="13.89" length="33.60" shape="16.80,4.80 -16.80,4.80"/>
-        <lane id=":C_7_3" index="3" speed="13.89" length="33.60" shape="16.80,1.60 -16.80,1.60"/>
+    <edge id=":Ayodhya_7" function="internal">
+        <lane id=":Ayodhya_7_0" index="0" speed="13.89" length="33.60" shape="16.80,-288.80 -16.80,-288.80"/>
+        <lane id=":Ayodhya_7_1" index="1" speed="13.89" length="33.60" shape="16.80,-292.00 -16.80,-292.00"/>
+        <lane id=":Ayodhya_7_2" index="2" speed="13.89" length="33.60" shape="16.80,-295.20 -16.80,-295.20"/>
+        <lane id=":Ayodhya_7_3" index="3" speed="13.89" length="33.60" shape="16.80,-298.40 -16.80,-298.40"/>
     </edge>
-    <edge id=":C_11" function="internal">
-        <lane id=":C_11_0" index="0" speed="11.36" length="5.01" shape="16.80,1.60 11.84,0.89"/>
+    <edge id=":Ayodhya_11" function="internal">
+        <lane id=":Ayodhya_11_0" index="0" speed="11.36" length="5.01" shape="16.80,-298.40 11.84,-299.11"/>
     </edge>
-    <edge id=":C_25" function="internal">
-        <lane id=":C_25_0" index="0" speed="11.36" length="24.66" shape="11.84,0.89 8.75,0.45 3.00,-3.00 -0.45,-8.75 -1.60,-16.80"/>
+    <edge id=":Ayodhya_25" function="internal">
+        <lane id=":Ayodhya_25_0" index="0" speed="11.36" length="24.66" shape="11.84,-299.11 8.75,-299.55 3.00,-303.00 -0.45,-308.75 -1.60,-316.80"/>
     </edge>
-    <edge id=":C_12" function="internal">
-        <lane id=":C_12_0" index="0" speed="6.51" length="9.03" shape="11.20,-16.80 11.55,-14.35 12.60,-12.60 14.35,-11.55 16.80,-11.20"/>
+    <edge id=":Ayodhya_12" function="internal">
+        <lane id=":Ayodhya_12_0" index="0" speed="6.51" length="9.03" shape="11.20,-316.80 11.55,-314.35 12.60,-312.60 14.35,-311.55 16.80,-311.20"/>
     </edge>
-    <edge id=":C_13" function="internal">
-        <lane id=":C_13_0" index="0" speed="13.89" length="33.60" shape="11.20,-16.80 11.20,16.80"/>
-        <lane id=":C_13_1" index="1" speed="13.89" length="33.60" shape="8.00,-16.80 8.00,16.80"/>
-        <lane id=":C_13_2" index="2" speed="13.89" length="33.60" shape="4.80,-16.80 4.80,16.80"/>
-        <lane id=":C_13_3" index="3" speed="13.89" length="33.60" shape="1.60,-16.80 1.60,16.80"/>
+    <edge id=":Ayodhya_13" function="internal">
+        <lane id=":Ayodhya_13_0" index="0" speed="13.89" length="33.60" shape="11.20,-316.80 11.20,-283.20"/>
+        <lane id=":Ayodhya_13_1" index="1" speed="13.89" length="33.60" shape="8.00,-316.80 8.00,-283.20"/>
+        <lane id=":Ayodhya_13_2" index="2" speed="13.89" length="33.60" shape="4.80,-316.80 4.80,-283.20"/>
+        <lane id=":Ayodhya_13_3" index="3" speed="13.89" length="33.60" shape="1.60,-316.80 1.60,-283.20"/>
     </edge>
-    <edge id=":C_17" function="internal">
-        <lane id=":C_17_0" index="0" speed="11.36" length="5.01" shape="1.60,-16.80 0.89,-11.84"/>
+    <edge id=":Ayodhya_17" function="internal">
+        <lane id=":Ayodhya_17_0" index="0" speed="11.36" length="5.01" shape="1.60,-316.80 0.89,-311.84"/>
     </edge>
-    <edge id=":C_26" function="internal">
-        <lane id=":C_26_0" index="0" speed="11.36" length="24.66" shape="0.89,-11.84 0.45,-8.75 -3.00,-3.00 -8.75,0.45 -16.80,1.60"/>
+    <edge id=":Ayodhya_26" function="internal">
+        <lane id=":Ayodhya_26_0" index="0" speed="11.36" length="24.66" shape="0.89,-311.84 0.45,-308.75 -3.00,-303.00 -8.75,-299.55 -16.80,-298.40"/>
     </edge>
-    <edge id=":C_18" function="internal">
-        <lane id=":C_18_0" index="0" speed="6.51" length="9.03" shape="-16.80,-11.20 -14.35,-11.55 -12.60,-12.60 -11.55,-14.35 -11.20,-16.80"/>
+    <edge id=":Ayodhya_18" function="internal">
+        <lane id=":Ayodhya_18_0" index="0" speed="6.51" length="9.03" shape="-16.80,-311.20 -14.35,-311.55 -12.60,-312.60 -11.55,-314.35 -11.20,-316.80"/>
     </edge>
-    <edge id=":C_19" function="internal">
-        <lane id=":C_19_0" index="0" speed="13.89" length="33.60" shape="-16.80,-11.20 16.80,-11.20"/>
-        <lane id=":C_19_1" index="1" speed="13.89" length="33.60" shape="-16.80,-8.00 16.80,-8.00"/>
-        <lane id=":C_19_2" index="2" speed="13.89" length="33.60" shape="-16.80,-4.80 16.80,-4.80"/>
-        <lane id=":C_19_3" index="3" speed="13.89" length="33.60" shape="-16.80,-1.60 16.80,-1.60"/>
+    <edge id=":Ayodhya_19" function="internal">
+        <lane id=":Ayodhya_19_0" index="0" speed="13.89" length="33.60" shape="-16.80,-311.20 16.80,-311.20"/>
+        <lane id=":Ayodhya_19_1" index="1" speed="13.89" length="33.60" shape="-16.80,-308.00 16.80,-308.00"/>
+        <lane id=":Ayodhya_19_2" index="2" speed="13.89" length="33.60" shape="-16.80,-304.80 16.80,-304.80"/>
+        <lane id=":Ayodhya_19_3" index="3" speed="13.89" length="33.60" shape="-16.80,-301.60 16.80,-301.60"/>
     </edge>
-    <edge id=":C_23" function="internal">
-        <lane id=":C_23_0" index="0" speed="11.36" length="5.01" shape="-16.80,-1.60 -11.84,-0.89"/>
+    <edge id=":Ayodhya_23" function="internal">
+        <lane id=":Ayodhya_23_0" index="0" speed="11.36" length="5.01" shape="-16.80,-301.60 -11.84,-300.89"/>
     </edge>
-    <edge id=":C_27" function="internal">
-        <lane id=":C_27_0" index="0" speed="11.36" length="24.66" shape="-11.84,-0.89 -8.75,-0.45 -3.00,3.00 0.45,8.75 1.60,16.80"/>
+    <edge id=":Ayodhya_27" function="internal">
+        <lane id=":Ayodhya_27_0" index="0" speed="11.36" length="24.66" shape="-11.84,-300.89 -8.75,-300.45 -3.00,-297.00 0.45,-291.25 1.60,-283.20"/>
+    </edge>
+    <edge id=":Badrinath_0" function="internal">
+        <lane id=":Badrinath_0_0" index="0" speed="6.51" length="9.03" shape="-311.20,316.80 -311.55,314.35 -312.60,312.60 -314.35,311.55 -316.80,311.20"/>
+    </edge>
+    <edge id=":Badrinath_1" function="internal">
+        <lane id=":Badrinath_1_0" index="0" speed="13.89" length="33.60" shape="-311.20,316.80 -311.20,283.20"/>
+        <lane id=":Badrinath_1_1" index="1" speed="13.89" length="33.60" shape="-308.00,316.80 -308.00,283.20"/>
+        <lane id=":Badrinath_1_2" index="2" speed="13.89" length="33.60" shape="-304.80,316.80 -304.80,283.20"/>
+        <lane id=":Badrinath_1_3" index="3" speed="13.89" length="33.60" shape="-301.60,316.80 -301.60,283.20"/>
+    </edge>
+    <edge id=":Badrinath_5" function="internal">
+        <lane id=":Badrinath_5_0" index="0" speed="11.36" length="5.01" shape="-301.60,316.80 -300.89,311.84"/>
+    </edge>
+    <edge id=":Badrinath_24" function="internal">
+        <lane id=":Badrinath_24_0" index="0" speed="11.36" length="24.66" shape="-300.89,311.84 -300.45,308.75 -297.00,303.00 -291.25,299.55 -283.20,298.40"/>
+    </edge>
+    <edge id=":Badrinath_6" function="internal">
+        <lane id=":Badrinath_6_0" index="0" speed="6.51" length="9.03" shape="-283.20,311.20 -285.65,311.55 -287.40,312.60 -288.45,314.35 -288.80,316.80"/>
+    </edge>
+    <edge id=":Badrinath_7" function="internal">
+        <lane id=":Badrinath_7_0" index="0" speed="13.89" length="33.60" shape="-283.20,311.20 -316.80,311.20"/>
+        <lane id=":Badrinath_7_1" index="1" speed="13.89" length="33.60" shape="-283.20,308.00 -316.80,308.00"/>
+        <lane id=":Badrinath_7_2" index="2" speed="13.89" length="33.60" shape="-283.20,304.80 -316.80,304.80"/>
+        <lane id=":Badrinath_7_3" index="3" speed="13.89" length="33.60" shape="-283.20,301.60 -316.80,301.60"/>
+    </edge>
+    <edge id=":Badrinath_11" function="internal">
+        <lane id=":Badrinath_11_0" index="0" speed="11.36" length="5.01" shape="-283.20,301.60 -288.16,300.89"/>
+    </edge>
+    <edge id=":Badrinath_25" function="internal">
+        <lane id=":Badrinath_25_0" index="0" speed="11.36" length="24.66" shape="-288.16,300.89 -291.25,300.45 -297.00,297.00 -300.45,291.25 -301.60,283.20"/>
+    </edge>
+    <edge id=":Badrinath_12" function="internal">
+        <lane id=":Badrinath_12_0" index="0" speed="6.51" length="9.03" shape="-288.80,283.20 -288.45,285.65 -287.40,287.40 -285.65,288.45 -283.20,288.80"/>
+    </edge>
+    <edge id=":Badrinath_13" function="internal">
+        <lane id=":Badrinath_13_0" index="0" speed="13.89" length="33.60" shape="-288.80,283.20 -288.80,316.80"/>
+        <lane id=":Badrinath_13_1" index="1" speed="13.89" length="33.60" shape="-292.00,283.20 -292.00,316.80"/>
+        <lane id=":Badrinath_13_2" index="2" speed="13.89" length="33.60" shape="-295.20,283.20 -295.20,316.80"/>
+        <lane id=":Badrinath_13_3" index="3" speed="13.89" length="33.60" shape="-298.40,283.20 -298.40,316.80"/>
+    </edge>
+    <edge id=":Badrinath_17" function="internal">
+        <lane id=":Badrinath_17_0" index="0" speed="11.36" length="5.01" shape="-298.40,283.20 -299.11,288.16"/>
+    </edge>
+    <edge id=":Badrinath_26" function="internal">
+        <lane id=":Badrinath_26_0" index="0" speed="11.36" length="24.66" shape="-299.11,288.16 -299.55,291.25 -303.00,297.00 -308.75,300.45 -316.80,301.60"/>
+    </edge>
+    <edge id=":Badrinath_18" function="internal">
+        <lane id=":Badrinath_18_0" index="0" speed="6.51" length="9.03" shape="-316.80,288.80 -314.35,288.45 -312.60,287.40 -311.55,285.65 -311.20,283.20"/>
+    </edge>
+    <edge id=":Badrinath_19" function="internal">
+        <lane id=":Badrinath_19_0" index="0" speed="13.89" length="33.60" shape="-316.80,288.80 -283.20,288.80"/>
+        <lane id=":Badrinath_19_1" index="1" speed="13.89" length="33.60" shape="-316.80,292.00 -283.20,292.00"/>
+        <lane id=":Badrinath_19_2" index="2" speed="13.89" length="33.60" shape="-316.80,295.20 -283.20,295.20"/>
+        <lane id=":Badrinath_19_3" index="3" speed="13.89" length="33.60" shape="-316.80,298.40 -283.20,298.40"/>
+    </edge>
+    <edge id=":Badrinath_23" function="internal">
+        <lane id=":Badrinath_23_0" index="0" speed="11.36" length="5.01" shape="-316.80,298.40 -311.84,299.11"/>
+    </edge>
+    <edge id=":Badrinath_27" function="internal">
+        <lane id=":Badrinath_27_0" index="0" speed="11.36" length="24.66" shape="-311.84,299.11 -308.75,299.55 -303.00,303.00 -299.55,308.75 -298.40,316.80"/>
+    </edge>
+    <edge id=":BrajVrindavan_0" function="internal">
+        <lane id=":BrajVrindavan_0_0" index="0" speed="6.51" length="9.03" shape="-11.20,16.80 -11.55,14.35 -12.60,12.60 -14.35,11.55 -16.80,11.20"/>
+    </edge>
+    <edge id=":BrajVrindavan_1" function="internal">
+        <lane id=":BrajVrindavan_1_0" index="0" speed="13.89" length="33.60" shape="-11.20,16.80 -11.20,-16.80"/>
+        <lane id=":BrajVrindavan_1_1" index="1" speed="13.89" length="33.60" shape="-8.00,16.80 -8.00,-16.80"/>
+        <lane id=":BrajVrindavan_1_2" index="2" speed="13.89" length="33.60" shape="-4.80,16.80 -4.80,-16.80"/>
+        <lane id=":BrajVrindavan_1_3" index="3" speed="13.89" length="33.60" shape="-1.60,16.80 -1.60,-16.80"/>
+    </edge>
+    <edge id=":BrajVrindavan_5" function="internal">
+        <lane id=":BrajVrindavan_5_0" index="0" speed="11.36" length="5.01" shape="-1.60,16.80 -0.89,11.84"/>
+    </edge>
+    <edge id=":BrajVrindavan_24" function="internal">
+        <lane id=":BrajVrindavan_24_0" index="0" speed="11.36" length="24.66" shape="-0.89,11.84 -0.45,8.75 3.00,3.00 8.75,-0.45 16.80,-1.60"/>
+    </edge>
+    <edge id=":BrajVrindavan_6" function="internal">
+        <lane id=":BrajVrindavan_6_0" index="0" speed="6.51" length="9.03" shape="16.80,11.20 14.35,11.55 12.60,12.60 11.55,14.35 11.20,16.80"/>
+    </edge>
+    <edge id=":BrajVrindavan_7" function="internal">
+        <lane id=":BrajVrindavan_7_0" index="0" speed="13.89" length="33.60" shape="16.80,11.20 -16.80,11.20"/>
+        <lane id=":BrajVrindavan_7_1" index="1" speed="13.89" length="33.60" shape="16.80,8.00 -16.80,8.00"/>
+        <lane id=":BrajVrindavan_7_2" index="2" speed="13.89" length="33.60" shape="16.80,4.80 -16.80,4.80"/>
+        <lane id=":BrajVrindavan_7_3" index="3" speed="13.89" length="33.60" shape="16.80,1.60 -16.80,1.60"/>
+    </edge>
+    <edge id=":BrajVrindavan_11" function="internal">
+        <lane id=":BrajVrindavan_11_0" index="0" speed="11.36" length="5.01" shape="16.80,1.60 11.84,0.89"/>
+    </edge>
+    <edge id=":BrajVrindavan_25" function="internal">
+        <lane id=":BrajVrindavan_25_0" index="0" speed="11.36" length="24.66" shape="11.84,0.89 8.75,0.45 3.00,-3.00 -0.45,-8.75 -1.60,-16.80"/>
+    </edge>
+    <edge id=":BrajVrindavan_12" function="internal">
+        <lane id=":BrajVrindavan_12_0" index="0" speed="6.51" length="9.03" shape="11.20,-16.80 11.55,-14.35 12.60,-12.60 14.35,-11.55 16.80,-11.20"/>
+    </edge>
+    <edge id=":BrajVrindavan_13" function="internal">
+        <lane id=":BrajVrindavan_13_0" index="0" speed="13.89" length="33.60" shape="11.20,-16.80 11.20,16.80"/>
+        <lane id=":BrajVrindavan_13_1" index="1" speed="13.89" length="33.60" shape="8.00,-16.80 8.00,16.80"/>
+        <lane id=":BrajVrindavan_13_2" index="2" speed="13.89" length="33.60" shape="4.80,-16.80 4.80,16.80"/>
+        <lane id=":BrajVrindavan_13_3" index="3" speed="13.89" length="33.60" shape="1.60,-16.80 1.60,16.80"/>
+    </edge>
+    <edge id=":BrajVrindavan_17" function="internal">
+        <lane id=":BrajVrindavan_17_0" index="0" speed="11.36" length="5.01" shape="1.60,-16.80 0.89,-11.84"/>
+    </edge>
+    <edge id=":BrajVrindavan_26" function="internal">
+        <lane id=":BrajVrindavan_26_0" index="0" speed="11.36" length="24.66" shape="0.89,-11.84 0.45,-8.75 -3.00,-3.00 -8.75,0.45 -16.80,1.60"/>
+    </edge>
+    <edge id=":BrajVrindavan_18" function="internal">
+        <lane id=":BrajVrindavan_18_0" index="0" speed="6.51" length="9.03" shape="-16.80,-11.20 -14.35,-11.55 -12.60,-12.60 -11.55,-14.35 -11.20,-16.80"/>
+    </edge>
+    <edge id=":BrajVrindavan_19" function="internal">
+        <lane id=":BrajVrindavan_19_0" index="0" speed="13.89" length="33.60" shape="-16.80,-11.20 16.80,-11.20"/>
+        <lane id=":BrajVrindavan_19_1" index="1" speed="13.89" length="33.60" shape="-16.80,-8.00 16.80,-8.00"/>
+        <lane id=":BrajVrindavan_19_2" index="2" speed="13.89" length="33.60" shape="-16.80,-4.80 16.80,-4.80"/>
+        <lane id=":BrajVrindavan_19_3" index="3" speed="13.89" length="33.60" shape="-16.80,-1.60 16.80,-1.60"/>
+    </edge>
+    <edge id=":BrajVrindavan_23" function="internal">
+        <lane id=":BrajVrindavan_23_0" index="0" speed="11.36" length="5.01" shape="-16.80,-1.60 -11.84,-0.89"/>
+    </edge>
+    <edge id=":BrajVrindavan_27" function="internal">
+        <lane id=":BrajVrindavan_27_0" index="0" speed="11.36" length="24.66" shape="-11.84,-0.89 -8.75,-0.45 -3.00,3.00 0.45,8.75 1.60,16.80"/>
+    </edge>
+    <edge id=":Dwarika_0" function="internal">
+        <lane id=":Dwarika_0_0" index="0" speed="6.51" length="9.03" shape="288.80,16.80 288.45,14.35 287.40,12.60 285.65,11.55 283.20,11.20"/>
+    </edge>
+    <edge id=":Dwarika_1" function="internal">
+        <lane id=":Dwarika_1_0" index="0" speed="13.89" length="33.60" shape="288.80,16.80 288.80,-16.80"/>
+        <lane id=":Dwarika_1_1" index="1" speed="13.89" length="33.60" shape="292.00,16.80 292.00,-16.80"/>
+        <lane id=":Dwarika_1_2" index="2" speed="13.89" length="33.60" shape="295.20,16.80 295.20,-16.80"/>
+        <lane id=":Dwarika_1_3" index="3" speed="13.89" length="33.60" shape="298.40,16.80 298.40,-16.80"/>
+    </edge>
+    <edge id=":Dwarika_5" function="internal">
+        <lane id=":Dwarika_5_0" index="0" speed="11.36" length="5.01" shape="298.40,16.80 299.11,11.84"/>
+    </edge>
+    <edge id=":Dwarika_24" function="internal">
+        <lane id=":Dwarika_24_0" index="0" speed="11.36" length="24.66" shape="299.11,11.84 299.55,8.75 303.00,3.00 308.75,-0.45 316.80,-1.60"/>
+    </edge>
+    <edge id=":Dwarika_6" function="internal">
+        <lane id=":Dwarika_6_0" index="0" speed="6.51" length="9.03" shape="316.80,11.20 314.35,11.55 312.60,12.60 311.55,14.35 311.20,16.80"/>
+    </edge>
+    <edge id=":Dwarika_7" function="internal">
+        <lane id=":Dwarika_7_0" index="0" speed="13.89" length="33.60" shape="316.80,11.20 283.20,11.20"/>
+        <lane id=":Dwarika_7_1" index="1" speed="13.89" length="33.60" shape="316.80,8.00 283.20,8.00"/>
+        <lane id=":Dwarika_7_2" index="2" speed="13.89" length="33.60" shape="316.80,4.80 283.20,4.80"/>
+        <lane id=":Dwarika_7_3" index="3" speed="13.89" length="33.60" shape="316.80,1.60 283.20,1.60"/>
+    </edge>
+    <edge id=":Dwarika_11" function="internal">
+        <lane id=":Dwarika_11_0" index="0" speed="11.36" length="5.01" shape="316.80,1.60 311.84,0.89"/>
+    </edge>
+    <edge id=":Dwarika_25" function="internal">
+        <lane id=":Dwarika_25_0" index="0" speed="11.36" length="24.66" shape="311.84,0.89 308.75,0.45 303.00,-3.00 299.55,-8.75 298.40,-16.80"/>
+    </edge>
+    <edge id=":Dwarika_12" function="internal">
+        <lane id=":Dwarika_12_0" index="0" speed="6.51" length="9.03" shape="311.20,-16.80 311.55,-14.35 312.60,-12.60 314.35,-11.55 316.80,-11.20"/>
+    </edge>
+    <edge id=":Dwarika_13" function="internal">
+        <lane id=":Dwarika_13_0" index="0" speed="13.89" length="33.60" shape="311.20,-16.80 311.20,16.80"/>
+        <lane id=":Dwarika_13_1" index="1" speed="13.89" length="33.60" shape="308.00,-16.80 308.00,16.80"/>
+        <lane id=":Dwarika_13_2" index="2" speed="13.89" length="33.60" shape="304.80,-16.80 304.80,16.80"/>
+        <lane id=":Dwarika_13_3" index="3" speed="13.89" length="33.60" shape="301.60,-16.80 301.60,16.80"/>
+    </edge>
+    <edge id=":Dwarika_17" function="internal">
+        <lane id=":Dwarika_17_0" index="0" speed="11.36" length="5.01" shape="301.60,-16.80 300.89,-11.84"/>
+    </edge>
+    <edge id=":Dwarika_26" function="internal">
+        <lane id=":Dwarika_26_0" index="0" speed="11.36" length="24.66" shape="300.89,-11.84 300.45,-8.75 297.00,-3.00 291.25,0.45 283.20,1.60"/>
+    </edge>
+    <edge id=":Dwarika_18" function="internal">
+        <lane id=":Dwarika_18_0" index="0" speed="6.51" length="9.03" shape="283.20,-11.20 285.65,-11.55 287.40,-12.60 288.45,-14.35 288.80,-16.80"/>
+    </edge>
+    <edge id=":Dwarika_19" function="internal">
+        <lane id=":Dwarika_19_0" index="0" speed="13.89" length="33.60" shape="283.20,-11.20 316.80,-11.20"/>
+        <lane id=":Dwarika_19_1" index="1" speed="13.89" length="33.60" shape="283.20,-8.00 316.80,-8.00"/>
+        <lane id=":Dwarika_19_2" index="2" speed="13.89" length="33.60" shape="283.20,-4.80 316.80,-4.80"/>
+        <lane id=":Dwarika_19_3" index="3" speed="13.89" length="33.60" shape="283.20,-1.60 316.80,-1.60"/>
+    </edge>
+    <edge id=":Dwarika_23" function="internal">
+        <lane id=":Dwarika_23_0" index="0" speed="11.36" length="5.01" shape="283.20,-1.60 288.16,-0.89"/>
+    </edge>
+    <edge id=":Dwarika_27" function="internal">
+        <lane id=":Dwarika_27_0" index="0" speed="11.36" length="24.66" shape="288.16,-0.89 291.25,-0.45 297.00,3.00 300.45,8.75 301.60,16.80"/>
+    </edge>
+    <edge id=":JagannathPuri_0" function="internal">
+        <lane id=":JagannathPuri_0_0" index="0" speed="6.51" length="9.03" shape="288.80,-283.20 288.45,-285.65 287.40,-287.40 285.65,-288.45 283.20,-288.80"/>
+    </edge>
+    <edge id=":JagannathPuri_1" function="internal">
+        <lane id=":JagannathPuri_1_0" index="0" speed="13.89" length="33.60" shape="288.80,-283.20 288.80,-316.80"/>
+        <lane id=":JagannathPuri_1_1" index="1" speed="13.89" length="33.60" shape="292.00,-283.20 292.00,-316.80"/>
+        <lane id=":JagannathPuri_1_2" index="2" speed="13.89" length="33.60" shape="295.20,-283.20 295.20,-316.80"/>
+        <lane id=":JagannathPuri_1_3" index="3" speed="13.89" length="33.60" shape="298.40,-283.20 298.40,-316.80"/>
+    </edge>
+    <edge id=":JagannathPuri_5" function="internal">
+        <lane id=":JagannathPuri_5_0" index="0" speed="11.36" length="5.01" shape="298.40,-283.20 299.11,-288.16"/>
+    </edge>
+    <edge id=":JagannathPuri_24" function="internal">
+        <lane id=":JagannathPuri_24_0" index="0" speed="11.36" length="24.66" shape="299.11,-288.16 299.55,-291.25 303.00,-297.00 308.75,-300.45 316.80,-301.60"/>
+    </edge>
+    <edge id=":JagannathPuri_6" function="internal">
+        <lane id=":JagannathPuri_6_0" index="0" speed="6.51" length="9.03" shape="316.80,-288.80 314.35,-288.45 312.60,-287.40 311.55,-285.65 311.20,-283.20"/>
+    </edge>
+    <edge id=":JagannathPuri_7" function="internal">
+        <lane id=":JagannathPuri_7_0" index="0" speed="13.89" length="33.60" shape="316.80,-288.80 283.20,-288.80"/>
+        <lane id=":JagannathPuri_7_1" index="1" speed="13.89" length="33.60" shape="316.80,-292.00 283.20,-292.00"/>
+        <lane id=":JagannathPuri_7_2" index="2" speed="13.89" length="33.60" shape="316.80,-295.20 283.20,-295.20"/>
+        <lane id=":JagannathPuri_7_3" index="3" speed="13.89" length="33.60" shape="316.80,-298.40 283.20,-298.40"/>
+    </edge>
+    <edge id=":JagannathPuri_11" function="internal">
+        <lane id=":JagannathPuri_11_0" index="0" speed="11.36" length="5.01" shape="316.80,-298.40 311.84,-299.11"/>
+    </edge>
+    <edge id=":JagannathPuri_25" function="internal">
+        <lane id=":JagannathPuri_25_0" index="0" speed="11.36" length="24.66" shape="311.84,-299.11 308.75,-299.55 303.00,-303.00 299.55,-308.75 298.40,-316.80"/>
+    </edge>
+    <edge id=":JagannathPuri_12" function="internal">
+        <lane id=":JagannathPuri_12_0" index="0" speed="6.51" length="9.03" shape="311.20,-316.80 311.55,-314.35 312.60,-312.60 314.35,-311.55 316.80,-311.20"/>
+    </edge>
+    <edge id=":JagannathPuri_13" function="internal">
+        <lane id=":JagannathPuri_13_0" index="0" speed="13.89" length="33.60" shape="311.20,-316.80 311.20,-283.20"/>
+        <lane id=":JagannathPuri_13_1" index="1" speed="13.89" length="33.60" shape="308.00,-316.80 308.00,-283.20"/>
+        <lane id=":JagannathPuri_13_2" index="2" speed="13.89" length="33.60" shape="304.80,-316.80 304.80,-283.20"/>
+        <lane id=":JagannathPuri_13_3" index="3" speed="13.89" length="33.60" shape="301.60,-316.80 301.60,-283.20"/>
+    </edge>
+    <edge id=":JagannathPuri_17" function="internal">
+        <lane id=":JagannathPuri_17_0" index="0" speed="11.36" length="5.01" shape="301.60,-316.80 300.89,-311.84"/>
+    </edge>
+    <edge id=":JagannathPuri_26" function="internal">
+        <lane id=":JagannathPuri_26_0" index="0" speed="11.36" length="24.66" shape="300.89,-311.84 300.45,-308.75 297.00,-303.00 291.25,-299.55 283.20,-298.40"/>
+    </edge>
+    <edge id=":JagannathPuri_18" function="internal">
+        <lane id=":JagannathPuri_18_0" index="0" speed="6.51" length="9.03" shape="283.20,-311.20 285.65,-311.55 287.40,-312.60 288.45,-314.35 288.80,-316.80"/>
+    </edge>
+    <edge id=":JagannathPuri_19" function="internal">
+        <lane id=":JagannathPuri_19_0" index="0" speed="13.89" length="33.60" shape="283.20,-311.20 316.80,-311.20"/>
+        <lane id=":JagannathPuri_19_1" index="1" speed="13.89" length="33.60" shape="283.20,-308.00 316.80,-308.00"/>
+        <lane id=":JagannathPuri_19_2" index="2" speed="13.89" length="33.60" shape="283.20,-304.80 316.80,-304.80"/>
+        <lane id=":JagannathPuri_19_3" index="3" speed="13.89" length="33.60" shape="283.20,-301.60 316.80,-301.60"/>
+    </edge>
+    <edge id=":JagannathPuri_23" function="internal">
+        <lane id=":JagannathPuri_23_0" index="0" speed="11.36" length="5.01" shape="283.20,-301.60 288.16,-300.89"/>
+    </edge>
+    <edge id=":JagannathPuri_27" function="internal">
+        <lane id=":JagannathPuri_27_0" index="0" speed="11.36" length="24.66" shape="288.16,-300.89 291.25,-300.45 297.00,-297.00 300.45,-291.25 301.60,-283.20"/>
+    </edge>
+    <edge id=":Kedarnath_0" function="internal">
+        <lane id=":Kedarnath_0_0" index="0" speed="6.51" length="9.03" shape="288.80,316.80 288.45,314.35 287.40,312.60 285.65,311.55 283.20,311.20"/>
+    </edge>
+    <edge id=":Kedarnath_1" function="internal">
+        <lane id=":Kedarnath_1_0" index="0" speed="13.89" length="33.60" shape="288.80,316.80 288.80,283.20"/>
+        <lane id=":Kedarnath_1_1" index="1" speed="13.89" length="33.60" shape="292.00,316.80 292.00,283.20"/>
+        <lane id=":Kedarnath_1_2" index="2" speed="13.89" length="33.60" shape="295.20,316.80 295.20,283.20"/>
+        <lane id=":Kedarnath_1_3" index="3" speed="13.89" length="33.60" shape="298.40,316.80 298.40,283.20"/>
+    </edge>
+    <edge id=":Kedarnath_5" function="internal">
+        <lane id=":Kedarnath_5_0" index="0" speed="11.36" length="5.01" shape="298.40,316.80 299.11,311.84"/>
+    </edge>
+    <edge id=":Kedarnath_24" function="internal">
+        <lane id=":Kedarnath_24_0" index="0" speed="11.36" length="24.66" shape="299.11,311.84 299.55,308.75 303.00,303.00 308.75,299.55 316.80,298.40"/>
+    </edge>
+    <edge id=":Kedarnath_6" function="internal">
+        <lane id=":Kedarnath_6_0" index="0" speed="6.51" length="9.03" shape="316.80,311.20 314.35,311.55 312.60,312.60 311.55,314.35 311.20,316.80"/>
+    </edge>
+    <edge id=":Kedarnath_7" function="internal">
+        <lane id=":Kedarnath_7_0" index="0" speed="13.89" length="33.60" shape="316.80,311.20 283.20,311.20"/>
+        <lane id=":Kedarnath_7_1" index="1" speed="13.89" length="33.60" shape="316.80,308.00 283.20,308.00"/>
+        <lane id=":Kedarnath_7_2" index="2" speed="13.89" length="33.60" shape="316.80,304.80 283.20,304.80"/>
+        <lane id=":Kedarnath_7_3" index="3" speed="13.89" length="33.60" shape="316.80,301.60 283.20,301.60"/>
+    </edge>
+    <edge id=":Kedarnath_11" function="internal">
+        <lane id=":Kedarnath_11_0" index="0" speed="11.36" length="5.01" shape="316.80,301.60 311.84,300.89"/>
+    </edge>
+    <edge id=":Kedarnath_25" function="internal">
+        <lane id=":Kedarnath_25_0" index="0" speed="11.36" length="24.66" shape="311.84,300.89 308.75,300.45 303.00,297.00 299.55,291.25 298.40,283.20"/>
+    </edge>
+    <edge id=":Kedarnath_12" function="internal">
+        <lane id=":Kedarnath_12_0" index="0" speed="6.51" length="9.03" shape="311.20,283.20 311.55,285.65 312.60,287.40 314.35,288.45 316.80,288.80"/>
+    </edge>
+    <edge id=":Kedarnath_13" function="internal">
+        <lane id=":Kedarnath_13_0" index="0" speed="13.89" length="33.60" shape="311.20,283.20 311.20,316.80"/>
+        <lane id=":Kedarnath_13_1" index="1" speed="13.89" length="33.60" shape="308.00,283.20 308.00,316.80"/>
+        <lane id=":Kedarnath_13_2" index="2" speed="13.89" length="33.60" shape="304.80,283.20 304.80,316.80"/>
+        <lane id=":Kedarnath_13_3" index="3" speed="13.89" length="33.60" shape="301.60,283.20 301.60,316.80"/>
+    </edge>
+    <edge id=":Kedarnath_17" function="internal">
+        <lane id=":Kedarnath_17_0" index="0" speed="11.36" length="5.01" shape="301.60,283.20 300.89,288.16"/>
+    </edge>
+    <edge id=":Kedarnath_26" function="internal">
+        <lane id=":Kedarnath_26_0" index="0" speed="11.36" length="24.66" shape="300.89,288.16 300.45,291.25 297.00,297.00 291.25,300.45 283.20,301.60"/>
+    </edge>
+    <edge id=":Kedarnath_18" function="internal">
+        <lane id=":Kedarnath_18_0" index="0" speed="6.51" length="9.03" shape="283.20,288.80 285.65,288.45 287.40,287.40 288.45,285.65 288.80,283.20"/>
+    </edge>
+    <edge id=":Kedarnath_19" function="internal">
+        <lane id=":Kedarnath_19_0" index="0" speed="13.89" length="33.60" shape="283.20,288.80 316.80,288.80"/>
+        <lane id=":Kedarnath_19_1" index="1" speed="13.89" length="33.60" shape="283.20,292.00 316.80,292.00"/>
+        <lane id=":Kedarnath_19_2" index="2" speed="13.89" length="33.60" shape="283.20,295.20 316.80,295.20"/>
+        <lane id=":Kedarnath_19_3" index="3" speed="13.89" length="33.60" shape="283.20,298.40 316.80,298.40"/>
+    </edge>
+    <edge id=":Kedarnath_23" function="internal">
+        <lane id=":Kedarnath_23_0" index="0" speed="11.36" length="5.01" shape="283.20,298.40 288.16,299.11"/>
+    </edge>
+    <edge id=":Kedarnath_27" function="internal">
+        <lane id=":Kedarnath_27_0" index="0" speed="11.36" length="24.66" shape="288.16,299.11 291.25,299.55 297.00,303.00 300.45,308.75 301.60,316.80"/>
+    </edge>
+    <edge id=":Mathura_0" function="internal">
+        <lane id=":Mathura_0_0" index="0" speed="6.51" length="9.03" shape="-311.20,16.80 -311.55,14.35 -312.60,12.60 -314.35,11.55 -316.80,11.20"/>
+    </edge>
+    <edge id=":Mathura_1" function="internal">
+        <lane id=":Mathura_1_0" index="0" speed="13.89" length="33.60" shape="-311.20,16.80 -311.20,-16.80"/>
+        <lane id=":Mathura_1_1" index="1" speed="13.89" length="33.60" shape="-308.00,16.80 -308.00,-16.80"/>
+        <lane id=":Mathura_1_2" index="2" speed="13.89" length="33.60" shape="-304.80,16.80 -304.80,-16.80"/>
+        <lane id=":Mathura_1_3" index="3" speed="13.89" length="33.60" shape="-301.60,16.80 -301.60,-16.80"/>
+    </edge>
+    <edge id=":Mathura_5" function="internal">
+        <lane id=":Mathura_5_0" index="0" speed="11.36" length="5.01" shape="-301.60,16.80 -300.89,11.84"/>
+    </edge>
+    <edge id=":Mathura_24" function="internal">
+        <lane id=":Mathura_24_0" index="0" speed="11.36" length="24.66" shape="-300.89,11.84 -300.45,8.75 -297.00,3.00 -291.25,-0.45 -283.20,-1.60"/>
+    </edge>
+    <edge id=":Mathura_6" function="internal">
+        <lane id=":Mathura_6_0" index="0" speed="6.51" length="9.03" shape="-283.20,11.20 -285.65,11.55 -287.40,12.60 -288.45,14.35 -288.80,16.80"/>
+    </edge>
+    <edge id=":Mathura_7" function="internal">
+        <lane id=":Mathura_7_0" index="0" speed="13.89" length="33.60" shape="-283.20,11.20 -316.80,11.20"/>
+        <lane id=":Mathura_7_1" index="1" speed="13.89" length="33.60" shape="-283.20,8.00 -316.80,8.00"/>
+        <lane id=":Mathura_7_2" index="2" speed="13.89" length="33.60" shape="-283.20,4.80 -316.80,4.80"/>
+        <lane id=":Mathura_7_3" index="3" speed="13.89" length="33.60" shape="-283.20,1.60 -316.80,1.60"/>
+    </edge>
+    <edge id=":Mathura_11" function="internal">
+        <lane id=":Mathura_11_0" index="0" speed="11.36" length="5.01" shape="-283.20,1.60 -288.16,0.89"/>
+    </edge>
+    <edge id=":Mathura_25" function="internal">
+        <lane id=":Mathura_25_0" index="0" speed="11.36" length="24.66" shape="-288.16,0.89 -291.25,0.45 -297.00,-3.00 -300.45,-8.75 -301.60,-16.80"/>
+    </edge>
+    <edge id=":Mathura_12" function="internal">
+        <lane id=":Mathura_12_0" index="0" speed="6.51" length="9.03" shape="-288.80,-16.80 -288.45,-14.35 -287.40,-12.60 -285.65,-11.55 -283.20,-11.20"/>
+    </edge>
+    <edge id=":Mathura_13" function="internal">
+        <lane id=":Mathura_13_0" index="0" speed="13.89" length="33.60" shape="-288.80,-16.80 -288.80,16.80"/>
+        <lane id=":Mathura_13_1" index="1" speed="13.89" length="33.60" shape="-292.00,-16.80 -292.00,16.80"/>
+        <lane id=":Mathura_13_2" index="2" speed="13.89" length="33.60" shape="-295.20,-16.80 -295.20,16.80"/>
+        <lane id=":Mathura_13_3" index="3" speed="13.89" length="33.60" shape="-298.40,-16.80 -298.40,16.80"/>
+    </edge>
+    <edge id=":Mathura_17" function="internal">
+        <lane id=":Mathura_17_0" index="0" speed="11.36" length="5.01" shape="-298.40,-16.80 -299.11,-11.84"/>
+    </edge>
+    <edge id=":Mathura_26" function="internal">
+        <lane id=":Mathura_26_0" index="0" speed="11.36" length="24.66" shape="-299.11,-11.84 -299.55,-8.75 -303.00,-3.00 -308.75,0.45 -316.80,1.60"/>
+    </edge>
+    <edge id=":Mathura_18" function="internal">
+        <lane id=":Mathura_18_0" index="0" speed="6.51" length="9.03" shape="-316.80,-11.20 -314.35,-11.55 -312.60,-12.60 -311.55,-14.35 -311.20,-16.80"/>
+    </edge>
+    <edge id=":Mathura_19" function="internal">
+        <lane id=":Mathura_19_0" index="0" speed="13.89" length="33.60" shape="-316.80,-11.20 -283.20,-11.20"/>
+        <lane id=":Mathura_19_1" index="1" speed="13.89" length="33.60" shape="-316.80,-8.00 -283.20,-8.00"/>
+        <lane id=":Mathura_19_2" index="2" speed="13.89" length="33.60" shape="-316.80,-4.80 -283.20,-4.80"/>
+        <lane id=":Mathura_19_3" index="3" speed="13.89" length="33.60" shape="-316.80,-1.60 -283.20,-1.60"/>
+    </edge>
+    <edge id=":Mathura_23" function="internal">
+        <lane id=":Mathura_23_0" index="0" speed="11.36" length="5.01" shape="-316.80,-1.60 -311.84,-0.89"/>
+    </edge>
+    <edge id=":Mathura_27" function="internal">
+        <lane id=":Mathura_27_0" index="0" speed="11.36" length="24.66" shape="-311.84,-0.89 -308.75,-0.45 -303.00,3.00 -299.55,8.75 -298.40,16.80"/>
+    </edge>
+    <edge id=":Mithila_0" function="internal">
+        <lane id=":Mithila_0_0" index="0" speed="6.51" length="9.03" shape="-11.20,316.80 -11.55,314.35 -12.60,312.60 -14.35,311.55 -16.80,311.20"/>
+    </edge>
+    <edge id=":Mithila_1" function="internal">
+        <lane id=":Mithila_1_0" index="0" speed="13.89" length="33.60" shape="-11.20,316.80 -11.20,283.20"/>
+        <lane id=":Mithila_1_1" index="1" speed="13.89" length="33.60" shape="-8.00,316.80 -8.00,283.20"/>
+        <lane id=":Mithila_1_2" index="2" speed="13.89" length="33.60" shape="-4.80,316.80 -4.80,283.20"/>
+        <lane id=":Mithila_1_3" index="3" speed="13.89" length="33.60" shape="-1.60,316.80 -1.60,283.20"/>
+    </edge>
+    <edge id=":Mithila_5" function="internal">
+        <lane id=":Mithila_5_0" index="0" speed="11.36" length="5.01" shape="-1.60,316.80 -0.89,311.84"/>
+    </edge>
+    <edge id=":Mithila_24" function="internal">
+        <lane id=":Mithila_24_0" index="0" speed="11.36" length="24.66" shape="-0.89,311.84 -0.45,308.75 3.00,303.00 8.75,299.55 16.80,298.40"/>
+    </edge>
+    <edge id=":Mithila_6" function="internal">
+        <lane id=":Mithila_6_0" index="0" speed="6.51" length="9.03" shape="16.80,311.20 14.35,311.55 12.60,312.60 11.55,314.35 11.20,316.80"/>
+    </edge>
+    <edge id=":Mithila_7" function="internal">
+        <lane id=":Mithila_7_0" index="0" speed="13.89" length="33.60" shape="16.80,311.20 -16.80,311.20"/>
+        <lane id=":Mithila_7_1" index="1" speed="13.89" length="33.60" shape="16.80,308.00 -16.80,308.00"/>
+        <lane id=":Mithila_7_2" index="2" speed="13.89" length="33.60" shape="16.80,304.80 -16.80,304.80"/>
+        <lane id=":Mithila_7_3" index="3" speed="13.89" length="33.60" shape="16.80,301.60 -16.80,301.60"/>
+    </edge>
+    <edge id=":Mithila_11" function="internal">
+        <lane id=":Mithila_11_0" index="0" speed="11.36" length="5.01" shape="16.80,301.60 11.84,300.89"/>
+    </edge>
+    <edge id=":Mithila_25" function="internal">
+        <lane id=":Mithila_25_0" index="0" speed="11.36" length="24.66" shape="11.84,300.89 8.75,300.45 3.00,297.00 -0.45,291.25 -1.60,283.20"/>
+    </edge>
+    <edge id=":Mithila_12" function="internal">
+        <lane id=":Mithila_12_0" index="0" speed="6.51" length="9.03" shape="11.20,283.20 11.55,285.65 12.60,287.40 14.35,288.45 16.80,288.80"/>
+    </edge>
+    <edge id=":Mithila_13" function="internal">
+        <lane id=":Mithila_13_0" index="0" speed="13.89" length="33.60" shape="11.20,283.20 11.20,316.80"/>
+        <lane id=":Mithila_13_1" index="1" speed="13.89" length="33.60" shape="8.00,283.20 8.00,316.80"/>
+        <lane id=":Mithila_13_2" index="2" speed="13.89" length="33.60" shape="4.80,283.20 4.80,316.80"/>
+        <lane id=":Mithila_13_3" index="3" speed="13.89" length="33.60" shape="1.60,283.20 1.60,316.80"/>
+    </edge>
+    <edge id=":Mithila_17" function="internal">
+        <lane id=":Mithila_17_0" index="0" speed="11.36" length="5.01" shape="1.60,283.20 0.89,288.16"/>
+    </edge>
+    <edge id=":Mithila_26" function="internal">
+        <lane id=":Mithila_26_0" index="0" speed="11.36" length="24.66" shape="0.89,288.16 0.45,291.25 -3.00,297.00 -8.75,300.45 -16.80,301.60"/>
+    </edge>
+    <edge id=":Mithila_18" function="internal">
+        <lane id=":Mithila_18_0" index="0" speed="6.51" length="9.03" shape="-16.80,288.80 -14.35,288.45 -12.60,287.40 -11.55,285.65 -11.20,283.20"/>
+    </edge>
+    <edge id=":Mithila_19" function="internal">
+        <lane id=":Mithila_19_0" index="0" speed="13.89" length="33.60" shape="-16.80,288.80 16.80,288.80"/>
+        <lane id=":Mithila_19_1" index="1" speed="13.89" length="33.60" shape="-16.80,292.00 16.80,292.00"/>
+        <lane id=":Mithila_19_2" index="2" speed="13.89" length="33.60" shape="-16.80,295.20 16.80,295.20"/>
+        <lane id=":Mithila_19_3" index="3" speed="13.89" length="33.60" shape="-16.80,298.40 16.80,298.40"/>
+    </edge>
+    <edge id=":Mithila_23" function="internal">
+        <lane id=":Mithila_23_0" index="0" speed="11.36" length="5.01" shape="-16.80,298.40 -11.84,299.11"/>
+    </edge>
+    <edge id=":Mithila_27" function="internal">
+        <lane id=":Mithila_27_0" index="0" speed="11.36" length="24.66" shape="-11.84,299.11 -8.75,299.55 -3.00,303.00 0.45,308.75 1.60,316.80"/>
+    </edge>
+    <edge id=":Pandarpur_0" function="internal">
+        <lane id=":Pandarpur_0_0" index="0" speed="6.51" length="9.03" shape="-311.20,-283.20 -311.55,-285.65 -312.60,-287.40 -314.35,-288.45 -316.80,-288.80"/>
+    </edge>
+    <edge id=":Pandarpur_1" function="internal">
+        <lane id=":Pandarpur_1_0" index="0" speed="13.89" length="33.60" shape="-311.20,-283.20 -311.20,-316.80"/>
+        <lane id=":Pandarpur_1_1" index="1" speed="13.89" length="33.60" shape="-308.00,-283.20 -308.00,-316.80"/>
+        <lane id=":Pandarpur_1_2" index="2" speed="13.89" length="33.60" shape="-304.80,-283.20 -304.80,-316.80"/>
+        <lane id=":Pandarpur_1_3" index="3" speed="13.89" length="33.60" shape="-301.60,-283.20 -301.60,-316.80"/>
+    </edge>
+    <edge id=":Pandarpur_5" function="internal">
+        <lane id=":Pandarpur_5_0" index="0" speed="11.36" length="5.01" shape="-301.60,-283.20 -300.89,-288.16"/>
+    </edge>
+    <edge id=":Pandarpur_24" function="internal">
+        <lane id=":Pandarpur_24_0" index="0" speed="11.36" length="24.66" shape="-300.89,-288.16 -300.45,-291.25 -297.00,-297.00 -291.25,-300.45 -283.20,-301.60"/>
+    </edge>
+    <edge id=":Pandarpur_6" function="internal">
+        <lane id=":Pandarpur_6_0" index="0" speed="6.51" length="9.03" shape="-283.20,-288.80 -285.65,-288.45 -287.40,-287.40 -288.45,-285.65 -288.80,-283.20"/>
+    </edge>
+    <edge id=":Pandarpur_7" function="internal">
+        <lane id=":Pandarpur_7_0" index="0" speed="13.89" length="33.60" shape="-283.20,-288.80 -316.80,-288.80"/>
+        <lane id=":Pandarpur_7_1" index="1" speed="13.89" length="33.60" shape="-283.20,-292.00 -316.80,-292.00"/>
+        <lane id=":Pandarpur_7_2" index="2" speed="13.89" length="33.60" shape="-283.20,-295.20 -316.80,-295.20"/>
+        <lane id=":Pandarpur_7_3" index="3" speed="13.89" length="33.60" shape="-283.20,-298.40 -316.80,-298.40"/>
+    </edge>
+    <edge id=":Pandarpur_11" function="internal">
+        <lane id=":Pandarpur_11_0" index="0" speed="11.36" length="5.01" shape="-283.20,-298.40 -288.16,-299.11"/>
+    </edge>
+    <edge id=":Pandarpur_25" function="internal">
+        <lane id=":Pandarpur_25_0" index="0" speed="11.36" length="24.66" shape="-288.16,-299.11 -291.25,-299.55 -297.00,-303.00 -300.45,-308.75 -301.60,-316.80"/>
+    </edge>
+    <edge id=":Pandarpur_12" function="internal">
+        <lane id=":Pandarpur_12_0" index="0" speed="6.51" length="9.03" shape="-288.80,-316.80 -288.45,-314.35 -287.40,-312.60 -285.65,-311.55 -283.20,-311.20"/>
+    </edge>
+    <edge id=":Pandarpur_13" function="internal">
+        <lane id=":Pandarpur_13_0" index="0" speed="13.89" length="33.60" shape="-288.80,-316.80 -288.80,-283.20"/>
+        <lane id=":Pandarpur_13_1" index="1" speed="13.89" length="33.60" shape="-292.00,-316.80 -292.00,-283.20"/>
+        <lane id=":Pandarpur_13_2" index="2" speed="13.89" length="33.60" shape="-295.20,-316.80 -295.20,-283.20"/>
+        <lane id=":Pandarpur_13_3" index="3" speed="13.89" length="33.60" shape="-298.40,-316.80 -298.40,-283.20"/>
+    </edge>
+    <edge id=":Pandarpur_17" function="internal">
+        <lane id=":Pandarpur_17_0" index="0" speed="11.36" length="5.01" shape="-298.40,-316.80 -299.11,-311.84"/>
+    </edge>
+    <edge id=":Pandarpur_26" function="internal">
+        <lane id=":Pandarpur_26_0" index="0" speed="11.36" length="24.66" shape="-299.11,-311.84 -299.55,-308.75 -303.00,-303.00 -308.75,-299.55 -316.80,-298.40"/>
+    </edge>
+    <edge id=":Pandarpur_18" function="internal">
+        <lane id=":Pandarpur_18_0" index="0" speed="6.51" length="9.03" shape="-316.80,-311.20 -314.35,-311.55 -312.60,-312.60 -311.55,-314.35 -311.20,-316.80"/>
+    </edge>
+    <edge id=":Pandarpur_19" function="internal">
+        <lane id=":Pandarpur_19_0" index="0" speed="13.89" length="33.60" shape="-316.80,-311.20 -283.20,-311.20"/>
+        <lane id=":Pandarpur_19_1" index="1" speed="13.89" length="33.60" shape="-316.80,-308.00 -283.20,-308.00"/>
+        <lane id=":Pandarpur_19_2" index="2" speed="13.89" length="33.60" shape="-316.80,-304.80 -283.20,-304.80"/>
+        <lane id=":Pandarpur_19_3" index="3" speed="13.89" length="33.60" shape="-316.80,-301.60 -283.20,-301.60"/>
+    </edge>
+    <edge id=":Pandarpur_23" function="internal">
+        <lane id=":Pandarpur_23_0" index="0" speed="11.36" length="5.01" shape="-316.80,-301.60 -311.84,-300.89"/>
+    </edge>
+    <edge id=":Pandarpur_27" function="internal">
+        <lane id=":Pandarpur_27_0" index="0" speed="11.36" length="24.66" shape="-311.84,-300.89 -308.75,-300.45 -303.00,-297.00 -299.55,-291.25 -298.40,-283.20"/>
     </edge>
 
-    <edge id="C_E" from="C" to="E" priority="-1">
-        <lane id="C_E_0" index="0" speed="13.89" length="483.20" shape="16.80,-11.20 500.00,-11.20"/>
-        <lane id="C_E_1" index="1" speed="13.89" length="483.20" shape="16.80,-8.00 500.00,-8.00"/>
-        <lane id="C_E_2" index="2" speed="13.89" length="483.20" shape="16.80,-4.80 500.00,-4.80"/>
-        <lane id="C_E_3" index="3" speed="13.89" length="483.20" shape="16.80,-1.60 500.00,-1.60"/>
+    <edge id="A2BV" from="Ayodhya" to="BrajVrindavan" priority="-1">
+        <lane id="A2BV_0" index="0" speed="13.89" length="266.40" shape="11.20,-283.20 11.20,-16.80"/>
+        <lane id="A2BV_1" index="1" speed="13.89" length="266.40" shape="8.00,-283.20 8.00,-16.80"/>
+        <lane id="A2BV_2" index="2" speed="13.89" length="266.40" shape="4.80,-283.20 4.80,-16.80"/>
+        <lane id="A2BV_3" index="3" speed="13.89" length="266.40" shape="1.60,-283.20 1.60,-16.80"/>
     </edge>
-    <edge id="C_N" from="C" to="N" priority="-1">
-        <lane id="C_N_0" index="0" speed="13.89" length="483.20" shape="11.20,16.80 11.20,500.00"/>
-        <lane id="C_N_1" index="1" speed="13.89" length="483.20" shape="8.00,16.80 8.00,500.00"/>
-        <lane id="C_N_2" index="2" speed="13.89" length="483.20" shape="4.80,16.80 4.80,500.00"/>
-        <lane id="C_N_3" index="3" speed="13.89" length="483.20" shape="1.60,16.80 1.60,500.00"/>
+    <edge id="A2JP" from="Ayodhya" to="JagannathPuri" priority="-1">
+        <lane id="A2JP_0" index="0" speed="13.89" length="266.40" shape="16.80,-311.20 283.20,-311.20"/>
+        <lane id="A2JP_1" index="1" speed="13.89" length="266.40" shape="16.80,-308.00 283.20,-308.00"/>
+        <lane id="A2JP_2" index="2" speed="13.89" length="266.40" shape="16.80,-304.80 283.20,-304.80"/>
+        <lane id="A2JP_3" index="3" speed="13.89" length="266.40" shape="16.80,-301.60 283.20,-301.60"/>
     </edge>
-    <edge id="C_S" from="C" to="S" priority="-1">
-        <lane id="C_S_0" index="0" speed="13.89" length="483.20" shape="-11.20,-16.80 -11.20,-500.00"/>
-        <lane id="C_S_1" index="1" speed="13.89" length="483.20" shape="-8.00,-16.80 -8.00,-500.00"/>
-        <lane id="C_S_2" index="2" speed="13.89" length="483.20" shape="-4.80,-16.80 -4.80,-500.00"/>
-        <lane id="C_S_3" index="3" speed="13.89" length="483.20" shape="-1.60,-16.80 -1.60,-500.00"/>
+    <edge id="A2Ki" from="Ayodhya" to="Kishkindha" priority="-1">
+        <lane id="A2Ki_0" index="0" speed="13.89" length="283.20" shape="-11.20,-316.80 -11.20,-600.00"/>
+        <lane id="A2Ki_1" index="1" speed="13.89" length="283.20" shape="-8.00,-316.80 -8.00,-600.00"/>
+        <lane id="A2Ki_2" index="2" speed="13.89" length="283.20" shape="-4.80,-316.80 -4.80,-600.00"/>
+        <lane id="A2Ki_3" index="3" speed="13.89" length="283.20" shape="-1.60,-316.80 -1.60,-600.00"/>
     </edge>
-    <edge id="C_W" from="C" to="W" priority="-1">
-        <lane id="C_W_0" index="0" speed="13.89" length="483.20" shape="-16.80,11.20 -500.00,11.20"/>
-        <lane id="C_W_1" index="1" speed="13.89" length="483.20" shape="-16.80,8.00 -500.00,8.00"/>
-        <lane id="C_W_2" index="2" speed="13.89" length="483.20" shape="-16.80,4.80 -500.00,4.80"/>
-        <lane id="C_W_3" index="3" speed="13.89" length="483.20" shape="-16.80,1.60 -500.00,1.60"/>
+    <edge id="A2P" from="Ayodhya" to="Pandarpur" priority="-1">
+        <lane id="A2P_0" index="0" speed="13.89" length="266.40" shape="-16.80,-288.80 -283.20,-288.80"/>
+        <lane id="A2P_1" index="1" speed="13.89" length="266.40" shape="-16.80,-292.00 -283.20,-292.00"/>
+        <lane id="A2P_2" index="2" speed="13.89" length="266.40" shape="-16.80,-295.20 -283.20,-295.20"/>
+        <lane id="A2P_3" index="3" speed="13.89" length="266.40" shape="-16.80,-298.40 -283.20,-298.40"/>
     </edge>
-    <edge id="E_C" from="E" to="C" priority="-1">
-        <lane id="E_C_0" index="0" speed="13.89" length="483.20" shape="500.00,11.20 16.80,11.20"/>
-        <lane id="E_C_1" index="1" speed="13.89" length="483.20" shape="500.00,8.00 16.80,8.00"/>
-        <lane id="E_C_2" index="2" speed="13.89" length="483.20" shape="500.00,4.80 16.80,4.80"/>
-        <lane id="E_C_3" index="3" speed="13.89" length="483.20" shape="500.00,1.60 16.80,1.60"/>
+    <edge id="B2K" from="Badrinath" to="Kashi" priority="-1">
+        <lane id="B2K_0" index="0" speed="13.89" length="283.20" shape="-288.80,316.80 -288.80,600.00"/>
+        <lane id="B2K_1" index="1" speed="13.89" length="283.20" shape="-292.00,316.80 -292.00,600.00"/>
+        <lane id="B2K_2" index="2" speed="13.89" length="283.20" shape="-295.20,316.80 -295.20,600.00"/>
+        <lane id="B2K_3" index="3" speed="13.89" length="283.20" shape="-298.40,316.80 -298.40,600.00"/>
     </edge>
-    <edge id="N_C" from="N" to="C" priority="-1">
-        <lane id="N_C_0" index="0" speed="13.89" length="483.20" shape="-11.20,500.00 -11.20,16.80"/>
-        <lane id="N_C_1" index="1" speed="13.89" length="483.20" shape="-8.00,500.00 -8.00,16.80"/>
-        <lane id="N_C_2" index="2" speed="13.89" length="483.20" shape="-4.80,500.00 -4.80,16.80"/>
-        <lane id="N_C_3" index="3" speed="13.89" length="483.20" shape="-1.60,500.00 -1.60,16.80"/>
+    <edge id="B2M" from="Badrinath" to="Mathura" priority="-1">
+        <lane id="B2M_0" index="0" speed="13.89" length="266.40" shape="-311.20,283.20 -311.20,16.80"/>
+        <lane id="B2M_1" index="1" speed="13.89" length="266.40" shape="-308.00,283.20 -308.00,16.80"/>
+        <lane id="B2M_2" index="2" speed="13.89" length="266.40" shape="-304.80,283.20 -304.80,16.80"/>
+        <lane id="B2M_3" index="3" speed="13.89" length="266.40" shape="-301.60,283.20 -301.60,16.80"/>
     </edge>
-    <edge id="S_C" from="S" to="C" priority="-1">
-        <lane id="S_C_0" index="0" speed="13.89" length="483.20" shape="11.20,-500.00 11.20,-16.80"/>
-        <lane id="S_C_1" index="1" speed="13.89" length="483.20" shape="8.00,-500.00 8.00,-16.80"/>
-        <lane id="S_C_2" index="2" speed="13.89" length="483.20" shape="4.80,-500.00 4.80,-16.80"/>
-        <lane id="S_C_3" index="3" speed="13.89" length="483.20" shape="1.60,-500.00 1.60,-16.80"/>
+    <edge id="B2Mi" from="Badrinath" to="Mithila" priority="-1">
+        <lane id="B2Mi_0" index="0" speed="13.89" length="266.40" shape="-283.20,288.80 -16.80,288.80"/>
+        <lane id="B2Mi_1" index="1" speed="13.89" length="266.40" shape="-283.20,292.00 -16.80,292.00"/>
+        <lane id="B2Mi_2" index="2" speed="13.89" length="266.40" shape="-283.20,295.20 -16.80,295.20"/>
+        <lane id="B2Mi_3" index="3" speed="13.89" length="266.40" shape="-283.20,298.40 -16.80,298.40"/>
     </edge>
-    <edge id="W_C" from="W" to="C" priority="-1">
-        <lane id="W_C_0" index="0" speed="13.89" length="483.20" shape="-500.00,-11.20 -16.80,-11.20"/>
-        <lane id="W_C_1" index="1" speed="13.89" length="483.20" shape="-500.00,-8.00 -16.80,-8.00"/>
-        <lane id="W_C_2" index="2" speed="13.89" length="483.20" shape="-500.00,-4.80 -16.80,-4.80"/>
-        <lane id="W_C_3" index="3" speed="13.89" length="483.20" shape="-500.00,-1.60 -16.80,-1.60"/>
+    <edge id="B2P" from="Badrinath" to="Prayagraj" priority="-1">
+        <lane id="B2P_0" index="0" speed="13.89" length="283.20" shape="-316.80,311.20 -600.00,311.20"/>
+        <lane id="B2P_1" index="1" speed="13.89" length="283.20" shape="-316.80,308.00 -600.00,308.00"/>
+        <lane id="B2P_2" index="2" speed="13.89" length="283.20" shape="-316.80,304.80 -600.00,304.80"/>
+        <lane id="B2P_3" index="3" speed="13.89" length="283.20" shape="-316.80,301.60 -600.00,301.60"/>
+    </edge>
+    <edge id="BV2A" from="BrajVrindavan" to="Ayodhya" priority="-1">
+        <lane id="BV2A_0" index="0" speed="13.89" length="266.40" shape="-11.20,-16.80 -11.20,-283.20"/>
+        <lane id="BV2A_1" index="1" speed="13.89" length="266.40" shape="-8.00,-16.80 -8.00,-283.20"/>
+        <lane id="BV2A_2" index="2" speed="13.89" length="266.40" shape="-4.80,-16.80 -4.80,-283.20"/>
+        <lane id="BV2A_3" index="3" speed="13.89" length="266.40" shape="-1.60,-16.80 -1.60,-283.20"/>
+    </edge>
+    <edge id="BV2D" from="BrajVrindavan" to="Dwarika" priority="-1">
+        <lane id="BV2D_0" index="0" speed="13.89" length="266.40" shape="16.80,-11.20 283.20,-11.20"/>
+        <lane id="BV2D_1" index="1" speed="13.89" length="266.40" shape="16.80,-8.00 283.20,-8.00"/>
+        <lane id="BV2D_2" index="2" speed="13.89" length="266.40" shape="16.80,-4.80 283.20,-4.80"/>
+        <lane id="BV2D_3" index="3" speed="13.89" length="266.40" shape="16.80,-1.60 283.20,-1.60"/>
+    </edge>
+    <edge id="BV2M" from="BrajVrindavan" to="Mathura" priority="-1">
+        <lane id="BV2M_0" index="0" speed="13.89" length="266.40" shape="-16.80,11.20 -283.20,11.20"/>
+        <lane id="BV2M_1" index="1" speed="13.89" length="266.40" shape="-16.80,8.00 -283.20,8.00"/>
+        <lane id="BV2M_2" index="2" speed="13.89" length="266.40" shape="-16.80,4.80 -283.20,4.80"/>
+        <lane id="BV2M_3" index="3" speed="13.89" length="266.40" shape="-16.80,1.60 -283.20,1.60"/>
+    </edge>
+    <edge id="BV2Mi" from="BrajVrindavan" to="Mithila" priority="-1">
+        <lane id="BV2Mi_0" index="0" speed="13.89" length="266.40" shape="11.20,16.80 11.20,283.20"/>
+        <lane id="BV2Mi_1" index="1" speed="13.89" length="266.40" shape="8.00,16.80 8.00,283.20"/>
+        <lane id="BV2Mi_2" index="2" speed="13.89" length="266.40" shape="4.80,16.80 4.80,283.20"/>
+        <lane id="BV2Mi_3" index="3" speed="13.89" length="266.40" shape="1.60,16.80 1.60,283.20"/>
+    </edge>
+    <edge id="C2P" from="Chitrakoot" to="Pandarpur" priority="-1">
+        <lane id="C2P_0" index="0" speed="13.89" length="283.20" shape="-288.80,-600.00 -288.80,-316.80"/>
+        <lane id="C2P_1" index="1" speed="13.89" length="283.20" shape="-292.00,-600.00 -292.00,-316.80"/>
+        <lane id="C2P_2" index="2" speed="13.89" length="283.20" shape="-295.20,-600.00 -295.20,-316.80"/>
+        <lane id="C2P_3" index="3" speed="13.89" length="283.20" shape="-298.40,-600.00 -298.40,-316.80"/>
+    </edge>
+    <edge id="D2BV" from="Dwarika" to="BrajVrindavan" priority="-1">
+        <lane id="D2BV_0" index="0" speed="13.89" length="266.40" shape="283.20,11.20 16.80,11.20"/>
+        <lane id="D2BV_1" index="1" speed="13.89" length="266.40" shape="283.20,8.00 16.80,8.00"/>
+        <lane id="D2BV_2" index="2" speed="13.89" length="266.40" shape="283.20,4.80 16.80,4.80"/>
+        <lane id="D2BV_3" index="3" speed="13.89" length="266.40" shape="283.20,1.60 16.80,1.60"/>
+    </edge>
+    <edge id="D2JP" from="Dwarika" to="JagannathPuri" priority="-1">
+        <lane id="D2JP_0" index="0" speed="13.89" length="266.40" shape="288.80,-16.80 288.80,-283.20"/>
+        <lane id="D2JP_1" index="1" speed="13.89" length="266.40" shape="292.00,-16.80 292.00,-283.20"/>
+        <lane id="D2JP_2" index="2" speed="13.89" length="266.40" shape="295.20,-16.80 295.20,-283.20"/>
+        <lane id="D2JP_3" index="3" speed="13.89" length="266.40" shape="298.40,-16.80 298.40,-283.20"/>
+    </edge>
+    <edge id="D2K" from="Dwarika" to="Kedarnath" priority="-1">
+        <lane id="D2K_0" index="0" speed="13.89" length="266.40" shape="311.20,16.80 311.20,283.20"/>
+        <lane id="D2K_1" index="1" speed="13.89" length="266.40" shape="308.00,16.80 308.00,283.20"/>
+        <lane id="D2K_2" index="2" speed="13.89" length="266.40" shape="304.80,16.80 304.80,283.20"/>
+        <lane id="D2K_3" index="3" speed="13.89" length="266.40" shape="301.60,16.80 301.60,283.20"/>
+    </edge>
+    <edge id="D2Ku" from="Dwarika" to="Kurukshetra" priority="-1">
+        <lane id="D2Ku_0" index="0" speed="13.89" length="283.20" shape="316.80,-11.20 600.00,-11.20"/>
+        <lane id="D2Ku_1" index="1" speed="13.89" length="283.20" shape="316.80,-8.00 600.00,-8.00"/>
+        <lane id="D2Ku_2" index="2" speed="13.89" length="283.20" shape="316.80,-4.80 600.00,-4.80"/>
+        <lane id="D2Ku_3" index="3" speed="13.89" length="283.20" shape="316.80,-1.60 600.00,-1.60"/>
+    </edge>
+    <edge id="G2K" from="Gaya" to="Kedarnath" priority="-1">
+        <lane id="G2K_0" index="0" speed="13.89" length="283.20" shape="288.80,600.00 288.80,316.80"/>
+        <lane id="G2K_1" index="1" speed="13.89" length="283.20" shape="292.00,600.00 292.00,316.80"/>
+        <lane id="G2K_2" index="2" speed="13.89" length="283.20" shape="295.20,600.00 295.20,316.80"/>
+        <lane id="G2K_3" index="3" speed="13.89" length="283.20" shape="298.40,600.00 298.40,316.80"/>
+    </edge>
+    <edge id="JP2A" from="JagannathPuri" to="Ayodhya" priority="-1">
+        <lane id="JP2A_0" index="0" speed="13.89" length="266.40" shape="283.20,-288.80 16.80,-288.80"/>
+        <lane id="JP2A_1" index="1" speed="13.89" length="266.40" shape="283.20,-292.00 16.80,-292.00"/>
+        <lane id="JP2A_2" index="2" speed="13.89" length="266.40" shape="283.20,-295.20 16.80,-295.20"/>
+        <lane id="JP2A_3" index="3" speed="13.89" length="266.40" shape="283.20,-298.40 16.80,-298.40"/>
+    </edge>
+    <edge id="JP2D" from="JagannathPuri" to="Dwarika" priority="-1">
+        <lane id="JP2D_0" index="0" speed="13.89" length="266.40" shape="311.20,-283.20 311.20,-16.80"/>
+        <lane id="JP2D_1" index="1" speed="13.89" length="266.40" shape="308.00,-283.20 308.00,-16.80"/>
+        <lane id="JP2D_2" index="2" speed="13.89" length="266.40" shape="304.80,-283.20 304.80,-16.80"/>
+        <lane id="JP2D_3" index="3" speed="13.89" length="266.40" shape="301.60,-283.20 301.60,-16.80"/>
+    </edge>
+    <edge id="JP2R" from="JagannathPuri" to="Rameshwaram" priority="-1">
+        <lane id="JP2R_0" index="0" speed="13.89" length="283.20" shape="288.80,-316.80 288.80,-600.00"/>
+        <lane id="JP2R_1" index="1" speed="13.89" length="283.20" shape="292.00,-316.80 292.00,-600.00"/>
+        <lane id="JP2R_2" index="2" speed="13.89" length="283.20" shape="295.20,-316.80 295.20,-600.00"/>
+        <lane id="JP2R_3" index="3" speed="13.89" length="283.20" shape="298.40,-316.80 298.40,-600.00"/>
+    </edge>
+    <edge id="JP2SL" from="JagannathPuri" to="SriLanka" priority="-1">
+        <lane id="JP2SL_0" index="0" speed="13.89" length="283.20" shape="316.80,-311.20 600.00,-311.20"/>
+        <lane id="JP2SL_1" index="1" speed="13.89" length="283.20" shape="316.80,-308.00 600.00,-308.00"/>
+        <lane id="JP2SL_2" index="2" speed="13.89" length="283.20" shape="316.80,-304.80 600.00,-304.80"/>
+        <lane id="JP2SL_3" index="3" speed="13.89" length="283.20" shape="316.80,-301.60 600.00,-301.60"/>
+    </edge>
+    <edge id="K2B" from="Kashi" to="Badrinath" priority="-1">
+        <lane id="K2B_0" index="0" speed="13.89" length="283.20" shape="-311.20,600.00 -311.20,316.80"/>
+        <lane id="K2B_1" index="1" speed="13.89" length="283.20" shape="-308.00,600.00 -308.00,316.80"/>
+        <lane id="K2B_2" index="2" speed="13.89" length="283.20" shape="-304.80,600.00 -304.80,316.80"/>
+        <lane id="K2B_3" index="3" speed="13.89" length="283.20" shape="-301.60,600.00 -301.60,316.80"/>
+    </edge>
+    <edge id="K2D" from="Kedarnath" to="Dwarika" priority="-1">
+        <lane id="K2D_0" index="0" speed="13.89" length="266.40" shape="288.80,283.20 288.80,16.80"/>
+        <lane id="K2D_1" index="1" speed="13.89" length="266.40" shape="292.00,283.20 292.00,16.80"/>
+        <lane id="K2D_2" index="2" speed="13.89" length="266.40" shape="295.20,283.20 295.20,16.80"/>
+        <lane id="K2D_3" index="3" speed="13.89" length="266.40" shape="298.40,283.20 298.40,16.80"/>
+    </edge>
+    <edge id="K2G" from="Kedarnath" to="Gaya" priority="-1">
+        <lane id="K2G_0" index="0" speed="13.89" length="283.20" shape="311.20,316.80 311.20,600.00"/>
+        <lane id="K2G_1" index="1" speed="13.89" length="283.20" shape="308.00,316.80 308.00,600.00"/>
+        <lane id="K2G_2" index="2" speed="13.89" length="283.20" shape="304.80,316.80 304.80,600.00"/>
+        <lane id="K2G_3" index="3" speed="13.89" length="283.20" shape="301.60,316.80 301.60,600.00"/>
+    </edge>
+    <edge id="K2Mi" from="Kedarnath" to="Mithila" priority="-1">
+        <lane id="K2Mi_0" index="0" speed="13.89" length="266.40" shape="283.20,311.20 16.80,311.20"/>
+        <lane id="K2Mi_1" index="1" speed="13.89" length="266.40" shape="283.20,308.00 16.80,308.00"/>
+        <lane id="K2Mi_2" index="2" speed="13.89" length="266.40" shape="283.20,304.80 16.80,304.80"/>
+        <lane id="K2Mi_3" index="3" speed="13.89" length="266.40" shape="283.20,301.60 16.80,301.60"/>
+    </edge>
+    <edge id="K2U" from="Kedarnath" to="Ujjain" priority="-1">
+        <lane id="K2U_0" index="0" speed="13.89" length="283.20" shape="316.80,288.80 600.00,288.80"/>
+        <lane id="K2U_1" index="1" speed="13.89" length="283.20" shape="316.80,292.00 600.00,292.00"/>
+        <lane id="K2U_2" index="2" speed="13.89" length="283.20" shape="316.80,295.20 600.00,295.20"/>
+        <lane id="K2U_3" index="3" speed="13.89" length="283.20" shape="316.80,298.40 600.00,298.40"/>
+    </edge>
+    <edge id="Ki2A" from="Kishkindha" to="Ayodhya" priority="-1">
+        <lane id="Ki2A_0" index="0" speed="13.89" length="283.20" shape="11.20,-600.00 11.20,-316.80"/>
+        <lane id="Ki2A_1" index="1" speed="13.89" length="283.20" shape="8.00,-600.00 8.00,-316.80"/>
+        <lane id="Ki2A_2" index="2" speed="13.89" length="283.20" shape="4.80,-600.00 4.80,-316.80"/>
+        <lane id="Ki2A_3" index="3" speed="13.89" length="283.20" shape="1.60,-600.00 1.60,-316.80"/>
+    </edge>
+    <edge id="Ku2D" from="Kurukshetra" to="Dwarika" priority="-1">
+        <lane id="Ku2D_0" index="0" speed="13.89" length="283.20" shape="600.00,11.20 316.80,11.20"/>
+        <lane id="Ku2D_1" index="1" speed="13.89" length="283.20" shape="600.00,8.00 316.80,8.00"/>
+        <lane id="Ku2D_2" index="2" speed="13.89" length="283.20" shape="600.00,4.80 316.80,4.80"/>
+        <lane id="Ku2D_3" index="3" speed="13.89" length="283.20" shape="600.00,1.60 316.80,1.60"/>
+    </edge>
+    <edge id="M2B" from="Mathura" to="Badrinath" priority="-1">
+        <lane id="M2B_0" index="0" speed="13.89" length="266.40" shape="-288.80,16.80 -288.80,283.20"/>
+        <lane id="M2B_1" index="1" speed="13.89" length="266.40" shape="-292.00,16.80 -292.00,283.20"/>
+        <lane id="M2B_2" index="2" speed="13.89" length="266.40" shape="-295.20,16.80 -295.20,283.20"/>
+        <lane id="M2B_3" index="3" speed="13.89" length="266.40" shape="-298.40,16.80 -298.40,283.20"/>
+    </edge>
+    <edge id="M2BV" from="Mathura" to="BrajVrindavan" priority="-1">
+        <lane id="M2BV_0" index="0" speed="13.89" length="266.40" shape="-283.20,-11.20 -16.80,-11.20"/>
+        <lane id="M2BV_1" index="1" speed="13.89" length="266.40" shape="-283.20,-8.00 -16.80,-8.00"/>
+        <lane id="M2BV_2" index="2" speed="13.89" length="266.40" shape="-283.20,-4.80 -16.80,-4.80"/>
+        <lane id="M2BV_3" index="3" speed="13.89" length="266.40" shape="-283.20,-1.60 -16.80,-1.60"/>
+    </edge>
+    <edge id="M2P" from="Mathura" to="Pandarpur" priority="-1">
+        <lane id="M2P_0" index="0" speed="13.89" length="266.40" shape="-311.20,-16.80 -311.20,-283.20"/>
+        <lane id="M2P_1" index="1" speed="13.89" length="266.40" shape="-308.00,-16.80 -308.00,-283.20"/>
+        <lane id="M2P_2" index="2" speed="13.89" length="266.40" shape="-304.80,-16.80 -304.80,-283.20"/>
+        <lane id="M2P_3" index="3" speed="13.89" length="266.40" shape="-301.60,-16.80 -301.60,-283.20"/>
+    </edge>
+    <edge id="M2R" from="Mathura" to="Raivasa" priority="-1">
+        <lane id="M2R_0" index="0" speed="13.89" length="283.20" shape="-316.80,11.20 -600.00,11.20"/>
+        <lane id="M2R_1" index="1" speed="13.89" length="283.20" shape="-316.80,8.00 -600.00,8.00"/>
+        <lane id="M2R_2" index="2" speed="13.89" length="283.20" shape="-316.80,4.80 -600.00,4.80"/>
+        <lane id="M2R_3" index="3" speed="13.89" length="283.20" shape="-316.80,1.60 -600.00,1.60"/>
+    </edge>
+    <edge id="Mi2B" from="Mithila" to="Badrinath" priority="-1">
+        <lane id="Mi2B_0" index="0" speed="13.89" length="266.40" shape="-16.80,311.20 -283.20,311.20"/>
+        <lane id="Mi2B_1" index="1" speed="13.89" length="266.40" shape="-16.80,308.00 -283.20,308.00"/>
+        <lane id="Mi2B_2" index="2" speed="13.89" length="266.40" shape="-16.80,304.80 -283.20,304.80"/>
+        <lane id="Mi2B_3" index="3" speed="13.89" length="266.40" shape="-16.80,301.60 -283.20,301.60"/>
+    </edge>
+    <edge id="Mi2BV" from="Mithila" to="BrajVrindavan" priority="-1">
+        <lane id="Mi2BV_0" index="0" speed="13.89" length="266.40" shape="-11.20,283.20 -11.20,16.80"/>
+        <lane id="Mi2BV_1" index="1" speed="13.89" length="266.40" shape="-8.00,283.20 -8.00,16.80"/>
+        <lane id="Mi2BV_2" index="2" speed="13.89" length="266.40" shape="-4.80,283.20 -4.80,16.80"/>
+        <lane id="Mi2BV_3" index="3" speed="13.89" length="266.40" shape="-1.60,283.20 -1.60,16.80"/>
+    </edge>
+    <edge id="Mi2K" from="Mithila" to="Kedarnath" priority="-1">
+        <lane id="Mi2K_0" index="0" speed="13.89" length="266.40" shape="16.80,288.80 283.20,288.80"/>
+        <lane id="Mi2K_1" index="1" speed="13.89" length="266.40" shape="16.80,292.00 283.20,292.00"/>
+        <lane id="Mi2K_2" index="2" speed="13.89" length="266.40" shape="16.80,295.20 283.20,295.20"/>
+        <lane id="Mi2K_3" index="3" speed="13.89" length="266.40" shape="16.80,298.40 283.20,298.40"/>
+    </edge>
+    <edge id="Mi2S" from="Mithila" to="Somnath" priority="-1">
+        <lane id="Mi2S_0" index="0" speed="13.89" length="283.20" shape="11.20,316.80 11.20,600.00"/>
+        <lane id="Mi2S_1" index="1" speed="13.89" length="283.20" shape="8.00,316.80 8.00,600.00"/>
+        <lane id="Mi2S_2" index="2" speed="13.89" length="283.20" shape="4.80,316.80 4.80,600.00"/>
+        <lane id="Mi2S_3" index="3" speed="13.89" length="283.20" shape="1.60,316.80 1.60,600.00"/>
+    </edge>
+    <edge id="O2P" from="Orcha" to="Pandarpur" priority="-1">
+        <lane id="O2P_0" index="0" speed="13.89" length="283.20" shape="-600.00,-311.20 -316.80,-311.20"/>
+        <lane id="O2P_1" index="1" speed="13.89" length="283.20" shape="-600.00,-308.00 -316.80,-308.00"/>
+        <lane id="O2P_2" index="2" speed="13.89" length="283.20" shape="-600.00,-304.80 -316.80,-304.80"/>
+        <lane id="O2P_3" index="3" speed="13.89" length="283.20" shape="-600.00,-301.60 -316.80,-301.60"/>
+    </edge>
+    <edge id="P2A" from="Pandarpur" to="Ayodhya" priority="-1">
+        <lane id="P2A_0" index="0" speed="13.89" length="266.40" shape="-283.20,-311.20 -16.80,-311.20"/>
+        <lane id="P2A_1" index="1" speed="13.89" length="266.40" shape="-283.20,-308.00 -16.80,-308.00"/>
+        <lane id="P2A_2" index="2" speed="13.89" length="266.40" shape="-283.20,-304.80 -16.80,-304.80"/>
+        <lane id="P2A_3" index="3" speed="13.89" length="266.40" shape="-283.20,-301.60 -16.80,-301.60"/>
+    </edge>
+    <edge id="P2B" from="Prayagraj" to="Badrinath" priority="-1">
+        <lane id="P2B_0" index="0" speed="13.89" length="283.20" shape="-600.00,288.80 -316.80,288.80"/>
+        <lane id="P2B_1" index="1" speed="13.89" length="283.20" shape="-600.00,292.00 -316.80,292.00"/>
+        <lane id="P2B_2" index="2" speed="13.89" length="283.20" shape="-600.00,295.20 -316.80,295.20"/>
+        <lane id="P2B_3" index="3" speed="13.89" length="283.20" shape="-600.00,298.40 -316.80,298.40"/>
+    </edge>
+    <edge id="P2C" from="Pandarpur" to="Chitrakoot" priority="-1">
+        <lane id="P2C_0" index="0" speed="13.89" length="283.20" shape="-311.20,-316.80 -311.20,-600.00"/>
+        <lane id="P2C_1" index="1" speed="13.89" length="283.20" shape="-308.00,-316.80 -308.00,-600.00"/>
+        <lane id="P2C_2" index="2" speed="13.89" length="283.20" shape="-304.80,-316.80 -304.80,-600.00"/>
+        <lane id="P2C_3" index="3" speed="13.89" length="283.20" shape="-301.60,-316.80 -301.60,-600.00"/>
+    </edge>
+    <edge id="P2M" from="Pandarpur" to="Mathura" priority="-1">
+        <lane id="P2M_0" index="0" speed="13.89" length="266.40" shape="-288.80,-283.20 -288.80,-16.80"/>
+        <lane id="P2M_1" index="1" speed="13.89" length="266.40" shape="-292.00,-283.20 -292.00,-16.80"/>
+        <lane id="P2M_2" index="2" speed="13.89" length="266.40" shape="-295.20,-283.20 -295.20,-16.80"/>
+        <lane id="P2M_3" index="3" speed="13.89" length="266.40" shape="-298.40,-283.20 -298.40,-16.80"/>
+    </edge>
+    <edge id="P2O" from="Pandarpur" to="Orcha" priority="-1">
+        <lane id="P2O_0" index="0" speed="13.89" length="283.20" shape="-316.80,-288.80 -600.00,-288.80"/>
+        <lane id="P2O_1" index="1" speed="13.89" length="283.20" shape="-316.80,-292.00 -600.00,-292.00"/>
+        <lane id="P2O_2" index="2" speed="13.89" length="283.20" shape="-316.80,-295.20 -600.00,-295.20"/>
+        <lane id="P2O_3" index="3" speed="13.89" length="283.20" shape="-316.80,-298.40 -600.00,-298.40"/>
+    </edge>
+    <edge id="R2JP" from="Rameshwaram" to="JagannathPuri" priority="-1">
+        <lane id="R2JP_0" index="0" speed="13.89" length="283.20" shape="311.20,-600.00 311.20,-316.80"/>
+        <lane id="R2JP_1" index="1" speed="13.89" length="283.20" shape="308.00,-600.00 308.00,-316.80"/>
+        <lane id="R2JP_2" index="2" speed="13.89" length="283.20" shape="304.80,-600.00 304.80,-316.80"/>
+        <lane id="R2JP_3" index="3" speed="13.89" length="283.20" shape="301.60,-600.00 301.60,-316.80"/>
+    </edge>
+    <edge id="R2M" from="Raivasa" to="Mathura" priority="-1">
+        <lane id="R2M_0" index="0" speed="13.89" length="283.20" shape="-600.00,-11.20 -316.80,-11.20"/>
+        <lane id="R2M_1" index="1" speed="13.89" length="283.20" shape="-600.00,-8.00 -316.80,-8.00"/>
+        <lane id="R2M_2" index="2" speed="13.89" length="283.20" shape="-600.00,-4.80 -316.80,-4.80"/>
+        <lane id="R2M_3" index="3" speed="13.89" length="283.20" shape="-600.00,-1.60 -316.80,-1.60"/>
+    </edge>
+    <edge id="S2Mi" from="Somnath" to="Mithila" priority="-1">
+        <lane id="S2Mi_0" index="0" speed="13.89" length="283.20" shape="-11.20,600.00 -11.20,316.80"/>
+        <lane id="S2Mi_1" index="1" speed="13.89" length="283.20" shape="-8.00,600.00 -8.00,316.80"/>
+        <lane id="S2Mi_2" index="2" speed="13.89" length="283.20" shape="-4.80,600.00 -4.80,316.80"/>
+        <lane id="S2Mi_3" index="3" speed="13.89" length="283.20" shape="-1.60,600.00 -1.60,316.80"/>
+    </edge>
+    <edge id="SL2JP" from="SriLanka" to="JagannathPuri" priority="-1">
+        <lane id="SL2JP_0" index="0" speed="13.89" length="283.20" shape="600.00,-288.80 316.80,-288.80"/>
+        <lane id="SL2JP_1" index="1" speed="13.89" length="283.20" shape="600.00,-292.00 316.80,-292.00"/>
+        <lane id="SL2JP_2" index="2" speed="13.89" length="283.20" shape="600.00,-295.20 316.80,-295.20"/>
+        <lane id="SL2JP_3" index="3" speed="13.89" length="283.20" shape="600.00,-298.40 316.80,-298.40"/>
+    </edge>
+    <edge id="U2K" from="Ujjain" to="Kedarnath" priority="-1">
+        <lane id="U2K_0" index="0" speed="13.89" length="283.20" shape="600.00,311.20 316.80,311.20"/>
+        <lane id="U2K_1" index="1" speed="13.89" length="283.20" shape="600.00,308.00 316.80,308.00"/>
+        <lane id="U2K_2" index="2" speed="13.89" length="283.20" shape="600.00,304.80 316.80,304.80"/>
+        <lane id="U2K_3" index="3" speed="13.89" length="283.20" shape="600.00,301.60 316.80,301.60"/>
     </edge>
 
-    <tlLogic id="C" type="static" programID="0" offset="0">
+    <tlLogic id="Ayodhya" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="Badrinath" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="BrajVrindavan" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="Dwarika" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="J13" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="J3" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="Kedarnath" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="Mathura" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
+    </tlLogic>
+    <tlLogic id="Mithila" type="static" programID="0" offset="0">
         <phase duration="42" state="GGGGGgrrrrrrGGGGGgrrrrrr"/>
         <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
         <phase duration="42" state="rrrrrrGGGGGgrrrrrrGGGGGg"/>
         <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
     </tlLogic>
 
-    <junction id="C" type="traffic_light" x="0.00" y="0.00" incLanes="N_C_0 N_C_1 N_C_2 N_C_3 E_C_0 E_C_1 E_C_2 E_C_3 S_C_0 S_C_1 S_C_2 S_C_3 W_C_0 W_C_1 W_C_2 W_C_3" intLanes=":C_0_0 :C_1_0 :C_1_1 :C_1_2 :C_1_3 :C_24_0 :C_6_0 :C_7_0 :C_7_1 :C_7_2 :C_7_3 :C_25_0 :C_12_0 :C_13_0 :C_13_1 :C_13_2 :C_13_3 :C_26_0 :C_18_0 :C_19_0 :C_19_1 :C_19_2 :C_19_3 :C_27_0" shape="-12.80,16.80 12.80,16.80 13.24,14.58 13.80,13.80 14.58,13.24 15.58,12.91 16.80,12.80 16.80,-12.80 14.58,-13.24 13.80,-13.80 13.24,-14.58 12.91,-15.58 12.80,-16.80 -12.80,-16.80 -13.24,-14.58 -13.80,-13.80 -14.58,-13.24 -15.58,-12.91 -16.80,-12.80 -16.80,12.80 -14.58,13.24 -13.80,13.80 -13.24,14.58 -12.91,15.58">
+    <junction id="Ayodhya" type="traffic_light" x="0.00" y="-300.00" incLanes="BV2A_0 BV2A_1 BV2A_2 BV2A_3 JP2A_0 JP2A_1 JP2A_2 JP2A_3 Ki2A_0 Ki2A_1 Ki2A_2 Ki2A_3 P2A_0 P2A_1 P2A_2 P2A_3" intLanes=":Ayodhya_0_0 :Ayodhya_1_0 :Ayodhya_1_1 :Ayodhya_1_2 :Ayodhya_1_3 :Ayodhya_24_0 :Ayodhya_6_0 :Ayodhya_7_0 :Ayodhya_7_1 :Ayodhya_7_2 :Ayodhya_7_3 :Ayodhya_25_0 :Ayodhya_12_0 :Ayodhya_13_0 :Ayodhya_13_1 :Ayodhya_13_2 :Ayodhya_13_3 :Ayodhya_26_0 :Ayodhya_18_0 :Ayodhya_19_0 :Ayodhya_19_1 :Ayodhya_19_2 :Ayodhya_19_3 :Ayodhya_27_0" shape="-12.80,-283.20 12.80,-283.20 13.24,-285.42 13.80,-286.20 14.58,-286.76 15.58,-287.09 16.80,-287.20 16.80,-312.80 14.58,-313.24 13.80,-313.80 13.24,-314.58 12.91,-315.58 12.80,-316.80 -12.80,-316.80 -13.24,-314.58 -13.80,-313.80 -14.58,-313.24 -15.58,-312.91 -16.80,-312.80 -16.80,-287.20 -14.58,-286.76 -13.80,-286.20 -13.24,-285.42 -12.91,-284.42">
         <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
         <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
         <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
@@ -173,68 +941,732 @@
         <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
         <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
     </junction>
-    <junction id="E" type="dead_end" x="500.00" y="0.00" incLanes="C_E_0 C_E_1 C_E_2 C_E_3" intLanes="" shape="500.00,0.00 500.00,-12.80 500.00,0.00"/>
-    <junction id="N" type="dead_end" x="0.00" y="500.00" incLanes="C_N_0 C_N_1 C_N_2 C_N_3" intLanes="" shape="0.00,500.00 12.80,500.00 0.00,500.00"/>
-    <junction id="S" type="dead_end" x="0.00" y="-500.00" incLanes="C_S_0 C_S_1 C_S_2 C_S_3" intLanes="" shape="0.00,-500.00 -12.80,-500.00 0.00,-500.00"/>
-    <junction id="W" type="dead_end" x="-500.00" y="0.00" incLanes="C_W_0 C_W_1 C_W_2 C_W_3" intLanes="" shape="-500.00,0.00 -500.00,12.80 -500.00,0.00"/>
+    <junction id="Badrinath" type="traffic_light" x="-300.00" y="300.00" incLanes="K2B_0 K2B_1 K2B_2 K2B_3 Mi2B_0 Mi2B_1 Mi2B_2 Mi2B_3 M2B_0 M2B_1 M2B_2 M2B_3 P2B_0 P2B_1 P2B_2 P2B_3" intLanes=":Badrinath_0_0 :Badrinath_1_0 :Badrinath_1_1 :Badrinath_1_2 :Badrinath_1_3 :Badrinath_24_0 :Badrinath_6_0 :Badrinath_7_0 :Badrinath_7_1 :Badrinath_7_2 :Badrinath_7_3 :Badrinath_25_0 :Badrinath_12_0 :Badrinath_13_0 :Badrinath_13_1 :Badrinath_13_2 :Badrinath_13_3 :Badrinath_26_0 :Badrinath_18_0 :Badrinath_19_0 :Badrinath_19_1 :Badrinath_19_2 :Badrinath_19_3 :Badrinath_27_0" shape="-312.80,316.80 -287.20,316.80 -286.76,314.58 -286.20,313.80 -285.42,313.24 -284.42,312.91 -283.20,312.80 -283.20,287.20 -285.42,286.76 -286.20,286.20 -286.76,285.42 -287.09,284.42 -287.20,283.20 -312.80,283.20 -313.24,285.42 -313.80,286.20 -314.58,286.76 -315.58,287.09 -316.80,287.20 -316.80,312.80 -314.58,313.24 -313.80,313.80 -313.24,314.58 -312.91,315.58">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="BrajVrindavan" type="traffic_light" x="0.00" y="0.00" incLanes="Mi2BV_0 Mi2BV_1 Mi2BV_2 Mi2BV_3 D2BV_0 D2BV_1 D2BV_2 D2BV_3 A2BV_0 A2BV_1 A2BV_2 A2BV_3 M2BV_0 M2BV_1 M2BV_2 M2BV_3" intLanes=":BrajVrindavan_0_0 :BrajVrindavan_1_0 :BrajVrindavan_1_1 :BrajVrindavan_1_2 :BrajVrindavan_1_3 :BrajVrindavan_24_0 :BrajVrindavan_6_0 :BrajVrindavan_7_0 :BrajVrindavan_7_1 :BrajVrindavan_7_2 :BrajVrindavan_7_3 :BrajVrindavan_25_0 :BrajVrindavan_12_0 :BrajVrindavan_13_0 :BrajVrindavan_13_1 :BrajVrindavan_13_2 :BrajVrindavan_13_3 :BrajVrindavan_26_0 :BrajVrindavan_18_0 :BrajVrindavan_19_0 :BrajVrindavan_19_1 :BrajVrindavan_19_2 :BrajVrindavan_19_3 :BrajVrindavan_27_0" shape="-12.80,16.80 12.80,16.80 13.24,14.58 13.80,13.80 14.58,13.24 15.58,12.91 16.80,12.80 16.80,-12.80 14.58,-13.24 13.80,-13.80 13.24,-14.58 12.91,-15.58 12.80,-16.80 -12.80,-16.80 -13.24,-14.58 -13.80,-13.80 -14.58,-13.24 -15.58,-12.91 -16.80,-12.80 -16.80,12.80 -14.58,13.24 -13.80,13.80 -13.24,14.58 -12.91,15.58">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Chitrakoot" type="dead_end" x="-300.00" y="-600.00" incLanes="P2C_0 P2C_1 P2C_2 P2C_3" intLanes="" shape="-300.00,-600.00 -312.80,-600.00 -300.00,-600.00"/>
+    <junction id="Dwarika" type="traffic_light" x="300.00" y="0.00" incLanes="K2D_0 K2D_1 K2D_2 K2D_3 Ku2D_0 Ku2D_1 Ku2D_2 Ku2D_3 JP2D_0 JP2D_1 JP2D_2 JP2D_3 BV2D_0 BV2D_1 BV2D_2 BV2D_3" intLanes=":Dwarika_0_0 :Dwarika_1_0 :Dwarika_1_1 :Dwarika_1_2 :Dwarika_1_3 :Dwarika_24_0 :Dwarika_6_0 :Dwarika_7_0 :Dwarika_7_1 :Dwarika_7_2 :Dwarika_7_3 :Dwarika_25_0 :Dwarika_12_0 :Dwarika_13_0 :Dwarika_13_1 :Dwarika_13_2 :Dwarika_13_3 :Dwarika_26_0 :Dwarika_18_0 :Dwarika_19_0 :Dwarika_19_1 :Dwarika_19_2 :Dwarika_19_3 :Dwarika_27_0" shape="287.20,16.80 312.80,16.80 313.24,14.58 313.80,13.80 314.58,13.24 315.58,12.91 316.80,12.80 316.80,-12.80 314.58,-13.24 313.80,-13.80 313.24,-14.58 312.91,-15.58 312.80,-16.80 287.20,-16.80 286.76,-14.58 286.20,-13.80 285.42,-13.24 284.42,-12.91 283.20,-12.80 283.20,12.80 285.42,13.24 286.20,13.80 286.76,14.58 287.09,15.58">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Gaya" type="dead_end" x="300.00" y="600.00" incLanes="K2G_0 K2G_1 K2G_2 K2G_3" intLanes="" shape="300.00,600.00 312.80,600.00 300.00,600.00"/>
+    <junction id="JagannathPuri" type="traffic_light" x="300.00" y="-300.00" incLanes="D2JP_0 D2JP_1 D2JP_2 D2JP_3 SL2JP_0 SL2JP_1 SL2JP_2 SL2JP_3 R2JP_0 R2JP_1 R2JP_2 R2JP_3 A2JP_0 A2JP_1 A2JP_2 A2JP_3" intLanes=":JagannathPuri_0_0 :JagannathPuri_1_0 :JagannathPuri_1_1 :JagannathPuri_1_2 :JagannathPuri_1_3 :JagannathPuri_24_0 :JagannathPuri_6_0 :JagannathPuri_7_0 :JagannathPuri_7_1 :JagannathPuri_7_2 :JagannathPuri_7_3 :JagannathPuri_25_0 :JagannathPuri_12_0 :JagannathPuri_13_0 :JagannathPuri_13_1 :JagannathPuri_13_2 :JagannathPuri_13_3 :JagannathPuri_26_0 :JagannathPuri_18_0 :JagannathPuri_19_0 :JagannathPuri_19_1 :JagannathPuri_19_2 :JagannathPuri_19_3 :JagannathPuri_27_0" shape="287.20,-283.20 312.80,-283.20 313.24,-285.42 313.80,-286.20 314.58,-286.76 315.58,-287.09 316.80,-287.20 316.80,-312.80 314.58,-313.24 313.80,-313.80 313.24,-314.58 312.91,-315.58 312.80,-316.80 287.20,-316.80 286.76,-314.58 286.20,-313.80 285.42,-313.24 284.42,-312.91 283.20,-312.80 283.20,-287.20 285.42,-286.76 286.20,-286.20 286.76,-285.42 287.09,-284.42">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Kashi" type="dead_end" x="-300.00" y="600.00" incLanes="B2K_0 B2K_1 B2K_2 B2K_3" intLanes="" shape="-300.00,600.00 -287.20,600.00 -300.00,600.00"/>
+    <junction id="Kedarnath" type="traffic_light" x="300.00" y="300.00" incLanes="G2K_0 G2K_1 G2K_2 G2K_3 U2K_0 U2K_1 U2K_2 U2K_3 D2K_0 D2K_1 D2K_2 D2K_3 Mi2K_0 Mi2K_1 Mi2K_2 Mi2K_3" intLanes=":Kedarnath_0_0 :Kedarnath_1_0 :Kedarnath_1_1 :Kedarnath_1_2 :Kedarnath_1_3 :Kedarnath_24_0 :Kedarnath_6_0 :Kedarnath_7_0 :Kedarnath_7_1 :Kedarnath_7_2 :Kedarnath_7_3 :Kedarnath_25_0 :Kedarnath_12_0 :Kedarnath_13_0 :Kedarnath_13_1 :Kedarnath_13_2 :Kedarnath_13_3 :Kedarnath_26_0 :Kedarnath_18_0 :Kedarnath_19_0 :Kedarnath_19_1 :Kedarnath_19_2 :Kedarnath_19_3 :Kedarnath_27_0" shape="287.20,316.80 312.80,316.80 313.24,314.58 313.80,313.80 314.58,313.24 315.58,312.91 316.80,312.80 316.80,287.20 314.58,286.76 313.80,286.20 313.24,285.42 312.91,284.42 312.80,283.20 287.20,283.20 286.76,285.42 286.20,286.20 285.42,286.76 284.42,287.09 283.20,287.20 283.20,312.80 285.42,313.24 286.20,313.80 286.76,314.58 287.09,315.58">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Kishkindha" type="dead_end" x="0.00" y="-600.00" incLanes="A2Ki_0 A2Ki_1 A2Ki_2 A2Ki_3" intLanes="" shape="0.00,-600.00 -12.80,-600.00 0.00,-600.00"/>
+    <junction id="Kurukshetra" type="dead_end" x="600.00" y="0.00" incLanes="D2Ku_0 D2Ku_1 D2Ku_2 D2Ku_3" intLanes="" shape="600.00,0.00 600.00,-12.80 600.00,0.00"/>
+    <junction id="Mathura" type="traffic_light" x="-300.00" y="0.00" incLanes="B2M_0 B2M_1 B2M_2 B2M_3 BV2M_0 BV2M_1 BV2M_2 BV2M_3 P2M_0 P2M_1 P2M_2 P2M_3 R2M_0 R2M_1 R2M_2 R2M_3" intLanes=":Mathura_0_0 :Mathura_1_0 :Mathura_1_1 :Mathura_1_2 :Mathura_1_3 :Mathura_24_0 :Mathura_6_0 :Mathura_7_0 :Mathura_7_1 :Mathura_7_2 :Mathura_7_3 :Mathura_25_0 :Mathura_12_0 :Mathura_13_0 :Mathura_13_1 :Mathura_13_2 :Mathura_13_3 :Mathura_26_0 :Mathura_18_0 :Mathura_19_0 :Mathura_19_1 :Mathura_19_2 :Mathura_19_3 :Mathura_27_0" shape="-312.80,16.80 -287.20,16.80 -286.76,14.58 -286.20,13.80 -285.42,13.24 -284.42,12.91 -283.20,12.80 -283.20,-12.80 -285.42,-13.24 -286.20,-13.80 -286.76,-14.58 -287.09,-15.58 -287.20,-16.80 -312.80,-16.80 -313.24,-14.58 -313.80,-13.80 -314.58,-13.24 -315.58,-12.91 -316.80,-12.80 -316.80,12.80 -314.58,13.24 -313.80,13.80 -313.24,14.58 -312.91,15.58">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Mithila" type="traffic_light" x="0.00" y="300.00" incLanes="S2Mi_0 S2Mi_1 S2Mi_2 S2Mi_3 K2Mi_0 K2Mi_1 K2Mi_2 K2Mi_3 BV2Mi_0 BV2Mi_1 BV2Mi_2 BV2Mi_3 B2Mi_0 B2Mi_1 B2Mi_2 B2Mi_3" intLanes=":Mithila_0_0 :Mithila_1_0 :Mithila_1_1 :Mithila_1_2 :Mithila_1_3 :Mithila_24_0 :Mithila_6_0 :Mithila_7_0 :Mithila_7_1 :Mithila_7_2 :Mithila_7_3 :Mithila_25_0 :Mithila_12_0 :Mithila_13_0 :Mithila_13_1 :Mithila_13_2 :Mithila_13_3 :Mithila_26_0 :Mithila_18_0 :Mithila_19_0 :Mithila_19_1 :Mithila_19_2 :Mithila_19_3 :Mithila_27_0" shape="-12.80,316.80 12.80,316.80 13.24,314.58 13.80,313.80 14.58,313.24 15.58,312.91 16.80,312.80 16.80,287.20 14.58,286.76 13.80,286.20 13.24,285.42 12.91,284.42 12.80,283.20 -12.80,283.20 -13.24,285.42 -13.80,286.20 -14.58,286.76 -15.58,287.09 -16.80,287.20 -16.80,312.80 -14.58,313.24 -13.80,313.80 -13.24,314.58 -12.91,315.58">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Orcha" type="dead_end" x="-600.00" y="-300.00" incLanes="P2O_0 P2O_1 P2O_2 P2O_3" intLanes="" shape="-600.00,-300.00 -600.00,-287.20 -600.00,-300.00"/>
+    <junction id="Pandarpur" type="traffic_light" x="-300.00" y="-300.00" incLanes="M2P_0 M2P_1 M2P_2 M2P_3 A2P_0 A2P_1 A2P_2 A2P_3 C2P_0 C2P_1 C2P_2 C2P_3 O2P_0 O2P_1 O2P_2 O2P_3" intLanes=":Pandarpur_0_0 :Pandarpur_1_0 :Pandarpur_1_1 :Pandarpur_1_2 :Pandarpur_1_3 :Pandarpur_24_0 :Pandarpur_6_0 :Pandarpur_7_0 :Pandarpur_7_1 :Pandarpur_7_2 :Pandarpur_7_3 :Pandarpur_25_0 :Pandarpur_12_0 :Pandarpur_13_0 :Pandarpur_13_1 :Pandarpur_13_2 :Pandarpur_13_3 :Pandarpur_26_0 :Pandarpur_18_0 :Pandarpur_19_0 :Pandarpur_19_1 :Pandarpur_19_2 :Pandarpur_19_3 :Pandarpur_27_0" shape="-312.80,-283.20 -287.20,-283.20 -286.76,-285.42 -286.20,-286.20 -285.42,-286.76 -284.42,-287.09 -283.20,-287.20 -283.20,-312.80 -285.42,-313.24 -286.20,-313.80 -286.76,-314.58 -287.09,-315.58 -287.20,-316.80 -312.80,-316.80 -313.24,-314.58 -313.80,-313.80 -314.58,-313.24 -315.58,-312.91 -316.80,-312.80 -316.80,-287.20 -314.58,-286.76 -313.80,-286.20 -313.24,-285.42 -312.91,-284.42">
+        <request index="0"  response="000000000000000000000000" foes="000000000000011110000000" cont="0"/>
+        <request index="1"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="2"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="3"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="4"  response="100000000000100000000000" foes="111111100000111110000000" cont="0"/>
+        <request index="5"  response="100000011110100000000000" foes="111110011110111110000000" cont="1"/>
+        <request index="6"  response="000000011110000000000000" foes="000000011110000000000000" cont="0"/>
+        <request index="7"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="8"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="9"  response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="10" response="000000111110000000111111" foes="100000111110000000111111" cont="0"/>
+        <request index="11" response="011110111110000000111110" foes="011110111110000000111110" cont="1"/>
+        <request index="12" response="000000000000000000000000" foes="011110000000000000000000" cont="0"/>
+        <request index="13" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="14" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="15" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="16" response="100000000000100000000000" foes="111110000000111111100000" cont="0"/>
+        <request index="17" response="100000000000100000011110" foes="111110000000111110011110" cont="1"/>
+        <request index="18" response="000000000000000000011110" foes="000000000000000000011110" cont="0"/>
+        <request index="19" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="20" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="21" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="22" response="000000111111000000111110" foes="000000111111100000111110" cont="0"/>
+        <request index="23" response="000000111110011110111110" foes="000000111110011110111110" cont="1"/>
+    </junction>
+    <junction id="Prayagraj" type="dead_end" x="-600.00" y="300.00" incLanes="B2P_0 B2P_1 B2P_2 B2P_3" intLanes="" shape="-600.00,300.00 -600.00,312.80 -600.00,300.00"/>
+    <junction id="Raivasa" type="dead_end" x="-600.00" y="0.00" incLanes="M2R_0 M2R_1 M2R_2 M2R_3" intLanes="" shape="-600.00,0.00 -600.00,12.80 -600.00,0.00"/>
+    <junction id="Rameshwaram" type="dead_end" x="300.00" y="-600.00" incLanes="JP2R_0 JP2R_1 JP2R_2 JP2R_3" intLanes="" shape="300.00,-600.00 287.20,-600.00 300.00,-600.00"/>
+    <junction id="Somnath" type="dead_end" x="0.00" y="600.00" incLanes="Mi2S_0 Mi2S_1 Mi2S_2 Mi2S_3" intLanes="" shape="0.00,600.00 12.80,600.00 0.00,600.00"/>
+    <junction id="SriLanka" type="dead_end" x="600.00" y="-300.00" incLanes="JP2SL_0 JP2SL_1 JP2SL_2 JP2SL_3" intLanes="" shape="600.00,-300.00 600.00,-312.80 600.00,-300.00"/>
+    <junction id="Ujjain" type="dead_end" x="600.00" y="300.00" incLanes="K2U_0 K2U_1 K2U_2 K2U_3" intLanes="" shape="600.00,300.00 600.00,287.20 600.00,300.00"/>
 
-    <junction id=":C_24_0" type="internal" x="-0.89" y="11.84" incLanes=":C_5_0 S_C_0 S_C_1 S_C_2 S_C_3" intLanes=":C_7_0 :C_7_1 :C_7_2 :C_7_3 :C_11_0 :C_12_0 :C_13_0 :C_13_1 :C_13_2 :C_13_3 :C_19_0 :C_19_1 :C_19_2 :C_19_3 :C_23_0"/>
-    <junction id=":C_25_0" type="internal" x="11.84" y="0.89" incLanes=":C_11_0 W_C_0 W_C_1 W_C_2 W_C_3" intLanes=":C_1_0 :C_1_1 :C_1_2 :C_1_3 :C_5_0 :C_13_0 :C_13_1 :C_13_2 :C_13_3 :C_17_0 :C_18_0 :C_19_0 :C_19_1 :C_19_2 :C_19_3"/>
-    <junction id=":C_26_0" type="internal" x="0.89" y="-11.84" incLanes=":C_17_0 N_C_0 N_C_1 N_C_2 N_C_3" intLanes=":C_0_0 :C_1_0 :C_1_1 :C_1_2 :C_1_3 :C_7_0 :C_7_1 :C_7_2 :C_7_3 :C_11_0 :C_19_0 :C_19_1 :C_19_2 :C_19_3 :C_23_0"/>
-    <junction id=":C_27_0" type="internal" x="-11.84" y="-0.89" incLanes=":C_23_0 E_C_0 E_C_1 E_C_2 E_C_3" intLanes=":C_1_0 :C_1_1 :C_1_2 :C_1_3 :C_5_0 :C_6_0 :C_7_0 :C_7_1 :C_7_2 :C_7_3 :C_13_0 :C_13_1 :C_13_2 :C_13_3 :C_17_0"/>
+    <junction id=":Ayodhya_24_0" type="internal" x="-0.89" y="-288.16" incLanes=":Ayodhya_5_0 Ki2A_0 Ki2A_1 Ki2A_2 Ki2A_3" intLanes=":Ayodhya_7_0 :Ayodhya_7_1 :Ayodhya_7_2 :Ayodhya_7_3 :Ayodhya_11_0 :Ayodhya_12_0 :Ayodhya_13_0 :Ayodhya_13_1 :Ayodhya_13_2 :Ayodhya_13_3 :Ayodhya_19_0 :Ayodhya_19_1 :Ayodhya_19_2 :Ayodhya_19_3 :Ayodhya_23_0"/>
+    <junction id=":Ayodhya_25_0" type="internal" x="11.84" y="-299.11" incLanes=":Ayodhya_11_0 P2A_0 P2A_1 P2A_2 P2A_3" intLanes=":Ayodhya_1_0 :Ayodhya_1_1 :Ayodhya_1_2 :Ayodhya_1_3 :Ayodhya_5_0 :Ayodhya_13_0 :Ayodhya_13_1 :Ayodhya_13_2 :Ayodhya_13_3 :Ayodhya_17_0 :Ayodhya_18_0 :Ayodhya_19_0 :Ayodhya_19_1 :Ayodhya_19_2 :Ayodhya_19_3"/>
+    <junction id=":Ayodhya_26_0" type="internal" x="0.89" y="-311.84" incLanes=":Ayodhya_17_0 BV2A_0 BV2A_1 BV2A_2 BV2A_3" intLanes=":Ayodhya_0_0 :Ayodhya_1_0 :Ayodhya_1_1 :Ayodhya_1_2 :Ayodhya_1_3 :Ayodhya_7_0 :Ayodhya_7_1 :Ayodhya_7_2 :Ayodhya_7_3 :Ayodhya_11_0 :Ayodhya_19_0 :Ayodhya_19_1 :Ayodhya_19_2 :Ayodhya_19_3 :Ayodhya_23_0"/>
+    <junction id=":Ayodhya_27_0" type="internal" x="-11.84" y="-300.89" incLanes=":Ayodhya_23_0 JP2A_0 JP2A_1 JP2A_2 JP2A_3" intLanes=":Ayodhya_1_0 :Ayodhya_1_1 :Ayodhya_1_2 :Ayodhya_1_3 :Ayodhya_5_0 :Ayodhya_6_0 :Ayodhya_7_0 :Ayodhya_7_1 :Ayodhya_7_2 :Ayodhya_7_3 :Ayodhya_13_0 :Ayodhya_13_1 :Ayodhya_13_2 :Ayodhya_13_3 :Ayodhya_17_0"/>
+    <junction id=":Badrinath_24_0" type="internal" x="-300.89" y="311.84" incLanes=":Badrinath_5_0 M2B_0 M2B_1 M2B_2 M2B_3" intLanes=":Badrinath_7_0 :Badrinath_7_1 :Badrinath_7_2 :Badrinath_7_3 :Badrinath_11_0 :Badrinath_12_0 :Badrinath_13_0 :Badrinath_13_1 :Badrinath_13_2 :Badrinath_13_3 :Badrinath_19_0 :Badrinath_19_1 :Badrinath_19_2 :Badrinath_19_3 :Badrinath_23_0"/>
+    <junction id=":Badrinath_25_0" type="internal" x="-288.16" y="300.89" incLanes=":Badrinath_11_0 P2B_0 P2B_1 P2B_2 P2B_3" intLanes=":Badrinath_1_0 :Badrinath_1_1 :Badrinath_1_2 :Badrinath_1_3 :Badrinath_5_0 :Badrinath_13_0 :Badrinath_13_1 :Badrinath_13_2 :Badrinath_13_3 :Badrinath_17_0 :Badrinath_18_0 :Badrinath_19_0 :Badrinath_19_1 :Badrinath_19_2 :Badrinath_19_3"/>
+    <junction id=":Badrinath_26_0" type="internal" x="-299.11" y="288.16" incLanes=":Badrinath_17_0 K2B_0 K2B_1 K2B_2 K2B_3" intLanes=":Badrinath_0_0 :Badrinath_1_0 :Badrinath_1_1 :Badrinath_1_2 :Badrinath_1_3 :Badrinath_7_0 :Badrinath_7_1 :Badrinath_7_2 :Badrinath_7_3 :Badrinath_11_0 :Badrinath_19_0 :Badrinath_19_1 :Badrinath_19_2 :Badrinath_19_3 :Badrinath_23_0"/>
+    <junction id=":Badrinath_27_0" type="internal" x="-311.84" y="299.11" incLanes=":Badrinath_23_0 Mi2B_0 Mi2B_1 Mi2B_2 Mi2B_3" intLanes=":Badrinath_1_0 :Badrinath_1_1 :Badrinath_1_2 :Badrinath_1_3 :Badrinath_5_0 :Badrinath_6_0 :Badrinath_7_0 :Badrinath_7_1 :Badrinath_7_2 :Badrinath_7_3 :Badrinath_13_0 :Badrinath_13_1 :Badrinath_13_2 :Badrinath_13_3 :Badrinath_17_0"/>
+    <junction id=":BrajVrindavan_24_0" type="internal" x="-0.89" y="11.84" incLanes=":BrajVrindavan_5_0 A2BV_0 A2BV_1 A2BV_2 A2BV_3" intLanes=":BrajVrindavan_7_0 :BrajVrindavan_7_1 :BrajVrindavan_7_2 :BrajVrindavan_7_3 :BrajVrindavan_11_0 :BrajVrindavan_12_0 :BrajVrindavan_13_0 :BrajVrindavan_13_1 :BrajVrindavan_13_2 :BrajVrindavan_13_3 :BrajVrindavan_19_0 :BrajVrindavan_19_1 :BrajVrindavan_19_2 :BrajVrindavan_19_3 :BrajVrindavan_23_0"/>
+    <junction id=":BrajVrindavan_25_0" type="internal" x="11.84" y="0.89" incLanes=":BrajVrindavan_11_0 M2BV_0 M2BV_1 M2BV_2 M2BV_3" intLanes=":BrajVrindavan_1_0 :BrajVrindavan_1_1 :BrajVrindavan_1_2 :BrajVrindavan_1_3 :BrajVrindavan_5_0 :BrajVrindavan_13_0 :BrajVrindavan_13_1 :BrajVrindavan_13_2 :BrajVrindavan_13_3 :BrajVrindavan_17_0 :BrajVrindavan_18_0 :BrajVrindavan_19_0 :BrajVrindavan_19_1 :BrajVrindavan_19_2 :BrajVrindavan_19_3"/>
+    <junction id=":BrajVrindavan_26_0" type="internal" x="0.89" y="-11.84" incLanes=":BrajVrindavan_17_0 Mi2BV_0 Mi2BV_1 Mi2BV_2 Mi2BV_3" intLanes=":BrajVrindavan_0_0 :BrajVrindavan_1_0 :BrajVrindavan_1_1 :BrajVrindavan_1_2 :BrajVrindavan_1_3 :BrajVrindavan_7_0 :BrajVrindavan_7_1 :BrajVrindavan_7_2 :BrajVrindavan_7_3 :BrajVrindavan_11_0 :BrajVrindavan_19_0 :BrajVrindavan_19_1 :BrajVrindavan_19_2 :BrajVrindavan_19_3 :BrajVrindavan_23_0"/>
+    <junction id=":BrajVrindavan_27_0" type="internal" x="-11.84" y="-0.89" incLanes=":BrajVrindavan_23_0 D2BV_0 D2BV_1 D2BV_2 D2BV_3" intLanes=":BrajVrindavan_1_0 :BrajVrindavan_1_1 :BrajVrindavan_1_2 :BrajVrindavan_1_3 :BrajVrindavan_5_0 :BrajVrindavan_6_0 :BrajVrindavan_7_0 :BrajVrindavan_7_1 :BrajVrindavan_7_2 :BrajVrindavan_7_3 :BrajVrindavan_13_0 :BrajVrindavan_13_1 :BrajVrindavan_13_2 :BrajVrindavan_13_3 :BrajVrindavan_17_0"/>
+    <junction id=":Dwarika_24_0" type="internal" x="299.11" y="11.84" incLanes=":Dwarika_5_0 JP2D_0 JP2D_1 JP2D_2 JP2D_3" intLanes=":Dwarika_7_0 :Dwarika_7_1 :Dwarika_7_2 :Dwarika_7_3 :Dwarika_11_0 :Dwarika_12_0 :Dwarika_13_0 :Dwarika_13_1 :Dwarika_13_2 :Dwarika_13_3 :Dwarika_19_0 :Dwarika_19_1 :Dwarika_19_2 :Dwarika_19_3 :Dwarika_23_0"/>
+    <junction id=":Dwarika_25_0" type="internal" x="311.84" y="0.89" incLanes=":Dwarika_11_0 BV2D_0 BV2D_1 BV2D_2 BV2D_3" intLanes=":Dwarika_1_0 :Dwarika_1_1 :Dwarika_1_2 :Dwarika_1_3 :Dwarika_5_0 :Dwarika_13_0 :Dwarika_13_1 :Dwarika_13_2 :Dwarika_13_3 :Dwarika_17_0 :Dwarika_18_0 :Dwarika_19_0 :Dwarika_19_1 :Dwarika_19_2 :Dwarika_19_3"/>
+    <junction id=":Dwarika_26_0" type="internal" x="300.89" y="-11.84" incLanes=":Dwarika_17_0 K2D_0 K2D_1 K2D_2 K2D_3" intLanes=":Dwarika_0_0 :Dwarika_1_0 :Dwarika_1_1 :Dwarika_1_2 :Dwarika_1_3 :Dwarika_7_0 :Dwarika_7_1 :Dwarika_7_2 :Dwarika_7_3 :Dwarika_11_0 :Dwarika_19_0 :Dwarika_19_1 :Dwarika_19_2 :Dwarika_19_3 :Dwarika_23_0"/>
+    <junction id=":Dwarika_27_0" type="internal" x="288.16" y="-0.89" incLanes=":Dwarika_23_0 Ku2D_0 Ku2D_1 Ku2D_2 Ku2D_3" intLanes=":Dwarika_1_0 :Dwarika_1_1 :Dwarika_1_2 :Dwarika_1_3 :Dwarika_5_0 :Dwarika_6_0 :Dwarika_7_0 :Dwarika_7_1 :Dwarika_7_2 :Dwarika_7_3 :Dwarika_13_0 :Dwarika_13_1 :Dwarika_13_2 :Dwarika_13_3 :Dwarika_17_0"/>
+    <junction id=":JagannathPuri_24_0" type="internal" x="299.11" y="-288.16" incLanes=":JagannathPuri_5_0 R2JP_0 R2JP_1 R2JP_2 R2JP_3" intLanes=":JagannathPuri_7_0 :JagannathPuri_7_1 :JagannathPuri_7_2 :JagannathPuri_7_3 :JagannathPuri_11_0 :JagannathPuri_12_0 :JagannathPuri_13_0 :JagannathPuri_13_1 :JagannathPuri_13_2 :JagannathPuri_13_3 :JagannathPuri_19_0 :JagannathPuri_19_1 :JagannathPuri_19_2 :JagannathPuri_19_3 :JagannathPuri_23_0"/>
+    <junction id=":JagannathPuri_25_0" type="internal" x="311.84" y="-299.11" incLanes=":JagannathPuri_11_0 A2JP_0 A2JP_1 A2JP_2 A2JP_3" intLanes=":JagannathPuri_1_0 :JagannathPuri_1_1 :JagannathPuri_1_2 :JagannathPuri_1_3 :JagannathPuri_5_0 :JagannathPuri_13_0 :JagannathPuri_13_1 :JagannathPuri_13_2 :JagannathPuri_13_3 :JagannathPuri_17_0 :JagannathPuri_18_0 :JagannathPuri_19_0 :JagannathPuri_19_1 :JagannathPuri_19_2 :JagannathPuri_19_3"/>
+    <junction id=":JagannathPuri_26_0" type="internal" x="300.89" y="-311.84" incLanes=":JagannathPuri_17_0 D2JP_0 D2JP_1 D2JP_2 D2JP_3" intLanes=":JagannathPuri_0_0 :JagannathPuri_1_0 :JagannathPuri_1_1 :JagannathPuri_1_2 :JagannathPuri_1_3 :JagannathPuri_7_0 :JagannathPuri_7_1 :JagannathPuri_7_2 :JagannathPuri_7_3 :JagannathPuri_11_0 :JagannathPuri_19_0 :JagannathPuri_19_1 :JagannathPuri_19_2 :JagannathPuri_19_3 :JagannathPuri_23_0"/>
+    <junction id=":JagannathPuri_27_0" type="internal" x="288.16" y="-300.89" incLanes=":JagannathPuri_23_0 SL2JP_0 SL2JP_1 SL2JP_2 SL2JP_3" intLanes=":JagannathPuri_1_0 :JagannathPuri_1_1 :JagannathPuri_1_2 :JagannathPuri_1_3 :JagannathPuri_5_0 :JagannathPuri_6_0 :JagannathPuri_7_0 :JagannathPuri_7_1 :JagannathPuri_7_2 :JagannathPuri_7_3 :JagannathPuri_13_0 :JagannathPuri_13_1 :JagannathPuri_13_2 :JagannathPuri_13_3 :JagannathPuri_17_0"/>
+    <junction id=":Kedarnath_24_0" type="internal" x="299.11" y="311.84" incLanes=":Kedarnath_5_0 D2K_0 D2K_1 D2K_2 D2K_3" intLanes=":Kedarnath_7_0 :Kedarnath_7_1 :Kedarnath_7_2 :Kedarnath_7_3 :Kedarnath_11_0 :Kedarnath_12_0 :Kedarnath_13_0 :Kedarnath_13_1 :Kedarnath_13_2 :Kedarnath_13_3 :Kedarnath_19_0 :Kedarnath_19_1 :Kedarnath_19_2 :Kedarnath_19_3 :Kedarnath_23_0"/>
+    <junction id=":Kedarnath_25_0" type="internal" x="311.84" y="300.89" incLanes=":Kedarnath_11_0 Mi2K_0 Mi2K_1 Mi2K_2 Mi2K_3" intLanes=":Kedarnath_1_0 :Kedarnath_1_1 :Kedarnath_1_2 :Kedarnath_1_3 :Kedarnath_5_0 :Kedarnath_13_0 :Kedarnath_13_1 :Kedarnath_13_2 :Kedarnath_13_3 :Kedarnath_17_0 :Kedarnath_18_0 :Kedarnath_19_0 :Kedarnath_19_1 :Kedarnath_19_2 :Kedarnath_19_3"/>
+    <junction id=":Kedarnath_26_0" type="internal" x="300.89" y="288.16" incLanes=":Kedarnath_17_0 G2K_0 G2K_1 G2K_2 G2K_3" intLanes=":Kedarnath_0_0 :Kedarnath_1_0 :Kedarnath_1_1 :Kedarnath_1_2 :Kedarnath_1_3 :Kedarnath_7_0 :Kedarnath_7_1 :Kedarnath_7_2 :Kedarnath_7_3 :Kedarnath_11_0 :Kedarnath_19_0 :Kedarnath_19_1 :Kedarnath_19_2 :Kedarnath_19_3 :Kedarnath_23_0"/>
+    <junction id=":Kedarnath_27_0" type="internal" x="288.16" y="299.11" incLanes=":Kedarnath_23_0 U2K_0 U2K_1 U2K_2 U2K_3" intLanes=":Kedarnath_1_0 :Kedarnath_1_1 :Kedarnath_1_2 :Kedarnath_1_3 :Kedarnath_5_0 :Kedarnath_6_0 :Kedarnath_7_0 :Kedarnath_7_1 :Kedarnath_7_2 :Kedarnath_7_3 :Kedarnath_13_0 :Kedarnath_13_1 :Kedarnath_13_2 :Kedarnath_13_3 :Kedarnath_17_0"/>
+    <junction id=":Mathura_24_0" type="internal" x="-300.89" y="11.84" incLanes=":Mathura_5_0 P2M_0 P2M_1 P2M_2 P2M_3" intLanes=":Mathura_7_0 :Mathura_7_1 :Mathura_7_2 :Mathura_7_3 :Mathura_11_0 :Mathura_12_0 :Mathura_13_0 :Mathura_13_1 :Mathura_13_2 :Mathura_13_3 :Mathura_19_0 :Mathura_19_1 :Mathura_19_2 :Mathura_19_3 :Mathura_23_0"/>
+    <junction id=":Mathura_25_0" type="internal" x="-288.16" y="0.89" incLanes=":Mathura_11_0 R2M_0 R2M_1 R2M_2 R2M_3" intLanes=":Mathura_1_0 :Mathura_1_1 :Mathura_1_2 :Mathura_1_3 :Mathura_5_0 :Mathura_13_0 :Mathura_13_1 :Mathura_13_2 :Mathura_13_3 :Mathura_17_0 :Mathura_18_0 :Mathura_19_0 :Mathura_19_1 :Mathura_19_2 :Mathura_19_3"/>
+    <junction id=":Mathura_26_0" type="internal" x="-299.11" y="-11.84" incLanes=":Mathura_17_0 B2M_0 B2M_1 B2M_2 B2M_3" intLanes=":Mathura_0_0 :Mathura_1_0 :Mathura_1_1 :Mathura_1_2 :Mathura_1_3 :Mathura_7_0 :Mathura_7_1 :Mathura_7_2 :Mathura_7_3 :Mathura_11_0 :Mathura_19_0 :Mathura_19_1 :Mathura_19_2 :Mathura_19_3 :Mathura_23_0"/>
+    <junction id=":Mathura_27_0" type="internal" x="-311.84" y="-0.89" incLanes=":Mathura_23_0 BV2M_0 BV2M_1 BV2M_2 BV2M_3" intLanes=":Mathura_1_0 :Mathura_1_1 :Mathura_1_2 :Mathura_1_3 :Mathura_5_0 :Mathura_6_0 :Mathura_7_0 :Mathura_7_1 :Mathura_7_2 :Mathura_7_3 :Mathura_13_0 :Mathura_13_1 :Mathura_13_2 :Mathura_13_3 :Mathura_17_0"/>
+    <junction id=":Mithila_24_0" type="internal" x="-0.89" y="311.84" incLanes=":Mithila_5_0 BV2Mi_0 BV2Mi_1 BV2Mi_2 BV2Mi_3" intLanes=":Mithila_7_0 :Mithila_7_1 :Mithila_7_2 :Mithila_7_3 :Mithila_11_0 :Mithila_12_0 :Mithila_13_0 :Mithila_13_1 :Mithila_13_2 :Mithila_13_3 :Mithila_19_0 :Mithila_19_1 :Mithila_19_2 :Mithila_19_3 :Mithila_23_0"/>
+    <junction id=":Mithila_25_0" type="internal" x="11.84" y="300.89" incLanes=":Mithila_11_0 B2Mi_0 B2Mi_1 B2Mi_2 B2Mi_3" intLanes=":Mithila_1_0 :Mithila_1_1 :Mithila_1_2 :Mithila_1_3 :Mithila_5_0 :Mithila_13_0 :Mithila_13_1 :Mithila_13_2 :Mithila_13_3 :Mithila_17_0 :Mithila_18_0 :Mithila_19_0 :Mithila_19_1 :Mithila_19_2 :Mithila_19_3"/>
+    <junction id=":Mithila_26_0" type="internal" x="0.89" y="288.16" incLanes=":Mithila_17_0 S2Mi_0 S2Mi_1 S2Mi_2 S2Mi_3" intLanes=":Mithila_0_0 :Mithila_1_0 :Mithila_1_1 :Mithila_1_2 :Mithila_1_3 :Mithila_7_0 :Mithila_7_1 :Mithila_7_2 :Mithila_7_3 :Mithila_11_0 :Mithila_19_0 :Mithila_19_1 :Mithila_19_2 :Mithila_19_3 :Mithila_23_0"/>
+    <junction id=":Mithila_27_0" type="internal" x="-11.84" y="299.11" incLanes=":Mithila_23_0 K2Mi_0 K2Mi_1 K2Mi_2 K2Mi_3" intLanes=":Mithila_1_0 :Mithila_1_1 :Mithila_1_2 :Mithila_1_3 :Mithila_5_0 :Mithila_6_0 :Mithila_7_0 :Mithila_7_1 :Mithila_7_2 :Mithila_7_3 :Mithila_13_0 :Mithila_13_1 :Mithila_13_2 :Mithila_13_3 :Mithila_17_0"/>
+    <junction id=":Pandarpur_24_0" type="internal" x="-300.89" y="-288.16" incLanes=":Pandarpur_5_0 C2P_0 C2P_1 C2P_2 C2P_3" intLanes=":Pandarpur_7_0 :Pandarpur_7_1 :Pandarpur_7_2 :Pandarpur_7_3 :Pandarpur_11_0 :Pandarpur_12_0 :Pandarpur_13_0 :Pandarpur_13_1 :Pandarpur_13_2 :Pandarpur_13_3 :Pandarpur_19_0 :Pandarpur_19_1 :Pandarpur_19_2 :Pandarpur_19_3 :Pandarpur_23_0"/>
+    <junction id=":Pandarpur_25_0" type="internal" x="-288.16" y="-299.11" incLanes=":Pandarpur_11_0 O2P_0 O2P_1 O2P_2 O2P_3" intLanes=":Pandarpur_1_0 :Pandarpur_1_1 :Pandarpur_1_2 :Pandarpur_1_3 :Pandarpur_5_0 :Pandarpur_13_0 :Pandarpur_13_1 :Pandarpur_13_2 :Pandarpur_13_3 :Pandarpur_17_0 :Pandarpur_18_0 :Pandarpur_19_0 :Pandarpur_19_1 :Pandarpur_19_2 :Pandarpur_19_3"/>
+    <junction id=":Pandarpur_26_0" type="internal" x="-299.11" y="-311.84" incLanes=":Pandarpur_17_0 M2P_0 M2P_1 M2P_2 M2P_3" intLanes=":Pandarpur_0_0 :Pandarpur_1_0 :Pandarpur_1_1 :Pandarpur_1_2 :Pandarpur_1_3 :Pandarpur_7_0 :Pandarpur_7_1 :Pandarpur_7_2 :Pandarpur_7_3 :Pandarpur_11_0 :Pandarpur_19_0 :Pandarpur_19_1 :Pandarpur_19_2 :Pandarpur_19_3 :Pandarpur_23_0"/>
+    <junction id=":Pandarpur_27_0" type="internal" x="-311.84" y="-300.89" incLanes=":Pandarpur_23_0 A2P_0 A2P_1 A2P_2 A2P_3" intLanes=":Pandarpur_1_0 :Pandarpur_1_1 :Pandarpur_1_2 :Pandarpur_1_3 :Pandarpur_5_0 :Pandarpur_6_0 :Pandarpur_7_0 :Pandarpur_7_1 :Pandarpur_7_2 :Pandarpur_7_3 :Pandarpur_13_0 :Pandarpur_13_1 :Pandarpur_13_2 :Pandarpur_13_3 :Pandarpur_17_0"/>
 
-    <connection from="E_C" to="C_N" fromLane="0" toLane="0" via=":C_6_0" tl="C" linkIndex="6" dir="r" state="o"/>
-    <connection from="E_C" to="C_W" fromLane="0" toLane="0" via=":C_7_0" tl="C" linkIndex="7" dir="s" state="o"/>
-    <connection from="E_C" to="C_W" fromLane="1" toLane="1" via=":C_7_1" tl="C" linkIndex="8" dir="s" state="o"/>
-    <connection from="E_C" to="C_W" fromLane="2" toLane="2" via=":C_7_2" tl="C" linkIndex="9" dir="s" state="o"/>
-    <connection from="E_C" to="C_W" fromLane="3" toLane="3" via=":C_7_3" tl="C" linkIndex="10" dir="s" state="o"/>
-    <connection from="E_C" to="C_S" fromLane="3" toLane="3" via=":C_11_0" tl="C" linkIndex="11" dir="l" state="o"/>
-    <connection from="N_C" to="C_W" fromLane="0" toLane="0" via=":C_0_0" tl="C" linkIndex="0" dir="r" state="O"/>
-    <connection from="N_C" to="C_S" fromLane="0" toLane="0" via=":C_1_0" tl="C" linkIndex="1" dir="s" state="O"/>
-    <connection from="N_C" to="C_S" fromLane="1" toLane="1" via=":C_1_1" tl="C" linkIndex="2" dir="s" state="O"/>
-    <connection from="N_C" to="C_S" fromLane="2" toLane="2" via=":C_1_2" tl="C" linkIndex="3" dir="s" state="O"/>
-    <connection from="N_C" to="C_S" fromLane="3" toLane="3" via=":C_1_3" tl="C" linkIndex="4" dir="s" state="O"/>
-    <connection from="N_C" to="C_E" fromLane="3" toLane="3" via=":C_5_0" tl="C" linkIndex="5" dir="l" state="o"/>
-    <connection from="S_C" to="C_E" fromLane="0" toLane="0" via=":C_12_0" tl="C" linkIndex="12" dir="r" state="O"/>
-    <connection from="S_C" to="C_N" fromLane="0" toLane="0" via=":C_13_0" tl="C" linkIndex="13" dir="s" state="O"/>
-    <connection from="S_C" to="C_N" fromLane="1" toLane="1" via=":C_13_1" tl="C" linkIndex="14" dir="s" state="O"/>
-    <connection from="S_C" to="C_N" fromLane="2" toLane="2" via=":C_13_2" tl="C" linkIndex="15" dir="s" state="O"/>
-    <connection from="S_C" to="C_N" fromLane="3" toLane="3" via=":C_13_3" tl="C" linkIndex="16" dir="s" state="O"/>
-    <connection from="S_C" to="C_W" fromLane="3" toLane="3" via=":C_17_0" tl="C" linkIndex="17" dir="l" state="o"/>
-    <connection from="W_C" to="C_S" fromLane="0" toLane="0" via=":C_18_0" tl="C" linkIndex="18" dir="r" state="o"/>
-    <connection from="W_C" to="C_E" fromLane="0" toLane="0" via=":C_19_0" tl="C" linkIndex="19" dir="s" state="o"/>
-    <connection from="W_C" to="C_E" fromLane="1" toLane="1" via=":C_19_1" tl="C" linkIndex="20" dir="s" state="o"/>
-    <connection from="W_C" to="C_E" fromLane="2" toLane="2" via=":C_19_2" tl="C" linkIndex="21" dir="s" state="o"/>
-    <connection from="W_C" to="C_E" fromLane="3" toLane="3" via=":C_19_3" tl="C" linkIndex="22" dir="s" state="o"/>
-    <connection from="W_C" to="C_N" fromLane="3" toLane="3" via=":C_23_0" tl="C" linkIndex="23" dir="l" state="o"/>
+    <connection from="A2BV" to="BV2D" fromLane="0" toLane="0" via=":BrajVrindavan_12_0" tl="BrajVrindavan" linkIndex="12" dir="r" state="O"/>
+    <connection from="A2BV" to="BV2Mi" fromLane="0" toLane="0" via=":BrajVrindavan_13_0" tl="BrajVrindavan" linkIndex="13" dir="s" state="O"/>
+    <connection from="A2BV" to="BV2Mi" fromLane="1" toLane="1" via=":BrajVrindavan_13_1" tl="BrajVrindavan" linkIndex="14" dir="s" state="O"/>
+    <connection from="A2BV" to="BV2Mi" fromLane="2" toLane="2" via=":BrajVrindavan_13_2" tl="BrajVrindavan" linkIndex="15" dir="s" state="O"/>
+    <connection from="A2BV" to="BV2Mi" fromLane="3" toLane="3" via=":BrajVrindavan_13_3" tl="BrajVrindavan" linkIndex="16" dir="s" state="O"/>
+    <connection from="A2BV" to="BV2M" fromLane="3" toLane="3" via=":BrajVrindavan_17_0" tl="BrajVrindavan" linkIndex="17" dir="l" state="o"/>
+    <connection from="A2JP" to="JP2R" fromLane="0" toLane="0" via=":JagannathPuri_18_0" tl="J13" linkIndex="18" dir="r" state="o"/>
+    <connection from="A2JP" to="JP2SL" fromLane="0" toLane="0" via=":JagannathPuri_19_0" tl="J13" linkIndex="19" dir="s" state="o"/>
+    <connection from="A2JP" to="JP2SL" fromLane="1" toLane="1" via=":JagannathPuri_19_1" tl="J13" linkIndex="20" dir="s" state="o"/>
+    <connection from="A2JP" to="JP2SL" fromLane="2" toLane="2" via=":JagannathPuri_19_2" tl="J13" linkIndex="21" dir="s" state="o"/>
+    <connection from="A2JP" to="JP2SL" fromLane="3" toLane="3" via=":JagannathPuri_19_3" tl="J13" linkIndex="22" dir="s" state="o"/>
+    <connection from="A2JP" to="JP2D" fromLane="3" toLane="3" via=":JagannathPuri_23_0" tl="J13" linkIndex="23" dir="l" state="o"/>
+    <connection from="A2P" to="P2M" fromLane="0" toLane="0" via=":Pandarpur_6_0" tl="J3" linkIndex="6" dir="r" state="o"/>
+    <connection from="A2P" to="P2O" fromLane="0" toLane="0" via=":Pandarpur_7_0" tl="J3" linkIndex="7" dir="s" state="o"/>
+    <connection from="A2P" to="P2O" fromLane="1" toLane="1" via=":Pandarpur_7_1" tl="J3" linkIndex="8" dir="s" state="o"/>
+    <connection from="A2P" to="P2O" fromLane="2" toLane="2" via=":Pandarpur_7_2" tl="J3" linkIndex="9" dir="s" state="o"/>
+    <connection from="A2P" to="P2O" fromLane="3" toLane="3" via=":Pandarpur_7_3" tl="J3" linkIndex="10" dir="s" state="o"/>
+    <connection from="A2P" to="P2C" fromLane="3" toLane="3" via=":Pandarpur_11_0" tl="J3" linkIndex="11" dir="l" state="o"/>
+    <connection from="B2M" to="M2R" fromLane="0" toLane="0" via=":Mathura_0_0" tl="Mathura" linkIndex="0" dir="r" state="O"/>
+    <connection from="B2M" to="M2P" fromLane="0" toLane="0" via=":Mathura_1_0" tl="Mathura" linkIndex="1" dir="s" state="O"/>
+    <connection from="B2M" to="M2P" fromLane="1" toLane="1" via=":Mathura_1_1" tl="Mathura" linkIndex="2" dir="s" state="O"/>
+    <connection from="B2M" to="M2P" fromLane="2" toLane="2" via=":Mathura_1_2" tl="Mathura" linkIndex="3" dir="s" state="O"/>
+    <connection from="B2M" to="M2P" fromLane="3" toLane="3" via=":Mathura_1_3" tl="Mathura" linkIndex="4" dir="s" state="O"/>
+    <connection from="B2M" to="M2BV" fromLane="3" toLane="3" via=":Mathura_5_0" tl="Mathura" linkIndex="5" dir="l" state="o"/>
+    <connection from="B2Mi" to="Mi2BV" fromLane="0" toLane="0" via=":Mithila_18_0" tl="Mithila" linkIndex="18" dir="r" state="o"/>
+    <connection from="B2Mi" to="Mi2K" fromLane="0" toLane="0" via=":Mithila_19_0" tl="Mithila" linkIndex="19" dir="s" state="o"/>
+    <connection from="B2Mi" to="Mi2K" fromLane="1" toLane="1" via=":Mithila_19_1" tl="Mithila" linkIndex="20" dir="s" state="o"/>
+    <connection from="B2Mi" to="Mi2K" fromLane="2" toLane="2" via=":Mithila_19_2" tl="Mithila" linkIndex="21" dir="s" state="o"/>
+    <connection from="B2Mi" to="Mi2K" fromLane="3" toLane="3" via=":Mithila_19_3" tl="Mithila" linkIndex="22" dir="s" state="o"/>
+    <connection from="B2Mi" to="Mi2S" fromLane="3" toLane="3" via=":Mithila_23_0" tl="Mithila" linkIndex="23" dir="l" state="o"/>
+    <connection from="BV2A" to="A2P" fromLane="0" toLane="0" via=":Ayodhya_0_0" tl="Ayodhya" linkIndex="0" dir="r" state="O"/>
+    <connection from="BV2A" to="A2Ki" fromLane="0" toLane="0" via=":Ayodhya_1_0" tl="Ayodhya" linkIndex="1" dir="s" state="O"/>
+    <connection from="BV2A" to="A2Ki" fromLane="1" toLane="1" via=":Ayodhya_1_1" tl="Ayodhya" linkIndex="2" dir="s" state="O"/>
+    <connection from="BV2A" to="A2Ki" fromLane="2" toLane="2" via=":Ayodhya_1_2" tl="Ayodhya" linkIndex="3" dir="s" state="O"/>
+    <connection from="BV2A" to="A2Ki" fromLane="3" toLane="3" via=":Ayodhya_1_3" tl="Ayodhya" linkIndex="4" dir="s" state="O"/>
+    <connection from="BV2A" to="A2JP" fromLane="3" toLane="3" via=":Ayodhya_5_0" tl="Ayodhya" linkIndex="5" dir="l" state="o"/>
+    <connection from="BV2D" to="D2JP" fromLane="0" toLane="0" via=":Dwarika_18_0" tl="Dwarika" linkIndex="18" dir="r" state="o"/>
+    <connection from="BV2D" to="D2Ku" fromLane="0" toLane="0" via=":Dwarika_19_0" tl="Dwarika" linkIndex="19" dir="s" state="o"/>
+    <connection from="BV2D" to="D2Ku" fromLane="1" toLane="1" via=":Dwarika_19_1" tl="Dwarika" linkIndex="20" dir="s" state="o"/>
+    <connection from="BV2D" to="D2Ku" fromLane="2" toLane="2" via=":Dwarika_19_2" tl="Dwarika" linkIndex="21" dir="s" state="o"/>
+    <connection from="BV2D" to="D2Ku" fromLane="3" toLane="3" via=":Dwarika_19_3" tl="Dwarika" linkIndex="22" dir="s" state="o"/>
+    <connection from="BV2D" to="D2K" fromLane="3" toLane="3" via=":Dwarika_23_0" tl="Dwarika" linkIndex="23" dir="l" state="o"/>
+    <connection from="BV2M" to="M2B" fromLane="0" toLane="0" via=":Mathura_6_0" tl="Mathura" linkIndex="6" dir="r" state="o"/>
+    <connection from="BV2M" to="M2R" fromLane="0" toLane="0" via=":Mathura_7_0" tl="Mathura" linkIndex="7" dir="s" state="o"/>
+    <connection from="BV2M" to="M2R" fromLane="1" toLane="1" via=":Mathura_7_1" tl="Mathura" linkIndex="8" dir="s" state="o"/>
+    <connection from="BV2M" to="M2R" fromLane="2" toLane="2" via=":Mathura_7_2" tl="Mathura" linkIndex="9" dir="s" state="o"/>
+    <connection from="BV2M" to="M2R" fromLane="3" toLane="3" via=":Mathura_7_3" tl="Mathura" linkIndex="10" dir="s" state="o"/>
+    <connection from="BV2M" to="M2P" fromLane="3" toLane="3" via=":Mathura_11_0" tl="Mathura" linkIndex="11" dir="l" state="o"/>
+    <connection from="BV2Mi" to="Mi2K" fromLane="0" toLane="0" via=":Mithila_12_0" tl="Mithila" linkIndex="12" dir="r" state="O"/>
+    <connection from="BV2Mi" to="Mi2S" fromLane="0" toLane="0" via=":Mithila_13_0" tl="Mithila" linkIndex="13" dir="s" state="O"/>
+    <connection from="BV2Mi" to="Mi2S" fromLane="1" toLane="1" via=":Mithila_13_1" tl="Mithila" linkIndex="14" dir="s" state="O"/>
+    <connection from="BV2Mi" to="Mi2S" fromLane="2" toLane="2" via=":Mithila_13_2" tl="Mithila" linkIndex="15" dir="s" state="O"/>
+    <connection from="BV2Mi" to="Mi2S" fromLane="3" toLane="3" via=":Mithila_13_3" tl="Mithila" linkIndex="16" dir="s" state="O"/>
+    <connection from="BV2Mi" to="Mi2B" fromLane="3" toLane="3" via=":Mithila_17_0" tl="Mithila" linkIndex="17" dir="l" state="o"/>
+    <connection from="C2P" to="P2A" fromLane="0" toLane="0" via=":Pandarpur_12_0" tl="J3" linkIndex="12" dir="r" state="O"/>
+    <connection from="C2P" to="P2M" fromLane="0" toLane="0" via=":Pandarpur_13_0" tl="J3" linkIndex="13" dir="s" state="O"/>
+    <connection from="C2P" to="P2M" fromLane="1" toLane="1" via=":Pandarpur_13_1" tl="J3" linkIndex="14" dir="s" state="O"/>
+    <connection from="C2P" to="P2M" fromLane="2" toLane="2" via=":Pandarpur_13_2" tl="J3" linkIndex="15" dir="s" state="O"/>
+    <connection from="C2P" to="P2M" fromLane="3" toLane="3" via=":Pandarpur_13_3" tl="J3" linkIndex="16" dir="s" state="O"/>
+    <connection from="C2P" to="P2O" fromLane="3" toLane="3" via=":Pandarpur_17_0" tl="J3" linkIndex="17" dir="l" state="o"/>
+    <connection from="D2BV" to="BV2Mi" fromLane="0" toLane="0" via=":BrajVrindavan_6_0" tl="BrajVrindavan" linkIndex="6" dir="r" state="o"/>
+    <connection from="D2BV" to="BV2M" fromLane="0" toLane="0" via=":BrajVrindavan_7_0" tl="BrajVrindavan" linkIndex="7" dir="s" state="o"/>
+    <connection from="D2BV" to="BV2M" fromLane="1" toLane="1" via=":BrajVrindavan_7_1" tl="BrajVrindavan" linkIndex="8" dir="s" state="o"/>
+    <connection from="D2BV" to="BV2M" fromLane="2" toLane="2" via=":BrajVrindavan_7_2" tl="BrajVrindavan" linkIndex="9" dir="s" state="o"/>
+    <connection from="D2BV" to="BV2M" fromLane="3" toLane="3" via=":BrajVrindavan_7_3" tl="BrajVrindavan" linkIndex="10" dir="s" state="o"/>
+    <connection from="D2BV" to="BV2A" fromLane="3" toLane="3" via=":BrajVrindavan_11_0" tl="BrajVrindavan" linkIndex="11" dir="l" state="o"/>
+    <connection from="D2JP" to="JP2A" fromLane="0" toLane="0" via=":JagannathPuri_0_0" tl="J13" linkIndex="0" dir="r" state="O"/>
+    <connection from="D2JP" to="JP2R" fromLane="0" toLane="0" via=":JagannathPuri_1_0" tl="J13" linkIndex="1" dir="s" state="O"/>
+    <connection from="D2JP" to="JP2R" fromLane="1" toLane="1" via=":JagannathPuri_1_1" tl="J13" linkIndex="2" dir="s" state="O"/>
+    <connection from="D2JP" to="JP2R" fromLane="2" toLane="2" via=":JagannathPuri_1_2" tl="J13" linkIndex="3" dir="s" state="O"/>
+    <connection from="D2JP" to="JP2R" fromLane="3" toLane="3" via=":JagannathPuri_1_3" tl="J13" linkIndex="4" dir="s" state="O"/>
+    <connection from="D2JP" to="JP2SL" fromLane="3" toLane="3" via=":JagannathPuri_5_0" tl="J13" linkIndex="5" dir="l" state="o"/>
+    <connection from="D2K" to="K2U" fromLane="0" toLane="0" via=":Kedarnath_12_0" tl="Kedarnath" linkIndex="12" dir="r" state="O"/>
+    <connection from="D2K" to="K2G" fromLane="0" toLane="0" via=":Kedarnath_13_0" tl="Kedarnath" linkIndex="13" dir="s" state="O"/>
+    <connection from="D2K" to="K2G" fromLane="1" toLane="1" via=":Kedarnath_13_1" tl="Kedarnath" linkIndex="14" dir="s" state="O"/>
+    <connection from="D2K" to="K2G" fromLane="2" toLane="2" via=":Kedarnath_13_2" tl="Kedarnath" linkIndex="15" dir="s" state="O"/>
+    <connection from="D2K" to="K2G" fromLane="3" toLane="3" via=":Kedarnath_13_3" tl="Kedarnath" linkIndex="16" dir="s" state="O"/>
+    <connection from="D2K" to="K2Mi" fromLane="3" toLane="3" via=":Kedarnath_17_0" tl="Kedarnath" linkIndex="17" dir="l" state="o"/>
+    <connection from="G2K" to="K2Mi" fromLane="0" toLane="0" via=":Kedarnath_0_0" tl="Kedarnath" linkIndex="0" dir="r" state="O"/>
+    <connection from="G2K" to="K2D" fromLane="0" toLane="0" via=":Kedarnath_1_0" tl="Kedarnath" linkIndex="1" dir="s" state="O"/>
+    <connection from="G2K" to="K2D" fromLane="1" toLane="1" via=":Kedarnath_1_1" tl="Kedarnath" linkIndex="2" dir="s" state="O"/>
+    <connection from="G2K" to="K2D" fromLane="2" toLane="2" via=":Kedarnath_1_2" tl="Kedarnath" linkIndex="3" dir="s" state="O"/>
+    <connection from="G2K" to="K2D" fromLane="3" toLane="3" via=":Kedarnath_1_3" tl="Kedarnath" linkIndex="4" dir="s" state="O"/>
+    <connection from="G2K" to="K2U" fromLane="3" toLane="3" via=":Kedarnath_5_0" tl="Kedarnath" linkIndex="5" dir="l" state="o"/>
+    <connection from="JP2A" to="A2BV" fromLane="0" toLane="0" via=":Ayodhya_6_0" tl="Ayodhya" linkIndex="6" dir="r" state="o"/>
+    <connection from="JP2A" to="A2P" fromLane="0" toLane="0" via=":Ayodhya_7_0" tl="Ayodhya" linkIndex="7" dir="s" state="o"/>
+    <connection from="JP2A" to="A2P" fromLane="1" toLane="1" via=":Ayodhya_7_1" tl="Ayodhya" linkIndex="8" dir="s" state="o"/>
+    <connection from="JP2A" to="A2P" fromLane="2" toLane="2" via=":Ayodhya_7_2" tl="Ayodhya" linkIndex="9" dir="s" state="o"/>
+    <connection from="JP2A" to="A2P" fromLane="3" toLane="3" via=":Ayodhya_7_3" tl="Ayodhya" linkIndex="10" dir="s" state="o"/>
+    <connection from="JP2A" to="A2Ki" fromLane="3" toLane="3" via=":Ayodhya_11_0" tl="Ayodhya" linkIndex="11" dir="l" state="o"/>
+    <connection from="JP2D" to="D2Ku" fromLane="0" toLane="0" via=":Dwarika_12_0" tl="Dwarika" linkIndex="12" dir="r" state="O"/>
+    <connection from="JP2D" to="D2K" fromLane="0" toLane="0" via=":Dwarika_13_0" tl="Dwarika" linkIndex="13" dir="s" state="O"/>
+    <connection from="JP2D" to="D2K" fromLane="1" toLane="1" via=":Dwarika_13_1" tl="Dwarika" linkIndex="14" dir="s" state="O"/>
+    <connection from="JP2D" to="D2K" fromLane="2" toLane="2" via=":Dwarika_13_2" tl="Dwarika" linkIndex="15" dir="s" state="O"/>
+    <connection from="JP2D" to="D2K" fromLane="3" toLane="3" via=":Dwarika_13_3" tl="Dwarika" linkIndex="16" dir="s" state="O"/>
+    <connection from="JP2D" to="D2BV" fromLane="3" toLane="3" via=":Dwarika_17_0" tl="Dwarika" linkIndex="17" dir="l" state="o"/>
+    <connection from="K2B" to="B2P" fromLane="0" toLane="0" via=":Badrinath_0_0" tl="Badrinath" linkIndex="0" dir="r" state="O"/>
+    <connection from="K2B" to="B2M" fromLane="0" toLane="0" via=":Badrinath_1_0" tl="Badrinath" linkIndex="1" dir="s" state="O"/>
+    <connection from="K2B" to="B2M" fromLane="1" toLane="1" via=":Badrinath_1_1" tl="Badrinath" linkIndex="2" dir="s" state="O"/>
+    <connection from="K2B" to="B2M" fromLane="2" toLane="2" via=":Badrinath_1_2" tl="Badrinath" linkIndex="3" dir="s" state="O"/>
+    <connection from="K2B" to="B2M" fromLane="3" toLane="3" via=":Badrinath_1_3" tl="Badrinath" linkIndex="4" dir="s" state="O"/>
+    <connection from="K2B" to="B2Mi" fromLane="3" toLane="3" via=":Badrinath_5_0" tl="Badrinath" linkIndex="5" dir="l" state="o"/>
+    <connection from="K2D" to="D2BV" fromLane="0" toLane="0" via=":Dwarika_0_0" tl="Dwarika" linkIndex="0" dir="r" state="O"/>
+    <connection from="K2D" to="D2JP" fromLane="0" toLane="0" via=":Dwarika_1_0" tl="Dwarika" linkIndex="1" dir="s" state="O"/>
+    <connection from="K2D" to="D2JP" fromLane="1" toLane="1" via=":Dwarika_1_1" tl="Dwarika" linkIndex="2" dir="s" state="O"/>
+    <connection from="K2D" to="D2JP" fromLane="2" toLane="2" via=":Dwarika_1_2" tl="Dwarika" linkIndex="3" dir="s" state="O"/>
+    <connection from="K2D" to="D2JP" fromLane="3" toLane="3" via=":Dwarika_1_3" tl="Dwarika" linkIndex="4" dir="s" state="O"/>
+    <connection from="K2D" to="D2Ku" fromLane="3" toLane="3" via=":Dwarika_5_0" tl="Dwarika" linkIndex="5" dir="l" state="o"/>
+    <connection from="K2Mi" to="Mi2S" fromLane="0" toLane="0" via=":Mithila_6_0" tl="Mithila" linkIndex="6" dir="r" state="o"/>
+    <connection from="K2Mi" to="Mi2B" fromLane="0" toLane="0" via=":Mithila_7_0" tl="Mithila" linkIndex="7" dir="s" state="o"/>
+    <connection from="K2Mi" to="Mi2B" fromLane="1" toLane="1" via=":Mithila_7_1" tl="Mithila" linkIndex="8" dir="s" state="o"/>
+    <connection from="K2Mi" to="Mi2B" fromLane="2" toLane="2" via=":Mithila_7_2" tl="Mithila" linkIndex="9" dir="s" state="o"/>
+    <connection from="K2Mi" to="Mi2B" fromLane="3" toLane="3" via=":Mithila_7_3" tl="Mithila" linkIndex="10" dir="s" state="o"/>
+    <connection from="K2Mi" to="Mi2BV" fromLane="3" toLane="3" via=":Mithila_11_0" tl="Mithila" linkIndex="11" dir="l" state="o"/>
+    <connection from="Ki2A" to="A2JP" fromLane="0" toLane="0" via=":Ayodhya_12_0" tl="Ayodhya" linkIndex="12" dir="r" state="O"/>
+    <connection from="Ki2A" to="A2BV" fromLane="0" toLane="0" via=":Ayodhya_13_0" tl="Ayodhya" linkIndex="13" dir="s" state="O"/>
+    <connection from="Ki2A" to="A2BV" fromLane="1" toLane="1" via=":Ayodhya_13_1" tl="Ayodhya" linkIndex="14" dir="s" state="O"/>
+    <connection from="Ki2A" to="A2BV" fromLane="2" toLane="2" via=":Ayodhya_13_2" tl="Ayodhya" linkIndex="15" dir="s" state="O"/>
+    <connection from="Ki2A" to="A2BV" fromLane="3" toLane="3" via=":Ayodhya_13_3" tl="Ayodhya" linkIndex="16" dir="s" state="O"/>
+    <connection from="Ki2A" to="A2P" fromLane="3" toLane="3" via=":Ayodhya_17_0" tl="Ayodhya" linkIndex="17" dir="l" state="o"/>
+    <connection from="Ku2D" to="D2K" fromLane="0" toLane="0" via=":Dwarika_6_0" tl="Dwarika" linkIndex="6" dir="r" state="o"/>
+    <connection from="Ku2D" to="D2BV" fromLane="0" toLane="0" via=":Dwarika_7_0" tl="Dwarika" linkIndex="7" dir="s" state="o"/>
+    <connection from="Ku2D" to="D2BV" fromLane="1" toLane="1" via=":Dwarika_7_1" tl="Dwarika" linkIndex="8" dir="s" state="o"/>
+    <connection from="Ku2D" to="D2BV" fromLane="2" toLane="2" via=":Dwarika_7_2" tl="Dwarika" linkIndex="9" dir="s" state="o"/>
+    <connection from="Ku2D" to="D2BV" fromLane="3" toLane="3" via=":Dwarika_7_3" tl="Dwarika" linkIndex="10" dir="s" state="o"/>
+    <connection from="Ku2D" to="D2JP" fromLane="3" toLane="3" via=":Dwarika_11_0" tl="Dwarika" linkIndex="11" dir="l" state="o"/>
+    <connection from="M2B" to="B2Mi" fromLane="0" toLane="0" via=":Badrinath_12_0" tl="Badrinath" linkIndex="12" dir="r" state="O"/>
+    <connection from="M2B" to="B2K" fromLane="0" toLane="0" via=":Badrinath_13_0" tl="Badrinath" linkIndex="13" dir="s" state="O"/>
+    <connection from="M2B" to="B2K" fromLane="1" toLane="1" via=":Badrinath_13_1" tl="Badrinath" linkIndex="14" dir="s" state="O"/>
+    <connection from="M2B" to="B2K" fromLane="2" toLane="2" via=":Badrinath_13_2" tl="Badrinath" linkIndex="15" dir="s" state="O"/>
+    <connection from="M2B" to="B2K" fromLane="3" toLane="3" via=":Badrinath_13_3" tl="Badrinath" linkIndex="16" dir="s" state="O"/>
+    <connection from="M2B" to="B2P" fromLane="3" toLane="3" via=":Badrinath_17_0" tl="Badrinath" linkIndex="17" dir="l" state="o"/>
+    <connection from="M2BV" to="BV2A" fromLane="0" toLane="0" via=":BrajVrindavan_18_0" tl="BrajVrindavan" linkIndex="18" dir="r" state="o"/>
+    <connection from="M2BV" to="BV2D" fromLane="0" toLane="0" via=":BrajVrindavan_19_0" tl="BrajVrindavan" linkIndex="19" dir="s" state="o"/>
+    <connection from="M2BV" to="BV2D" fromLane="1" toLane="1" via=":BrajVrindavan_19_1" tl="BrajVrindavan" linkIndex="20" dir="s" state="o"/>
+    <connection from="M2BV" to="BV2D" fromLane="2" toLane="2" via=":BrajVrindavan_19_2" tl="BrajVrindavan" linkIndex="21" dir="s" state="o"/>
+    <connection from="M2BV" to="BV2D" fromLane="3" toLane="3" via=":BrajVrindavan_19_3" tl="BrajVrindavan" linkIndex="22" dir="s" state="o"/>
+    <connection from="M2BV" to="BV2Mi" fromLane="3" toLane="3" via=":BrajVrindavan_23_0" tl="BrajVrindavan" linkIndex="23" dir="l" state="o"/>
+    <connection from="M2P" to="P2O" fromLane="0" toLane="0" via=":Pandarpur_0_0" tl="J3" linkIndex="0" dir="r" state="O"/>
+    <connection from="M2P" to="P2C" fromLane="0" toLane="0" via=":Pandarpur_1_0" tl="J3" linkIndex="1" dir="s" state="O"/>
+    <connection from="M2P" to="P2C" fromLane="1" toLane="1" via=":Pandarpur_1_1" tl="J3" linkIndex="2" dir="s" state="O"/>
+    <connection from="M2P" to="P2C" fromLane="2" toLane="2" via=":Pandarpur_1_2" tl="J3" linkIndex="3" dir="s" state="O"/>
+    <connection from="M2P" to="P2C" fromLane="3" toLane="3" via=":Pandarpur_1_3" tl="J3" linkIndex="4" dir="s" state="O"/>
+    <connection from="M2P" to="P2A" fromLane="3" toLane="3" via=":Pandarpur_5_0" tl="J3" linkIndex="5" dir="l" state="o"/>
+    <connection from="Mi2B" to="B2K" fromLane="0" toLane="0" via=":Badrinath_6_0" tl="Badrinath" linkIndex="6" dir="r" state="o"/>
+    <connection from="Mi2B" to="B2P" fromLane="0" toLane="0" via=":Badrinath_7_0" tl="Badrinath" linkIndex="7" dir="s" state="o"/>
+    <connection from="Mi2B" to="B2P" fromLane="1" toLane="1" via=":Badrinath_7_1" tl="Badrinath" linkIndex="8" dir="s" state="o"/>
+    <connection from="Mi2B" to="B2P" fromLane="2" toLane="2" via=":Badrinath_7_2" tl="Badrinath" linkIndex="9" dir="s" state="o"/>
+    <connection from="Mi2B" to="B2P" fromLane="3" toLane="3" via=":Badrinath_7_3" tl="Badrinath" linkIndex="10" dir="s" state="o"/>
+    <connection from="Mi2B" to="B2M" fromLane="3" toLane="3" via=":Badrinath_11_0" tl="Badrinath" linkIndex="11" dir="l" state="o"/>
+    <connection from="Mi2BV" to="BV2M" fromLane="0" toLane="0" via=":BrajVrindavan_0_0" tl="BrajVrindavan" linkIndex="0" dir="r" state="O"/>
+    <connection from="Mi2BV" to="BV2A" fromLane="0" toLane="0" via=":BrajVrindavan_1_0" tl="BrajVrindavan" linkIndex="1" dir="s" state="O"/>
+    <connection from="Mi2BV" to="BV2A" fromLane="1" toLane="1" via=":BrajVrindavan_1_1" tl="BrajVrindavan" linkIndex="2" dir="s" state="O"/>
+    <connection from="Mi2BV" to="BV2A" fromLane="2" toLane="2" via=":BrajVrindavan_1_2" tl="BrajVrindavan" linkIndex="3" dir="s" state="O"/>
+    <connection from="Mi2BV" to="BV2A" fromLane="3" toLane="3" via=":BrajVrindavan_1_3" tl="BrajVrindavan" linkIndex="4" dir="s" state="O"/>
+    <connection from="Mi2BV" to="BV2D" fromLane="3" toLane="3" via=":BrajVrindavan_5_0" tl="BrajVrindavan" linkIndex="5" dir="l" state="o"/>
+    <connection from="Mi2K" to="K2D" fromLane="0" toLane="0" via=":Kedarnath_18_0" tl="Kedarnath" linkIndex="18" dir="r" state="o"/>
+    <connection from="Mi2K" to="K2U" fromLane="0" toLane="0" via=":Kedarnath_19_0" tl="Kedarnath" linkIndex="19" dir="s" state="o"/>
+    <connection from="Mi2K" to="K2U" fromLane="1" toLane="1" via=":Kedarnath_19_1" tl="Kedarnath" linkIndex="20" dir="s" state="o"/>
+    <connection from="Mi2K" to="K2U" fromLane="2" toLane="2" via=":Kedarnath_19_2" tl="Kedarnath" linkIndex="21" dir="s" state="o"/>
+    <connection from="Mi2K" to="K2U" fromLane="3" toLane="3" via=":Kedarnath_19_3" tl="Kedarnath" linkIndex="22" dir="s" state="o"/>
+    <connection from="Mi2K" to="K2G" fromLane="3" toLane="3" via=":Kedarnath_23_0" tl="Kedarnath" linkIndex="23" dir="l" state="o"/>
+    <connection from="O2P" to="P2C" fromLane="0" toLane="0" via=":Pandarpur_18_0" tl="J3" linkIndex="18" dir="r" state="o"/>
+    <connection from="O2P" to="P2A" fromLane="0" toLane="0" via=":Pandarpur_19_0" tl="J3" linkIndex="19" dir="s" state="o"/>
+    <connection from="O2P" to="P2A" fromLane="1" toLane="1" via=":Pandarpur_19_1" tl="J3" linkIndex="20" dir="s" state="o"/>
+    <connection from="O2P" to="P2A" fromLane="2" toLane="2" via=":Pandarpur_19_2" tl="J3" linkIndex="21" dir="s" state="o"/>
+    <connection from="O2P" to="P2A" fromLane="3" toLane="3" via=":Pandarpur_19_3" tl="J3" linkIndex="22" dir="s" state="o"/>
+    <connection from="O2P" to="P2M" fromLane="3" toLane="3" via=":Pandarpur_23_0" tl="J3" linkIndex="23" dir="l" state="o"/>
+    <connection from="P2A" to="A2Ki" fromLane="0" toLane="0" via=":Ayodhya_18_0" tl="Ayodhya" linkIndex="18" dir="r" state="o"/>
+    <connection from="P2A" to="A2JP" fromLane="0" toLane="0" via=":Ayodhya_19_0" tl="Ayodhya" linkIndex="19" dir="s" state="o"/>
+    <connection from="P2A" to="A2JP" fromLane="1" toLane="1" via=":Ayodhya_19_1" tl="Ayodhya" linkIndex="20" dir="s" state="o"/>
+    <connection from="P2A" to="A2JP" fromLane="2" toLane="2" via=":Ayodhya_19_2" tl="Ayodhya" linkIndex="21" dir="s" state="o"/>
+    <connection from="P2A" to="A2JP" fromLane="3" toLane="3" via=":Ayodhya_19_3" tl="Ayodhya" linkIndex="22" dir="s" state="o"/>
+    <connection from="P2A" to="A2BV" fromLane="3" toLane="3" via=":Ayodhya_23_0" tl="Ayodhya" linkIndex="23" dir="l" state="o"/>
+    <connection from="P2B" to="B2M" fromLane="0" toLane="0" via=":Badrinath_18_0" tl="Badrinath" linkIndex="18" dir="r" state="o"/>
+    <connection from="P2B" to="B2Mi" fromLane="0" toLane="0" via=":Badrinath_19_0" tl="Badrinath" linkIndex="19" dir="s" state="o"/>
+    <connection from="P2B" to="B2Mi" fromLane="1" toLane="1" via=":Badrinath_19_1" tl="Badrinath" linkIndex="20" dir="s" state="o"/>
+    <connection from="P2B" to="B2Mi" fromLane="2" toLane="2" via=":Badrinath_19_2" tl="Badrinath" linkIndex="21" dir="s" state="o"/>
+    <connection from="P2B" to="B2Mi" fromLane="3" toLane="3" via=":Badrinath_19_3" tl="Badrinath" linkIndex="22" dir="s" state="o"/>
+    <connection from="P2B" to="B2K" fromLane="3" toLane="3" via=":Badrinath_23_0" tl="Badrinath" linkIndex="23" dir="l" state="o"/>
+    <connection from="P2M" to="M2BV" fromLane="0" toLane="0" via=":Mathura_12_0" tl="Mathura" linkIndex="12" dir="r" state="O"/>
+    <connection from="P2M" to="M2B" fromLane="0" toLane="0" via=":Mathura_13_0" tl="Mathura" linkIndex="13" dir="s" state="O"/>
+    <connection from="P2M" to="M2B" fromLane="1" toLane="1" via=":Mathura_13_1" tl="Mathura" linkIndex="14" dir="s" state="O"/>
+    <connection from="P2M" to="M2B" fromLane="2" toLane="2" via=":Mathura_13_2" tl="Mathura" linkIndex="15" dir="s" state="O"/>
+    <connection from="P2M" to="M2B" fromLane="3" toLane="3" via=":Mathura_13_3" tl="Mathura" linkIndex="16" dir="s" state="O"/>
+    <connection from="P2M" to="M2R" fromLane="3" toLane="3" via=":Mathura_17_0" tl="Mathura" linkIndex="17" dir="l" state="o"/>
+    <connection from="R2JP" to="JP2SL" fromLane="0" toLane="0" via=":JagannathPuri_12_0" tl="J13" linkIndex="12" dir="r" state="O"/>
+    <connection from="R2JP" to="JP2D" fromLane="0" toLane="0" via=":JagannathPuri_13_0" tl="J13" linkIndex="13" dir="s" state="O"/>
+    <connection from="R2JP" to="JP2D" fromLane="1" toLane="1" via=":JagannathPuri_13_1" tl="J13" linkIndex="14" dir="s" state="O"/>
+    <connection from="R2JP" to="JP2D" fromLane="2" toLane="2" via=":JagannathPuri_13_2" tl="J13" linkIndex="15" dir="s" state="O"/>
+    <connection from="R2JP" to="JP2D" fromLane="3" toLane="3" via=":JagannathPuri_13_3" tl="J13" linkIndex="16" dir="s" state="O"/>
+    <connection from="R2JP" to="JP2A" fromLane="3" toLane="3" via=":JagannathPuri_17_0" tl="J13" linkIndex="17" dir="l" state="o"/>
+    <connection from="R2M" to="M2P" fromLane="0" toLane="0" via=":Mathura_18_0" tl="Mathura" linkIndex="18" dir="r" state="o"/>
+    <connection from="R2M" to="M2BV" fromLane="0" toLane="0" via=":Mathura_19_0" tl="Mathura" linkIndex="19" dir="s" state="o"/>
+    <connection from="R2M" to="M2BV" fromLane="1" toLane="1" via=":Mathura_19_1" tl="Mathura" linkIndex="20" dir="s" state="o"/>
+    <connection from="R2M" to="M2BV" fromLane="2" toLane="2" via=":Mathura_19_2" tl="Mathura" linkIndex="21" dir="s" state="o"/>
+    <connection from="R2M" to="M2BV" fromLane="3" toLane="3" via=":Mathura_19_3" tl="Mathura" linkIndex="22" dir="s" state="o"/>
+    <connection from="R2M" to="M2B" fromLane="3" toLane="3" via=":Mathura_23_0" tl="Mathura" linkIndex="23" dir="l" state="o"/>
+    <connection from="S2Mi" to="Mi2B" fromLane="0" toLane="0" via=":Mithila_0_0" tl="Mithila" linkIndex="0" dir="r" state="O"/>
+    <connection from="S2Mi" to="Mi2BV" fromLane="0" toLane="0" via=":Mithila_1_0" tl="Mithila" linkIndex="1" dir="s" state="O"/>
+    <connection from="S2Mi" to="Mi2BV" fromLane="1" toLane="1" via=":Mithila_1_1" tl="Mithila" linkIndex="2" dir="s" state="O"/>
+    <connection from="S2Mi" to="Mi2BV" fromLane="2" toLane="2" via=":Mithila_1_2" tl="Mithila" linkIndex="3" dir="s" state="O"/>
+    <connection from="S2Mi" to="Mi2BV" fromLane="3" toLane="3" via=":Mithila_1_3" tl="Mithila" linkIndex="4" dir="s" state="O"/>
+    <connection from="S2Mi" to="Mi2K" fromLane="3" toLane="3" via=":Mithila_5_0" tl="Mithila" linkIndex="5" dir="l" state="o"/>
+    <connection from="SL2JP" to="JP2D" fromLane="0" toLane="0" via=":JagannathPuri_6_0" tl="J13" linkIndex="6" dir="r" state="o"/>
+    <connection from="SL2JP" to="JP2A" fromLane="0" toLane="0" via=":JagannathPuri_7_0" tl="J13" linkIndex="7" dir="s" state="o"/>
+    <connection from="SL2JP" to="JP2A" fromLane="1" toLane="1" via=":JagannathPuri_7_1" tl="J13" linkIndex="8" dir="s" state="o"/>
+    <connection from="SL2JP" to="JP2A" fromLane="2" toLane="2" via=":JagannathPuri_7_2" tl="J13" linkIndex="9" dir="s" state="o"/>
+    <connection from="SL2JP" to="JP2A" fromLane="3" toLane="3" via=":JagannathPuri_7_3" tl="J13" linkIndex="10" dir="s" state="o"/>
+    <connection from="SL2JP" to="JP2R" fromLane="3" toLane="3" via=":JagannathPuri_11_0" tl="J13" linkIndex="11" dir="l" state="o"/>
+    <connection from="U2K" to="K2G" fromLane="0" toLane="0" via=":Kedarnath_6_0" tl="Kedarnath" linkIndex="6" dir="r" state="o"/>
+    <connection from="U2K" to="K2Mi" fromLane="0" toLane="0" via=":Kedarnath_7_0" tl="Kedarnath" linkIndex="7" dir="s" state="o"/>
+    <connection from="U2K" to="K2Mi" fromLane="1" toLane="1" via=":Kedarnath_7_1" tl="Kedarnath" linkIndex="8" dir="s" state="o"/>
+    <connection from="U2K" to="K2Mi" fromLane="2" toLane="2" via=":Kedarnath_7_2" tl="Kedarnath" linkIndex="9" dir="s" state="o"/>
+    <connection from="U2K" to="K2Mi" fromLane="3" toLane="3" via=":Kedarnath_7_3" tl="Kedarnath" linkIndex="10" dir="s" state="o"/>
+    <connection from="U2K" to="K2D" fromLane="3" toLane="3" via=":Kedarnath_11_0" tl="Kedarnath" linkIndex="11" dir="l" state="o"/>
 
-    <connection from=":C_0" to="C_W" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":C_1" to="C_S" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":C_1" to="C_S" fromLane="1" toLane="1" dir="s" state="M"/>
-    <connection from=":C_1" to="C_S" fromLane="2" toLane="2" dir="s" state="M"/>
-    <connection from=":C_1" to="C_S" fromLane="3" toLane="3" dir="s" state="M"/>
-    <connection from=":C_5" to="C_E" fromLane="0" toLane="3" via=":C_24_0" dir="l" state="m"/>
-    <connection from=":C_24" to="C_E" fromLane="0" toLane="3" dir="l" state="M"/>
-    <connection from=":C_6" to="C_N" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":C_7" to="C_W" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":C_7" to="C_W" fromLane="1" toLane="1" dir="s" state="M"/>
-    <connection from=":C_7" to="C_W" fromLane="2" toLane="2" dir="s" state="M"/>
-    <connection from=":C_7" to="C_W" fromLane="3" toLane="3" dir="s" state="M"/>
-    <connection from=":C_11" to="C_S" fromLane="0" toLane="3" via=":C_25_0" dir="l" state="m"/>
-    <connection from=":C_25" to="C_S" fromLane="0" toLane="3" dir="l" state="M"/>
-    <connection from=":C_12" to="C_E" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":C_13" to="C_N" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":C_13" to="C_N" fromLane="1" toLane="1" dir="s" state="M"/>
-    <connection from=":C_13" to="C_N" fromLane="2" toLane="2" dir="s" state="M"/>
-    <connection from=":C_13" to="C_N" fromLane="3" toLane="3" dir="s" state="M"/>
-    <connection from=":C_17" to="C_W" fromLane="0" toLane="3" via=":C_26_0" dir="l" state="m"/>
-    <connection from=":C_26" to="C_W" fromLane="0" toLane="3" dir="l" state="M"/>
-    <connection from=":C_18" to="C_S" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":C_19" to="C_E" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":C_19" to="C_E" fromLane="1" toLane="1" dir="s" state="M"/>
-    <connection from=":C_19" to="C_E" fromLane="2" toLane="2" dir="s" state="M"/>
-    <connection from=":C_19" to="C_E" fromLane="3" toLane="3" dir="s" state="M"/>
-    <connection from=":C_23" to="C_N" fromLane="0" toLane="3" via=":C_27_0" dir="l" state="m"/>
-    <connection from=":C_27" to="C_N" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Ayodhya_0" to="A2P" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Ayodhya_1" to="A2Ki" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Ayodhya_1" to="A2Ki" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Ayodhya_1" to="A2Ki" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Ayodhya_1" to="A2Ki" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Ayodhya_5" to="A2JP" fromLane="0" toLane="3" via=":Ayodhya_24_0" dir="l" state="m"/>
+    <connection from=":Ayodhya_24" to="A2JP" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Ayodhya_6" to="A2BV" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Ayodhya_7" to="A2P" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Ayodhya_7" to="A2P" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Ayodhya_7" to="A2P" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Ayodhya_7" to="A2P" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Ayodhya_11" to="A2Ki" fromLane="0" toLane="3" via=":Ayodhya_25_0" dir="l" state="m"/>
+    <connection from=":Ayodhya_25" to="A2Ki" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Ayodhya_12" to="A2JP" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Ayodhya_13" to="A2BV" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Ayodhya_13" to="A2BV" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Ayodhya_13" to="A2BV" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Ayodhya_13" to="A2BV" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Ayodhya_17" to="A2P" fromLane="0" toLane="3" via=":Ayodhya_26_0" dir="l" state="m"/>
+    <connection from=":Ayodhya_26" to="A2P" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Ayodhya_18" to="A2Ki" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Ayodhya_19" to="A2JP" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Ayodhya_19" to="A2JP" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Ayodhya_19" to="A2JP" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Ayodhya_19" to="A2JP" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Ayodhya_23" to="A2BV" fromLane="0" toLane="3" via=":Ayodhya_27_0" dir="l" state="m"/>
+    <connection from=":Ayodhya_27" to="A2BV" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Badrinath_0" to="B2P" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Badrinath_1" to="B2M" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Badrinath_1" to="B2M" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Badrinath_1" to="B2M" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Badrinath_1" to="B2M" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Badrinath_5" to="B2Mi" fromLane="0" toLane="3" via=":Badrinath_24_0" dir="l" state="m"/>
+    <connection from=":Badrinath_24" to="B2Mi" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Badrinath_6" to="B2K" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Badrinath_7" to="B2P" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Badrinath_7" to="B2P" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Badrinath_7" to="B2P" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Badrinath_7" to="B2P" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Badrinath_11" to="B2M" fromLane="0" toLane="3" via=":Badrinath_25_0" dir="l" state="m"/>
+    <connection from=":Badrinath_25" to="B2M" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Badrinath_12" to="B2Mi" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Badrinath_13" to="B2K" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Badrinath_13" to="B2K" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Badrinath_13" to="B2K" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Badrinath_13" to="B2K" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Badrinath_17" to="B2P" fromLane="0" toLane="3" via=":Badrinath_26_0" dir="l" state="m"/>
+    <connection from=":Badrinath_26" to="B2P" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Badrinath_18" to="B2M" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Badrinath_19" to="B2Mi" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Badrinath_19" to="B2Mi" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Badrinath_19" to="B2Mi" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Badrinath_19" to="B2Mi" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Badrinath_23" to="B2K" fromLane="0" toLane="3" via=":Badrinath_27_0" dir="l" state="m"/>
+    <connection from=":Badrinath_27" to="B2K" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":BrajVrindavan_0" to="BV2M" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":BrajVrindavan_1" to="BV2A" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_1" to="BV2A" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_1" to="BV2A" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_1" to="BV2A" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_5" to="BV2D" fromLane="0" toLane="3" via=":BrajVrindavan_24_0" dir="l" state="m"/>
+    <connection from=":BrajVrindavan_24" to="BV2D" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":BrajVrindavan_6" to="BV2Mi" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":BrajVrindavan_7" to="BV2M" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_7" to="BV2M" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_7" to="BV2M" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_7" to="BV2M" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_11" to="BV2A" fromLane="0" toLane="3" via=":BrajVrindavan_25_0" dir="l" state="m"/>
+    <connection from=":BrajVrindavan_25" to="BV2A" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":BrajVrindavan_12" to="BV2D" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":BrajVrindavan_13" to="BV2Mi" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_13" to="BV2Mi" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_13" to="BV2Mi" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_13" to="BV2Mi" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_17" to="BV2M" fromLane="0" toLane="3" via=":BrajVrindavan_26_0" dir="l" state="m"/>
+    <connection from=":BrajVrindavan_26" to="BV2M" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":BrajVrindavan_18" to="BV2A" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":BrajVrindavan_19" to="BV2D" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_19" to="BV2D" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_19" to="BV2D" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_19" to="BV2D" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":BrajVrindavan_23" to="BV2Mi" fromLane="0" toLane="3" via=":BrajVrindavan_27_0" dir="l" state="m"/>
+    <connection from=":BrajVrindavan_27" to="BV2Mi" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Dwarika_0" to="D2BV" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Dwarika_1" to="D2JP" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Dwarika_1" to="D2JP" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Dwarika_1" to="D2JP" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Dwarika_1" to="D2JP" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Dwarika_5" to="D2Ku" fromLane="0" toLane="3" via=":Dwarika_24_0" dir="l" state="m"/>
+    <connection from=":Dwarika_24" to="D2Ku" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Dwarika_6" to="D2K" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Dwarika_7" to="D2BV" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Dwarika_7" to="D2BV" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Dwarika_7" to="D2BV" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Dwarika_7" to="D2BV" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Dwarika_11" to="D2JP" fromLane="0" toLane="3" via=":Dwarika_25_0" dir="l" state="m"/>
+    <connection from=":Dwarika_25" to="D2JP" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Dwarika_12" to="D2Ku" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Dwarika_13" to="D2K" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Dwarika_13" to="D2K" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Dwarika_13" to="D2K" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Dwarika_13" to="D2K" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Dwarika_17" to="D2BV" fromLane="0" toLane="3" via=":Dwarika_26_0" dir="l" state="m"/>
+    <connection from=":Dwarika_26" to="D2BV" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Dwarika_18" to="D2JP" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Dwarika_19" to="D2Ku" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Dwarika_19" to="D2Ku" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Dwarika_19" to="D2Ku" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Dwarika_19" to="D2Ku" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Dwarika_23" to="D2K" fromLane="0" toLane="3" via=":Dwarika_27_0" dir="l" state="m"/>
+    <connection from=":Dwarika_27" to="D2K" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":JagannathPuri_0" to="JP2A" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":JagannathPuri_1" to="JP2R" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":JagannathPuri_1" to="JP2R" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":JagannathPuri_1" to="JP2R" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":JagannathPuri_1" to="JP2R" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":JagannathPuri_5" to="JP2SL" fromLane="0" toLane="3" via=":JagannathPuri_24_0" dir="l" state="m"/>
+    <connection from=":JagannathPuri_24" to="JP2SL" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":JagannathPuri_6" to="JP2D" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":JagannathPuri_7" to="JP2A" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":JagannathPuri_7" to="JP2A" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":JagannathPuri_7" to="JP2A" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":JagannathPuri_7" to="JP2A" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":JagannathPuri_11" to="JP2R" fromLane="0" toLane="3" via=":JagannathPuri_25_0" dir="l" state="m"/>
+    <connection from=":JagannathPuri_25" to="JP2R" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":JagannathPuri_12" to="JP2SL" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":JagannathPuri_13" to="JP2D" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":JagannathPuri_13" to="JP2D" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":JagannathPuri_13" to="JP2D" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":JagannathPuri_13" to="JP2D" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":JagannathPuri_17" to="JP2A" fromLane="0" toLane="3" via=":JagannathPuri_26_0" dir="l" state="m"/>
+    <connection from=":JagannathPuri_26" to="JP2A" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":JagannathPuri_18" to="JP2R" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":JagannathPuri_19" to="JP2SL" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":JagannathPuri_19" to="JP2SL" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":JagannathPuri_19" to="JP2SL" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":JagannathPuri_19" to="JP2SL" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":JagannathPuri_23" to="JP2D" fromLane="0" toLane="3" via=":JagannathPuri_27_0" dir="l" state="m"/>
+    <connection from=":JagannathPuri_27" to="JP2D" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Kedarnath_0" to="K2Mi" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Kedarnath_1" to="K2D" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Kedarnath_1" to="K2D" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Kedarnath_1" to="K2D" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Kedarnath_1" to="K2D" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Kedarnath_5" to="K2U" fromLane="0" toLane="3" via=":Kedarnath_24_0" dir="l" state="m"/>
+    <connection from=":Kedarnath_24" to="K2U" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Kedarnath_6" to="K2G" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Kedarnath_7" to="K2Mi" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Kedarnath_7" to="K2Mi" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Kedarnath_7" to="K2Mi" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Kedarnath_7" to="K2Mi" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Kedarnath_11" to="K2D" fromLane="0" toLane="3" via=":Kedarnath_25_0" dir="l" state="m"/>
+    <connection from=":Kedarnath_25" to="K2D" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Kedarnath_12" to="K2U" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Kedarnath_13" to="K2G" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Kedarnath_13" to="K2G" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Kedarnath_13" to="K2G" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Kedarnath_13" to="K2G" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Kedarnath_17" to="K2Mi" fromLane="0" toLane="3" via=":Kedarnath_26_0" dir="l" state="m"/>
+    <connection from=":Kedarnath_26" to="K2Mi" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Kedarnath_18" to="K2D" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Kedarnath_19" to="K2U" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Kedarnath_19" to="K2U" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Kedarnath_19" to="K2U" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Kedarnath_19" to="K2U" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Kedarnath_23" to="K2G" fromLane="0" toLane="3" via=":Kedarnath_27_0" dir="l" state="m"/>
+    <connection from=":Kedarnath_27" to="K2G" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mathura_0" to="M2R" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mathura_1" to="M2P" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mathura_1" to="M2P" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mathura_1" to="M2P" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mathura_1" to="M2P" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mathura_5" to="M2BV" fromLane="0" toLane="3" via=":Mathura_24_0" dir="l" state="m"/>
+    <connection from=":Mathura_24" to="M2BV" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mathura_6" to="M2B" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mathura_7" to="M2R" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mathura_7" to="M2R" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mathura_7" to="M2R" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mathura_7" to="M2R" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mathura_11" to="M2P" fromLane="0" toLane="3" via=":Mathura_25_0" dir="l" state="m"/>
+    <connection from=":Mathura_25" to="M2P" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mathura_12" to="M2BV" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mathura_13" to="M2B" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mathura_13" to="M2B" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mathura_13" to="M2B" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mathura_13" to="M2B" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mathura_17" to="M2R" fromLane="0" toLane="3" via=":Mathura_26_0" dir="l" state="m"/>
+    <connection from=":Mathura_26" to="M2R" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mathura_18" to="M2P" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mathura_19" to="M2BV" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mathura_19" to="M2BV" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mathura_19" to="M2BV" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mathura_19" to="M2BV" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mathura_23" to="M2B" fromLane="0" toLane="3" via=":Mathura_27_0" dir="l" state="m"/>
+    <connection from=":Mathura_27" to="M2B" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mithila_0" to="Mi2B" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mithila_1" to="Mi2BV" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mithila_1" to="Mi2BV" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mithila_1" to="Mi2BV" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mithila_1" to="Mi2BV" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mithila_5" to="Mi2K" fromLane="0" toLane="3" via=":Mithila_24_0" dir="l" state="m"/>
+    <connection from=":Mithila_24" to="Mi2K" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mithila_6" to="Mi2S" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mithila_7" to="Mi2B" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mithila_7" to="Mi2B" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mithila_7" to="Mi2B" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mithila_7" to="Mi2B" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mithila_11" to="Mi2BV" fromLane="0" toLane="3" via=":Mithila_25_0" dir="l" state="m"/>
+    <connection from=":Mithila_25" to="Mi2BV" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mithila_12" to="Mi2K" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mithila_13" to="Mi2S" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mithila_13" to="Mi2S" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mithila_13" to="Mi2S" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mithila_13" to="Mi2S" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mithila_17" to="Mi2B" fromLane="0" toLane="3" via=":Mithila_26_0" dir="l" state="m"/>
+    <connection from=":Mithila_26" to="Mi2B" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Mithila_18" to="Mi2BV" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Mithila_19" to="Mi2K" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Mithila_19" to="Mi2K" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Mithila_19" to="Mi2K" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Mithila_19" to="Mi2K" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Mithila_23" to="Mi2S" fromLane="0" toLane="3" via=":Mithila_27_0" dir="l" state="m"/>
+    <connection from=":Mithila_27" to="Mi2S" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Pandarpur_0" to="P2O" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Pandarpur_1" to="P2C" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Pandarpur_1" to="P2C" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Pandarpur_1" to="P2C" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Pandarpur_1" to="P2C" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Pandarpur_5" to="P2A" fromLane="0" toLane="3" via=":Pandarpur_24_0" dir="l" state="m"/>
+    <connection from=":Pandarpur_24" to="P2A" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Pandarpur_6" to="P2M" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Pandarpur_7" to="P2O" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Pandarpur_7" to="P2O" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Pandarpur_7" to="P2O" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Pandarpur_7" to="P2O" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Pandarpur_11" to="P2C" fromLane="0" toLane="3" via=":Pandarpur_25_0" dir="l" state="m"/>
+    <connection from=":Pandarpur_25" to="P2C" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Pandarpur_12" to="P2A" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Pandarpur_13" to="P2M" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Pandarpur_13" to="P2M" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Pandarpur_13" to="P2M" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Pandarpur_13" to="P2M" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Pandarpur_17" to="P2O" fromLane="0" toLane="3" via=":Pandarpur_26_0" dir="l" state="m"/>
+    <connection from=":Pandarpur_26" to="P2O" fromLane="0" toLane="3" dir="l" state="M"/>
+    <connection from=":Pandarpur_18" to="P2C" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Pandarpur_19" to="P2A" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Pandarpur_19" to="P2A" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Pandarpur_19" to="P2A" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":Pandarpur_19" to="P2A" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":Pandarpur_23" to="P2M" fromLane="0" toLane="3" via=":Pandarpur_27_0" dir="l" state="m"/>
+    <connection from=":Pandarpur_27" to="P2M" fromLane="0" toLane="3" dir="l" state="M"/>
 
 </net>
