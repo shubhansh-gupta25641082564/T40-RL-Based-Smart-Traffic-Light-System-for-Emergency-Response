@@ -55,13 +55,18 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
         ['W_C', 'C_E'],  # West to East (straight)
         ['W_C', 'C_S'],  # West to South (left turn)
         ['W_C', 'C_N'],  # West to North (right turn)
+
+        ['N_C', 'C_S'],
+        ['S_C', 'C_N'],
+        ['E_C', 'C_W'],
+        ['W_C', 'C_E'],
     ]
 
     all_vehicles = []
 
     # Civilian vehicles: Random route
     for i in range(num_vehicles):
-        depart_time = i * (3600 / num_vehicles)
+        depart_time = random.uniform(0, 3600)
         route_edges = random.choice(routes_list)
         all_vehicles.append({
             "id": f"civilian_{i}",
@@ -71,15 +76,9 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
         })
 
     # Emergency vehicles: Prefer straight (priority) routes
-    straight_routes = [
-        ['N_C', 'C_S'],
-        ['S_C', 'C_N'],
-        ['E_C', 'C_W'],
-        ['W_C', 'C_E']
-    ]
     for i in range(num_emergency):
         depart_time = random.uniform(100, 3500)
-        route_edges = random.choice(straight_routes)
+        route_edges = random.choice(routes_list)
         all_vehicles.append({
             "id": f"emergency_{i}",
             "type": "emergency",
