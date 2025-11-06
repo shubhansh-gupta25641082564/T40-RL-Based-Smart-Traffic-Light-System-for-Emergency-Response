@@ -24,15 +24,22 @@ def evaluate(config, model_path, num_episodes=10, use_gui=True):
     agent.load(model_path)
     rewards = []
     for ep in range(num_episodes):
+        print(f"\n==== Evaluation Episode {ep+1} ====")
         state = env.reset()
         done = False
         ep_reward = 0
+        step_count = 0
         while not done:
             action = agent.select_action(state)
             next_state, reward, done, info = env.step(action)
             ep_reward += reward
+            step_count += 1
+            print(f"Step {step_count}: Action={action}, Reward={reward:.2f}, Emergency={info['emergency_present']}, Waiting={info['total_waiting_time']:.2f}, Vehicles={info['vehicles_in_network']}")
             state = next_state
+        print(f"Episode {ep+1} finished. Total Reward: {ep_reward:.2f}, Steps: {step_count}, Remaining Vehicles: {info['vehicles_in_network']}")
         rewards.append(ep_reward)
+    print(f"\n--- Evaluation Summary ---")
+    print("Episode Rewards:", rewards)
     print("Mean Reward:", np.mean(rewards))
     env.close()
 
