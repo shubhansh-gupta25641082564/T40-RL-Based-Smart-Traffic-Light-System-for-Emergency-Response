@@ -4,7 +4,7 @@ import traci
 import numpy as np
 
 class TrafficEnvironment:
-    def __init__(self, net_file, route_file, use_gui=False, max_steps=3600000, delta_time=1000):
+    def __init__(self, net_file, route_file, use_gui=False, max_steps=36000, delta_time=10):
         self.net_file = net_file
         self.route_file = route_file
         self.use_gui = use_gui
@@ -23,7 +23,7 @@ class TrafficEnvironment:
             sumo_binary,
             "-n", self.net_file,
             "-r", self.route_file,
-            "--step-length", "0.001",
+            "--step-length", "0.1",
             "--waiting-time-memory", "10000",
             "--time-to-teleport", "-1",
             "--no-warnings", "true",
