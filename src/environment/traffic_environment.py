@@ -2,36 +2,65 @@ import os
 import sys
 import traci
 import numpy as np
+import xml.etree.ElementTree as ET
 
 class TrafficEnvironment:
-    def __init__(self, net_file, route_file, use_gui=False, max_steps=36000, delta_time=10):
-        self.net_file = net_file
-        self.route_file = route_file
-        self.use_gui = use_gui
-        self.max_steps = max_steps
-        self.delta_time = delta_time
-        self.tl_id = "C"
-        self.num_lanes = 12
-        self.state_size = self.num_lanes * 2
-        self.action_size = 2
-        self.current_step = 0
-        self.total_waiting_time = 0
+    def __init__(self, netfile, routefile, usegui=False, maxsteps=7200, deltatime=10):
+        self.netfile = netfile
+        self.routefile = routefile
+        self.usegui = usegui
+        self.maxsteps = maxsteps
+        self.deltatime = deltatime
+
+        # All traffic light IDs
+        self.tls_ids = self._get_tls_ids_from_network(netfile)
+
+        # Per-tl incoming lanes
+        self.tl_incoming_lanes = self._get_incoming_lanes_all_tls(netfile)
+
+        # Per-tl number of phases (actions)
+        self.tl_num_phases = {tls: self._get_num_phases(netfile, tls) for tls in self.tls_ids}
+
+        # State: for each lane 2 features (queue + wait), for all incoming lanes of all tls
+        self.n_tls = len(self.tls_ids)
+        self.lane_counts = [len(lanes) for lanes in self.tl_incoming_lanes.values()]
+        self.statesize = sum(lc*2 for lc in self.lane_counts)
+        self.actionsize = sum(self.tl_num_phases.values()) # not used; actions handled as per-tl array
+
+        self.currentstep = 0
+        self.totalwaitingtime = 0
+
+    def _get_tls_ids_from_network(self, netfile):
+        tree = ET.parse(netfile)
+        root = tree.getroot()
+        return [tl.get('id') for tl in root.findall('tlLogic')]
+
+    def _get_incoming_lanes_all_tls(self, netfile):
+        tree = ET.parse(netfile)
+        root = tree.getroot()
+        lanes_mapping = {}
+        for junction in root.findall("junction"):
+            if junction.get("type") == "traffic_light":
+                inc_lanes = junction.get("incLanes").split()
+                lanes_mapping[junction.get("id")] = inc_lanes
+        return lanes_mapping
+
+    def _get_num_phases(self, netfile, tls_id):
+        tree = ET.parse(netfile)
+        for node in tree.findall("tlLogic"):
+            if node.attrib["id"] == tls_id:
+                return len(node.findall("phase"))
+        return 2  # fallback/safe
 
     def start(self):
-        sumo_binary = "sumo-gui" if self.use_gui else "sumo"
+        sumo_binary = "sumo-gui" if self.usegui else "sumo"
         sumo_cmd = [
-            sumo_binary,
-            "-n", self.net_file,
-            "-r", self.route_file,
-            "--step-length", "0.1",
-            "--waiting-time-memory", "10000",
-            "--time-to-teleport", "-1",
-            "--no-warnings", "true",
-            "--no-step-log", "true",
+            sumo_binary, "-n", self.netfile, "-r", self.routefile,
+            "--step-length", "0.001", "--waiting-time-memory", "10000",
+            "--time-to-teleport", "-1", "--no-step-log", "true"
         ]
         traci.start(sumo_cmd)
-        traci.trafficlight.setPhaseDuration(self.tl_id, 1000)
-        self.current_step = 0
+        self.currentstep = 0
 
     def reset(self):
         if traci.isLoaded():
@@ -39,69 +68,53 @@ class TrafficEnvironment:
         self.start()
         for _ in range(5):
             traci.simulationStep()
-        self.total_waiting_time = 0
+        self.totalwaitingtime = 0
         return self.get_state()
 
     def get_state(self):
         state = []
-        incoming_lanes = [
-            "N_C_0", "N_C_1", "N_C_2",
-            "S_C_0", "S_C_1", "S_C_2",
-            "E_C_0", "E_C_1", "E_C_2",
-            "W_C_0", "W_C_1", "W_C_2",
-        ]
-        for lane in incoming_lanes:
-            queue_length = traci.lane.getLastStepHaltingNumber(lane)
-            vehicle_ids = traci.lane.getLastStepVehicleIDs(lane)
-            waiting_time = (
-                sum([traci.vehicle.getWaitingTime(vid) for vid in vehicle_ids]) / len(vehicle_ids) if vehicle_ids else 0
-            )
-            state.extend([queue_length, waiting_time])
-        return np.array(state, dtype=np.float32)
-
-    def check_emergency_vehicles(self):
-        emergency_present = False
-        ev_direction = None
-        all_vehicles = traci.vehicle.getIDList()
-        for vid in all_vehicles:
-            if "emergency" in vid:
-                edge_id = traci.vehicle.getRoadID(vid)
-                if edge_id in ["N_C", "S_C", "E_C", "W_C"]:
-                    position = traci.vehicle.getLanePosition(vid)
-                    lane_length = traci.lane.getLength(traci.vehicle.getLaneID(vid))
-                    distance_to_junction = lane_length - position
-                    if distance_to_junction < 100:
-                        emergency_present = True
-                        ev_direction = edge_id[0]
-                        break
-        return emergency_present, ev_direction
+        for tls_id in self.tls_ids:
+            for lane in self.tl_incoming_lanes[tls_id]:
+                try:
+                    q = traci.lane.getLastStepHaltingNumber(lane)
+                    vids = traci.lane.getLastStepVehicleIDs(lane)
+                    w = np.mean([traci.vehicle.getWaitingTime(vid) for vid in vids]) if vids else 0
+                except Exception as e:
+                    q, w = 0, 0
+                state.extend([q, w])
+        state = np.array(state, dtype=np.float32)
+        return state
 
     def step(self, action):
-        emergency_present, ev_direction = self.check_emergency_vehicles()
-        if emergency_present:
-            action = 0 if ev_direction in ["N", "S"] else 1
-        traci.trafficlight.setPhase(self.tl_id, 0 if action == 0 else 2)
-        for _ in range(self.delta_time):
+        assert len(action) == len(self.tls_ids), f"Action must have one phase per intersection: {len(action)} vs {len(self.tls_ids)}"
+        for i, tls in enumerate(self.tls_ids):
+            num_phases = self.tl_num_phases[tls]
+            valid_phase = int(action[i]) % num_phases
+            traci.trafficlight.setPhase(tls, valid_phase)
+        for _ in range(self.deltatime):
             traci.simulationStep()
-            self.current_step += 1
+            self.currentstep += 1
+
         next_state = self.get_state()
-        reward = self.calculate_reward(emergency_present)
-        done = self.current_step >= self.max_steps or traci.simulation.getMinExpectedNumber() == 0
-        info = {"emergency_present": emergency_present,
-                "total_waiting_time": self.total_waiting_time,
-                "vehicles_in_network": traci.vehicle.getIDCount()}
+        reward = self.calculate_reward()
+        done = self.currentstep >= self.maxsteps or traci.simulation.getMinExpectedNumber() <= 0
+        info = dict(totalwaitingtime=self.totalwaitingtime, vehiclesinnetwork=traci.vehicle.getIDCount())
+        print(f"[STEP] Reward: {reward}, Done: {done}, Info: {info}")
         return next_state, reward, done, info
 
-    def calculate_reward(self, emergency_present=False):
+    def calculate_reward(self):
+        reward = 0.0
         all_vehicles = traci.vehicle.getIDList()
-        current_waiting_time = sum([traci.vehicle.getWaitingTime(vid) for vid in all_vehicles])
-        reward = -current_waiting_time
-        if emergency_present:
-            for vid in all_vehicles:
-                if "emergency" in vid and traci.vehicle.getSpeed(vid) > 5:
-                    reward += 100
-        self.total_waiting_time = current_waiting_time
+        current_wait = sum(traci.vehicle.getWaitingTime(vid) for vid in all_vehicles)
+        emvs = [vid for vid in all_vehicles if "emergency" in vid]
+        normal_vs = [vid for vid in all_vehicles if "emergency" not in vid]
+        emv_wait = sum(traci.vehicle.getWaitingTime(vid) for vid in emvs)
+        civilian_wait = sum(traci.vehicle.getWaitingTime(vid) for vid in normal_vs)
+        reward = - civilian_wait - 10 * emv_wait  # EMV wait time much more heavily penalized!
+        self.totalwaitingtime = current_wait
+        print(f"[REWARD] Civilian wait {civilian_wait:.2f}, EMV wait {emv_wait:.2f}, Reward {reward:.2f}")
         return reward
 
     def close(self):
-        if traci.isLoaded(): traci.close()
+        if traci.isLoaded():
+            traci.close()
