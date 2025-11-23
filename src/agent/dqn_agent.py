@@ -4,69 +4,101 @@ from src.agent.neural_network import DQN
 from src.agent.replay_buffer import ReplayBuffer
 
 class DQNAgent:
-    def __init__(self, state_size, action_size, config):
-        self.state_size = state_size
-        self.action_size = action_size
+    def __init__(self, statesize, tl_num_phases, config):
+        self.statesize = statesize
+        self.tl_num_phases = tl_num_phases    # dict: {tls_id: num_phases}
+        self.n_tls = len(self.tl_num_phases)
         self.buffer = ReplayBuffer(config['buffersize'])
         self.gamma = config['gamma']
         self.lr = config['learningrate']
-        self.batch_size = config['batchsize']
+        self.batchsize = config['batchsize']
         self.epsilon = config['epsilonstart']
-        self.eps_min = config['epsilonmin']
-        self.eps_decay = config['epsilondecay']
+        self.epsmin = config['epsilonmin']
+        self.epsdecay = config['epsilondecay']
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.policy_net = DQN(state_size, action_size).to(self.device)
-        self.target_net = DQN(state_size, action_size).to(self.device)
-        self.optimizer = torch.optim.Adam(self.policy_net.parameters(), lr=self.lr)
-        self.update_target_network()
+        self.policynet = DQN(statesize, sum(self.tl_num_phases.values())).to(self.device)
+        self.targetnet = DQN(statesize, sum(self.tl_num_phases.values())).to(self.device)
+        self.optimizer = torch.optim.Adam(self.policynet.parameters(), lr=self.lr)
+        self.updatetargetnetwork()
 
-    def select_action(self, state):
+    def selectaction(self, state):
+        # Returns an array: one valid phase per tl
         if np.random.rand() < self.epsilon:
-            return np.random.randint(self.action_size)
+            action = np.array([
+                np.random.randint(self.tl_num_phases[tl])
+                for tl in self.tl_num_phases
+            ])
+            return action
         state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
         with torch.no_grad():
-            q_values = self.policy_net(state)
-        return q_values.argmax().item()
+            out = self.policynet(state).cpu().numpy().flatten()
+        # For each intersection, choose the phase with max Q among its slots
+        actions = []
+        idx = 0
+        for tl in self.tl_num_phases:
+            nump = self.tl_num_phases[tl]
+            best = np.argmax(out[idx:idx+nump])
+            actions.append(best)
+            idx += nump
+        action = np.array(actions)
+        return action
 
-    def train_step(self):
-        if len(self.buffer) < self.batch_size:
-            return 0
-        states, actions, rewards, next_states, dones = self.buffer.sample(self.batch_size)
+    def trainstep(self):
+        if len(self.buffer) < self.batchsize:
+            return 0.0
+        states, actions, rewards, nextstates, dones = self.buffer.sample(self.batchsize)
         states = torch.FloatTensor(states).to(self.device)
-        actions = torch.LongTensor(actions).unsqueeze(1).to(self.device)
-        rewards = torch.FloatTensor(rewards).unsqueeze(1).to(self.device)
-        next_states = torch.FloatTensor(next_states).to(self.device)
-        dones = torch.FloatTensor(dones).unsqueeze(1).to(self.device)
+        # For DQN, your action space is a vector (one phase per tl)
+        # We'll flatten actions for each sample
+        # Convert each multi-action (array) to single integer per phase (per-tl)
+        actions = torch.LongTensor(actions).to(self.device)
+        rewards = torch.FloatTensor(rewards).to(self.device)
+        nextstates = torch.FloatTensor(nextstates).to(self.device)
+        dones = torch.FloatTensor(dones).to(self.device)
 
-        q_values = self.policy_net(states).gather(1, actions)
-        with torch.no_grad():
-            max_next_q = self.target_net(next_states).max(1)[0].unsqueeze(1)
-            target_q = rewards + self.gamma * max_next_q * (1 - dones)
-
-        loss = torch.nn.functional.mse_loss(q_values, target_q)
+        q_pred_batch = []
+        q_target_batch = []
+        for i in range(self.batchsize):
+            q_all = self.policynet(states[i].unsqueeze(0)).view(-1)
+            next_q_all = self.targetnet(nextstates[i].unsqueeze(0)).view(-1)
+            idx = 0
+            q_pred = 0
+            q_target = 0
+            for j, tl in enumerate(self.tl_num_phases):
+                nump = self.tl_num_phases[tl]
+                a = int(actions[i][j]) % nump
+                q_pred += q_all[idx + a]
+                next_a = torch.argmax(next_q_all[idx:idx+nump]).item()
+                q_target += rewards[i] + (1 - dones[i]) * self.gamma * next_q_all[idx + next_a]
+                idx += nump
+            q_pred_batch.append(q_pred)
+            q_target_batch.append(q_target)
+        q_pred_tensor = torch.stack(q_pred_batch)
+        q_target_tensor = torch.stack(q_target_batch)
+        loss = torch.nn.functional.mse_loss(q_pred_tensor, q_target_tensor)
         self.optimizer.zero_grad()
         loss.backward()
-        torch.nn.utils.clip_grad_norm_(self.policy_net.parameters(), 1.0)
+        torch.nn.utils.clip_grad_norm_(self.policynet.parameters(), 1.0)
         self.optimizer.step()
         return loss.item()
 
-    def update_target_network(self):
-        self.target_net.load_state_dict(self.policy_net.state_dict())
+    def updatetargetnetwork(self):
+        self.targetnet.load_state_dict(self.policynet.state_dict())
 
-    def decay_epsilon(self):
-        self.epsilon = max(self.eps_min, self.epsilon * self.eps_decay)
+    def decayepsilon(self):
+        self.epsilon = max(self.epsmin, self.epsilon * self.epsdecay)
 
     def save(self, filepath):
         torch.save({
-            'policy_net': self.policy_net.state_dict(),
-            'target_net': self.target_net.state_dict(),
-            'optimizer': self.optimizer.state_dict(),
-            'epsilon': self.epsilon
+            "policynet": self.policynet.state_dict(),
+            "targetnet": self.targetnet.state_dict(),
+            "optimizer": self.optimizer.state_dict(),
+            "epsilon": self.epsilon,
         }, filepath)
 
     def load(self, filepath):
         checkpoint = torch.load(filepath, map_location=self.device)
-        self.policy_net.load_state_dict(checkpoint['policy_net'])
-        self.target_net.load_state_dict(checkpoint['target_net'])
-        self.optimizer.load_state_dict(checkpoint['optimizer'])
-        self.epsilon = checkpoint['epsilon']
+        self.policynet.load_state_dict(checkpoint["policynet"])
+        self.targetnet.load_state_dict(checkpoint["targetnet"])
+        self.optimizer.load_state_dict(checkpoint["optimizer"])
+        self.epsilon = checkpoint["epsilon"]
