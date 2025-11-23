@@ -2,19 +2,19 @@ import random
 import numpy as np
 
 class ReplayBuffer:
-    def __init__(self, buffer_size):
+    def __init__(self, buffersize):
+        self.buffersize = buffersize
         self.buffer = []
-        self.buffer_size = buffer_size
 
-    def push(self, state, action, reward, next_state, done):
-        if len(self.buffer) >= self.buffer_size:
+    def push(self, state, action, reward, nextstate, done):
+        if len(self.buffer) >= self.buffersize:
             self.buffer.pop(0)
-        self.buffer.append((state, action, reward, next_state, done))
+        self.buffer.append((state, action, reward, nextstate, done))
 
-    def sample(self, batch_size):
-        batch = random.sample(self.buffer, batch_size)
-        states, actions, rewards, next_states, dones = map(np.array, zip(*batch))
-        return states, actions, rewards, next_states, dones
+    def sample(self, batchsize):
+        batch = random.sample(self.buffer, batchsize)
+        states, actions, rewards, nextstates, dones = map(np.array, zip(*batch))
+        return states, actions, rewards, nextstates, dones
 
     def __len__(self):
         return len(self.buffer)
