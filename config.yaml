@@ -1,13 +1,15 @@
 environment:
-  netfile: data/networks/intersection.net.xml
-  routefile: data/networks/intersection.rou.xml
+  netfile: data\networks\intersection.net.xml
+  routefile: data\networks\intersection.rou.xml
   usegui: false
   deltatime: 10
-  maxsteps: 36000
+  maxsteps: 7200
+
 paths:
   modelsdir: models/checkpoints
   logsdir: data/logs
   bestmodel: models/bestmodel.pth
+
 agent:
   gamma: 0.95
   epsilonstart: 1.0
@@ -17,6 +19,7 @@ agent:
   batchsize: 128
   buffersize: 10000
   targetupdate: 10
+
 training:
-  numepisodes: 20
+  numepisodes: 200
   saveinterval: 2
