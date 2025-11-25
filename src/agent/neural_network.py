@@ -3,13 +3,16 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class DQN(nn.Module):
-    def __init__(self, state_size, action_size, hidden_size=128):
+    def __init__(self, statesize, actionsize, hiddensize=128):
         super(DQN, self).__init__()
-        self.fc1 = nn.Linear(state_size, hidden_size)
-        self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, action_size)
+        self.fc1 = nn.Linear(statesize, hiddensize)
+        self.fc2 = nn.Linear(hiddensize, hiddensize)
+        self.fc3 = nn.Linear(hiddensize, actionsize)
 
     def forward(self, x):
+        print("[Net] Forward pass with input:", x)
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        return self.fc3(x)
+        x = self.fc3(x)
+        print("[Net] Output:", x)
+        return x
