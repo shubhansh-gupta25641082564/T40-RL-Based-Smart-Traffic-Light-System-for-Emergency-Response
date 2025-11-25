@@ -4,104 +4,112 @@ import traci
 import numpy as np
 
 class TrafficEnvironment:
-    def __init__(self, net_file, route_file, use_gui=False, max_steps=36000, delta_time=10):
-        self.net_file = net_file
-        self.route_file = route_file
-        self.use_gui = use_gui
-        self.max_steps = max_steps
-        self.delta_time = delta_time
-        self.tl_id = "C"
-        self.num_lanes = 12
-        self.state_size = self.num_lanes * 2
-        self.action_size = 2
-        self.current_step = 0
-        self.total_waiting_time = 0
+    def __init__(self, netfile, routefile, usegui=False, maxsteps=7200, deltatime=10):
+        print("[Env] Initializing TrafficEnvironment...")
+        self.netfile = netfile
+        self.routefile = routefile
+        self.usegui = usegui
+        self.maxsteps = maxsteps
+        self.deltatime = deltatime
+        self.tlid = "C"
+        self.currentstep = 0
+        self.totalwaitingtime = 0
+
+        # Assume lanes by naming convention: modify if different
+        self.incominglanes = [
+            "NC0", "NC1", "NC2", "SC0", "SC1", "SC2",
+            "EC0", "EC1", "EC2", "WC0", "WC1", "WC2", "NC3", "SC3", "EC3", "WC3"
+        ]
+        self.statesize = len(self.incominglanes)*2  # queue length + waiting time per lane
+        self.actionsize = 2  # [NS green, EW green]
+        print(f"[Env] State size: {self.statesize}, Action size: {self.actionsize}")
 
     def start(self):
-        sumo_binary = "sumo-gui" if self.use_gui else "sumo"
-        sumo_cmd = [
-            sumo_binary,
-            "-n", self.net_file,
-            "-r", self.route_file,
-            "--step-length", "0.1",
-            "--waiting-time-memory", "10000",
-            "--time-to-teleport", "-1",
-            "--no-warnings", "true",
-            "--no-step-log", "true",
+        sumoBinary = "sumo-gui" if self.usegui else "sumo"
+        sumoCmd = [
+            sumoBinary, "-n", self.netfile, "-r", self.routefile,
+            "--step-length", "0.001", "--waiting-time-memory", "10000",
+            "--time-to-teleport", "-1", "--no-step-log", "true"
         ]
-        traci.start(sumo_cmd)
-        traci.trafficlight.setPhaseDuration(self.tl_id, 1000)
-        self.current_step = 0
+        print(f"[Env] Starting SUMO with: {' '.join(sumoCmd)}")
+        traci.start(sumoCmd)
+        traci.trafficlight.setPhaseDuration(self.tlid, 1000)
+        self.currentstep = 0
 
     def reset(self):
+        print("[Env] Resetting simulation...")
         if traci.isLoaded():
             traci.close()
         self.start()
         for _ in range(5):
             traci.simulationStep()
-        self.total_waiting_time = 0
+        self.totalwaitingtime = 0
+        print("[Env] Environment reset complete.")
         return self.get_state()
 
     def get_state(self):
+        print("[Env] Fetching state...")
         state = []
-        incoming_lanes = [
-            "N_C_0", "N_C_1", "N_C_2",
-            "S_C_0", "S_C_1", "S_C_2",
-            "E_C_0", "E_C_1", "E_C_2",
-            "W_C_0", "W_C_1", "W_C_2",
-        ]
-        for lane in incoming_lanes:
-            queue_length = traci.lane.getLastStepHaltingNumber(lane)
-            vehicle_ids = traci.lane.getLastStepVehicleIDs(lane)
-            waiting_time = (
-                sum([traci.vehicle.getWaitingTime(vid) for vid in vehicle_ids]) / len(vehicle_ids) if vehicle_ids else 0
-            )
-            state.extend([queue_length, waiting_time])
+        for lane in self.incominglanes:
+            queuelength = traci.lane.getLastStepHaltingNumber(lane)
+            vehicleids = traci.lane.getLastStepVehicleIDs(lane)
+            waitingtime = sum(traci.vehicle.getWaitingTime(vid) for vid in vehicleids)
+            state.extend([queuelength, waitingtime])
+        print("[Env] Current state:", state)
         return np.array(state, dtype=np.float32)
 
     def check_emergency_vehicles(self):
-        emergency_present = False
-        ev_direction = None
-        all_vehicles = traci.vehicle.getIDList()
-        for vid in all_vehicles:
+        emergencypresent = False
+        evdirection = None
+        allvehicles = traci.vehicle.getIDList()
+        for vid in allvehicles:
             if "emergency" in vid:
-                edge_id = traci.vehicle.getRoadID(vid)
-                if edge_id in ["N_C", "S_C", "E_C", "W_C"]:
+                edgeid = traci.vehicle.getRoadID(vid)
+                if edgeid in ["NC", "SC", "EC", "WC"]:
                     position = traci.vehicle.getLanePosition(vid)
-                    lane_length = traci.lane.getLength(traci.vehicle.getLaneID(vid))
-                    distance_to_junction = lane_length - position
-                    if distance_to_junction < 100:
-                        emergency_present = True
-                        ev_direction = edge_id[0]
+                    lanelength = traci.lane.getLength(traci.vehicle.getLaneID(vid))
+                    distancetojunction = lanelength - position
+                    if distancetojunction < 100:
+                        emergencypresent = True
+                        evdirection = edgeid[0]  # N/S/E/W
+                        print("[Env] Emergency vehicle detected in direction:", evdirection)
                         break
-        return emergency_present, ev_direction
+        return emergencypresent, evdirection
 
     def step(self, action):
-        emergency_present, ev_direction = self.check_emergency_vehicles()
-        if emergency_present:
-            action = 0 if ev_direction in ["N", "S"] else 1
-        traci.trafficlight.setPhase(self.tl_id, 0 if action == 0 else 2)
-        for _ in range(self.delta_time):
+        emergencypresent, evdirection = self.check_emergency_vehicles()
+        if emergencypresent:
+            # Prioritize action according to direction
+            action = 0 if evdirection in ["N", "S"] else 1
+            print("[Env] Overriding action, emergency priority:", action)
+        traci.trafficlight.setPhase(self.tlid, 0 if action == 0 else 2) # Example, NS=0, EW=2
+        for _ in range(self.deltatime):
             traci.simulationStep()
-            self.current_step += 1
+            self.currentstep += 1
         next_state = self.get_state()
-        reward = self.calculate_reward(emergency_present)
-        done = self.current_step >= self.max_steps or traci.simulation.getMinExpectedNumber() == 0
-        info = {"emergency_present": emergency_present,
-                "total_waiting_time": self.total_waiting_time,
-                "vehicles_in_network": traci.vehicle.getIDCount()}
+        reward = self.calculate_reward(emergencypresent)
+        done = self.currentstep >= self.maxsteps or traci.simulation.getMinExpectedNumber() == 0
+        info = {
+            "emergencypresent": emergencypresent,
+            "totalwaitingtime": self.totalwaitingtime,
+            "vehiclesinnetwork": traci.vehicle.getIDCount()
+        }
+        print(f"[Env] Step info: action={action}, reward={reward}, done={done}, info={info}")
         return next_state, reward, done, info
 
-    def calculate_reward(self, emergency_present=False):
-        all_vehicles = traci.vehicle.getIDList()
-        current_waiting_time = sum([traci.vehicle.getWaitingTime(vid) for vid in all_vehicles])
-        reward = -current_waiting_time
-        if emergency_present:
-            for vid in all_vehicles:
+    def calculate_reward(self, emergencypresent=False):
+        allvehicles = traci.vehicle.getIDList()
+        currentwaitingtime = sum(traci.vehicle.getWaitingTime(vid) for vid in allvehicles)
+        reward = -currentwaitingtime
+        if emergencypresent:
+            for vid in allvehicles:
                 if "emergency" in vid and traci.vehicle.getSpeed(vid) > 5:
-                    reward += 100
-        self.total_waiting_time = current_waiting_time
+                    reward += 200
+        self.totalwaitingtime = currentwaitingtime
+        print(f"[Env] Calculated reward: {reward}")
         return reward
 
     def close(self):
-        if traci.isLoaded(): traci.close()
+        print("[Env] Closing simulation...")
+        if traci.isLoaded():
+            traci.close()
