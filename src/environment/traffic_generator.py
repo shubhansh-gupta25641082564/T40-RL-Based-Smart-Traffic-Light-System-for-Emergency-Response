@@ -2,7 +2,7 @@ import random
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
+def generate_routes(output_file, num_vehicles=10000, num_emergency=2000):
     """
     Generate vehicle routes for simulation
 
@@ -40,33 +40,25 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
     # Define all valid start-to-end routes:
     # Each is a pair [INCOMING_EDGE, OUTGOING_EDGE]
     routes_list = [
-        ['N_C', 'C_S'],  # North to South (straight)
-        ['N_C', 'C_E'],  # North to East (right turn)
-        ['N_C', 'C_W'],  # North to West (left turn)
-
-        ['S_C', 'C_N'],  # South to North (straight)
-        ['S_C', 'C_E'],  # South to East (left turn)
-        ['S_C', 'C_W'],  # South to West (right turn)
-
-        ['E_C', 'C_W'],  # East to West (straight)
-        ['E_C', 'C_N'],  # East to North (left turn)
-        ['E_C', 'C_S'],  # East to South (right turn)
-
-        ['W_C', 'C_E'],  # West to East (straight)
-        ['W_C', 'C_S'],  # West to South (left turn)
-        ['W_C', 'C_N'],  # West to North (right turn)
-
-        ['N_C', 'C_S'],
-        ['S_C', 'C_N'],
-        ['E_C', 'C_W'],
-        ['W_C', 'C_E'],
+        ['N2C', 'C2E'],
+        ['N2C', 'C2W'],
+        ['N2C', 'C2S'],
+        ['E2C', 'C2N'],
+        ['E2C', 'C2W'],
+        ['E2C', 'C2S'],
+        ['W2C', 'C2N'],
+        ['W2C', 'C2E'],
+        ['W2C', 'C2S'],
+        ['S2C', 'C2N'],
+        ['S2C', 'C2E'],
+        ['S2C', 'C2W'],
     ]
 
     all_vehicles = []
 
     # Civilian vehicles: Random route
     for i in range(num_vehicles):
-        depart_time = random.uniform(0, 3600)
+        depart_time = random.uniform(0, 7200)
         route_edges = random.choice(routes_list)
         all_vehicles.append({
             "id": f"civilian_{i}",
@@ -75,9 +67,8 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
             "edges": route_edges
         })
 
-    # Emergency vehicles: Prefer straight (priority) routes
     for i in range(num_emergency):
-        depart_time = random.uniform(100, 3500)
+        depart_time = random.uniform(100, 7100)
         route_edges = random.choice(routes_list)
         all_vehicles.append({
             "id": f"emergency_{i}",
@@ -108,4 +99,4 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
 if __name__ == "__main__":
     import os
     os.makedirs('data/networks', exist_ok=True)
-    generate_routes('data/networks/intersection.rou.xml', num_vehicles=1000, num_emergency=200)
+    generate_routes('data/networks/intersection.rou.xml', num_vehicles=10000, num_emergency=2000)
