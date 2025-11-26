@@ -3,7 +3,7 @@ environment:
   routefile: data/networks/intersection.rou.xml
   usegui: false
   deltatime: 10
-  maxsteps: 36000
+  maxsteps: 7200
 paths:
   modelsdir: models/checkpoints
   logsdir: data/logs
@@ -18,5 +18,5 @@ agent:
   buffersize: 10000
   targetupdate: 10
 training:
-  numepisodes: 20
-  saveinterval: 2
+  numepisodes: 500
+  saveinterval: 5
