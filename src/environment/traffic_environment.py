@@ -4,14 +4,14 @@ import traci
 import numpy as np
 
 class TrafficEnvironment:
-    def __init__(self, net_file, route_file, use_gui=False, max_steps=36000, delta_time=10):
+    def __init__(self, net_file, route_file, use_gui=False, max_steps=7200, delta_time=10):
         self.net_file = net_file
         self.route_file = route_file
         self.use_gui = use_gui
         self.max_steps = max_steps
         self.delta_time = delta_time
         self.tl_id = "C"
-        self.num_lanes = 12
+        self.num_lanes = 16
         self.state_size = self.num_lanes * 2
         self.action_size = 2
         self.current_step = 0
@@ -23,7 +23,7 @@ class TrafficEnvironment:
             sumo_binary,
             "-n", self.net_file,
             "-r", self.route_file,
-            "--step-length", "0.1",
+            "--step-length", "0.001",
             "--waiting-time-memory", "10000",
             "--time-to-teleport", "-1",
             "--no-warnings", "true",
@@ -45,10 +45,10 @@ class TrafficEnvironment:
     def get_state(self):
         state = []
         incoming_lanes = [
-            "N_C_0", "N_C_1", "N_C_2",
-            "S_C_0", "S_C_1", "S_C_2",
-            "E_C_0", "E_C_1", "E_C_2",
-            "W_C_0", "W_C_1", "W_C_2",
+            "N2C_0", "N2C_1", "N2C_2", "N2C_3",
+            "E2C_0", "E2C_1", "E2C_2", "E2C_3",
+            "W2C_0", "W2C_1", "W2C_2", "W2C_3",
+            "S2C_0", "S2C_1", "S2C_2", "S2C_3",
         ]
         for lane in incoming_lanes:
             queue_length = traci.lane.getLastStepHaltingNumber(lane)
