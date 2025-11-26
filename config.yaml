@@ -3,7 +3,7 @@ environment:
   routefile: data/networks/intersection.rou.xml
   usegui: false
   deltatime: 10
-  maxsteps: 7200
+  maxsteps: 36000
 paths:
   modelsdir: models/checkpoints
   logsdir: data/logs

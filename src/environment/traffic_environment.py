@@ -4,7 +4,7 @@ import traci
 import numpy as np
 
 class TrafficEnvironment:
-    def __init__(self, net_file, route_file, use_gui=False, max_steps=7200, delta_time=10):
+    def __init__(self, net_file, route_file, use_gui=False, max_steps=36000, delta_time=10):
         self.net_file = net_file
         self.route_file = route_file
         self.use_gui = use_gui
