@@ -18,5 +18,5 @@ agent:
   buffersize: 10000
   targetupdate: 10
 training:
-  numepisodes: 20
+  numepisodes: 250
   saveinterval: 2
