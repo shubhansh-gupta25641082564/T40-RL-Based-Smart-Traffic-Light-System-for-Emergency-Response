@@ -40,26 +40,18 @@ def generate_routes(output_file, num_vehicles=1000, num_emergency=200):
     # Define all valid start-to-end routes:
     # Each is a pair [INCOMING_EDGE, OUTGOING_EDGE]
     routes_list = [
-        ['N_C', 'C_S'],  # North to South (straight)
-        ['N_C', 'C_E'],  # North to East (right turn)
-        ['N_C', 'C_W'],  # North to West (left turn)
-
-        ['S_C', 'C_N'],  # South to North (straight)
-        ['S_C', 'C_E'],  # South to East (left turn)
-        ['S_C', 'C_W'],  # South to West (right turn)
-
-        ['E_C', 'C_W'],  # East to West (straight)
-        ['E_C', 'C_N'],  # East to North (left turn)
-        ['E_C', 'C_S'],  # East to South (right turn)
-
-        ['W_C', 'C_E'],  # West to East (straight)
-        ['W_C', 'C_S'],  # West to South (left turn)
-        ['W_C', 'C_N'],  # West to North (right turn)
-
-        ['N_C', 'C_S'],
-        ['S_C', 'C_N'],
-        ['E_C', 'C_W'],
-        ['W_C', 'C_E'],
+        ['N2C', 'C2E'],
+        ['N2C', 'C2W'],
+        ['N2C', 'C2S'],
+        ['E2C', 'C2N'],
+        ['E2C', 'C2W'],
+        ['E2C', 'C2S'],
+        ['W2C', 'C2N'],
+        ['W2C', 'C2E'],
+        ['W2C', 'C2S'],
+        ['S2C', 'C2N'],
+        ['S2C', 'C2E'],
+        ['S2C', 'C2W'],
     ]
 
     all_vehicles = []

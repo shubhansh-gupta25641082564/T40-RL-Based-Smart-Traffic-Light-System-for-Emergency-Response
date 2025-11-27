@@ -8,7 +8,7 @@ def load_config(config_path):
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
 
-def evaluate(config, model_path, num_episodes=10, use_gui=True):
+def evaluate(config, model_path, num_episodes=125, use_gui=False):
     env = TrafficEnvironment(
         net_file=config["environment"]["netfile"],
         route_file=config["environment"]["routefile"],
