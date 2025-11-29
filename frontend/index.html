@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Smart Traffic Control Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="16" cy="10" r="3" fill="#dc2626"/>
+                    <circle cx="16" cy="16" r="3" fill="#ca8a04"/>
+                    <circle cx="16" cy="22" r="3" fill="#16a34a"/>
+                </svg>
+            </div>
+            <h1 class="nav-title">RL Smart Traffic Control</h1>
+        </div>
+        <div class="nav-right">
+            <div class="system-status">
+                <span class="status-indicator status-active"></span>
+                <span class="status-text">System Running</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>Traffic Monitoring</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span>Emergency Vehicles</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v6m0 6v6m9.22-7H13.78m-3.56 0H1.78m15.92-6.36l-4.24 4.24m-6.72 0L2.5 3.64m14.24 16.72l-4.24-4.24m-6.72 0l-4.24 4.24"></path>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- Header Metrics Row -->
+            <div class="metrics-row">
+                <div class="metric-card">
+                    <div class="metric-icon" style="background-color: var(--color-bg-3);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Total Vehicles</div>
+                        <div class="metric-value" id="totalVehicles">156</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon emergency-icon" style="background-color: var(--color-bg-4);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Emergency Vehicles Active</div>
+                        <div class="metric-value" id="emergencyVehicles">2</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background-color: var(--color-bg-2);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ca8a04" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Average Wait Time</div>
+                        <div class="metric-value" id="avgWaitTime">42.5<span class="metric-unit">s</span></div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background-color: var(--color-bg-1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">System Status</div>
+                        <div class="metric-value" style="font-size: 18px; color: #16a34a;">Running</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-Time Traffic Simulation Panel -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Live Traffic Intersection</h2>
+                    <div class="panel-controls">
+                        <button class="btn-icon" id="pauseBtn" title="Pause Simulation">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="6" y="4" width="4" height="16"></rect>
+                                <rect x="14" y="4" width="4" height="16"></rect>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" id="playBtn" title="Resume Simulation" style="display: none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="intersectionCanvas"></div>
+                </div>
+            </div>
+
+            <!-- Traffic Metrics Charts -->
+            <div class="charts-grid">
+                <div class="chart-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Queue Length Over Time</h3>
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="queueChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Traffic Distribution by Direction</h3>
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Average Delay by Direction</h3>
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="delayChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Emergency Vehicle Response Time</h3>
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="responseChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Vehicle Tracking & RL Performance -->
+            <div class="info-grid">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Emergency Vehicle Tracking</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="emergencyList" class="emergency-list"></div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">RL Agent Performance</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="rl-stats">
+                            <div class="rl-stat-item">
+                                <span class="rl-stat-label">Current Episode:</span>
+                                <span class="rl-stat-value" id="currentEpisode">450</span>
+                            </div>
+                            <div class="rl-stat-item">
+                                <span class="rl-stat-label">Total Reward:</span>
+                                <span class="rl-stat-value" id="totalReward">8,750</span>
+                            </div>
+                            <div class="rl-stat-item">
+                                <span class="rl-stat-label">Learning Rate:</span>
+                                <span class="rl-stat-value" id="learningRate">0.0001</span>
+                            </div>
+                            <div class="rl-stat-item">
+                                <span class="rl-stat-label">Model Accuracy:</span>
+                                <span class="rl-stat-value" id="accuracy">87.5%</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <canvas id="rewardChart" style="max-height: 200px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Logs Panel -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h3 class="panel-title">System Logs</h3>
+                    <button class="btn-secondary btn-sm" id="clearLogs">Clear Logs</button>
+                </div>
+                <div class="panel-body">
+                    <div id="systemLogs" class="logs-container"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
